@@ -23,7 +23,7 @@ import org.w3c.dom.Element;
 
 /**
  * Bean wiring target attribute checker.
- * <p/>
+ *
  * Makes sure that one of "beanIdRef", "beanClass" and "beanAnnotation" are configured.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

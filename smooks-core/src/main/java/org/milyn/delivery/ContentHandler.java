@@ -16,13 +16,5 @@
 
 package org.milyn.delivery;
 
-
-/**
- * Content Handler interface definition.
- * </p>
- * Base interface for all content delivery components.  See extending interfaces.
- * 
- * @author tfennelly
- */
 public interface ContentHandler<T> {
 }

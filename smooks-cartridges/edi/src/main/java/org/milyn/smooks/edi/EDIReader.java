@@ -42,7 +42,7 @@ import org.xml.sax.SAXException;
 
 /**
  * Smooks EDI Reader.
- * <p/>
+ *
  * Hooks the Milyn {@link org.milyn.edisax.EDIParser} into the <a href="http://milyn.codehaus.org/Smooks" target="new">Smooks</a> framework.
  * This adds EDI processing support to Smooks.
  *
@@ -95,7 +95,7 @@ public class EDIReader extends EDIParser implements SmooksXMLReader {
 
 	/**
 	 * Parse the EDI message.
-	 * <p/>
+	 *
 	 * Overridden so as to set the EDI to XML mapping model on the parser.
 	 */
 	public void parse(InputSource ediSource) throws IOException, SAXException {
@@ -112,7 +112,7 @@ public class EDIReader extends EDIParser implements SmooksXMLReader {
 
     /**
 	 * Get the mapping model associated with the supplied SmooksResourceConfiguration.
-	 * <p/>
+	 *
 	 * The parsed and validated model are cached in the Smooks container context, keyed
 	 * by the SmooksResourceConfiguration instance.
 	 * @return The Mapping Model.

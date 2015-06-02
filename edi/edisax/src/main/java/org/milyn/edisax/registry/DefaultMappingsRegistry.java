@@ -43,7 +43,7 @@ public class DefaultMappingsRegistry extends AbstractMappingsRegistry {
 	/**
 	 * Constructor mostly used for tests
 	 * 
-	 * @param models
+	 * @param models Edifact models
 	 */
 	public DefaultMappingsRegistry(EdifactModel... models) {
 		for (EdifactModel model : models) {
@@ -54,8 +54,7 @@ public class DefaultMappingsRegistry extends AbstractMappingsRegistry {
 	/**
 	 * Loading mapping model out of ZIP file
 	 * 
-	 * @param string
-	 * @param baseURI
+	 * @param baseURI base URI
 	 * @throws SAXException 
 	 * @throws IOException 
 	 * @throws EDIConfigurationException 
@@ -64,11 +63,6 @@ public class DefaultMappingsRegistry extends AbstractMappingsRegistry {
 		addModelReferences(mappingModelFiles, baseURI);
 	}
 
-	/**
-	 * Add references to the lookup list. 
-	 * 
-	 * @param references
-	 */
 	public void addModelReferences(String models, URI baseURI) {
 		String[] mappingModelFileTokens = models.split(",");
 		for (String modelRef : mappingModelFileTokens) {

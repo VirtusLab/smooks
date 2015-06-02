@@ -29,7 +29,7 @@ import org.milyn.delivery.sax.SAXVisitor;
 
 /**
  * Fragment {@link StreamResult} Writer SAX Visitor Annotation.
- * <p/>
+ *
  * Used to flag a {@link SAXVisitor} implementation as being a writer
  * to any defined {@link StreamResult}.  This annotation results in the
  * Stream Writer (for the StreamResult) being acquired on behalf of the

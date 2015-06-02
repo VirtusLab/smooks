@@ -29,7 +29,7 @@ import java.sql.SQLException;
 
 /**
  * Direct DataSource.
- * <p/>
+ *
  * Configured with a specific JDBC driver plus username etc.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

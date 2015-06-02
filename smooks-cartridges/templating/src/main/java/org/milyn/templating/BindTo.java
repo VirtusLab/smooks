@@ -19,7 +19,7 @@ import org.milyn.assertion.AssertArgument;
 
 /**
  * BindTo template usage.
- * <p/>
+ *
  * Bind the templating result to the specified beanId.  The templating result is
  * then available for other puroposes e.g. routing.
  *

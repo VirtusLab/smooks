@@ -60,7 +60,7 @@ public class ServletResourceLocator implements ContainerResourceLocator {
 	}
 
 	/**
-	 * Get a resource stream through the Servlet container. <p/> If a Servlet
+	 * Get a resource stream through the Servlet container.  If a Servlet
 	 * configuration (see
 	 * {@link ServletParamUtils#getParameterValue(String, ServletConfig)})
 	 * exists for "configName" the method uses use the config value, otherwise
@@ -115,7 +115,7 @@ public class ServletResourceLocator implements ContainerResourceLocator {
 	}
 
 	/**
-	 * Get a resource stream through the Servlet container. <p/> Loads the
+	 * Get a resource stream through the Servlet container.  Loads the
 	 * resource through the first successfull call of:
 	 * <ul>
 	 * <li>{@link javax.servlet.ServletContext#getResourceAsStream(java.lang.String)}</li>

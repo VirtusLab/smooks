@@ -43,15 +43,6 @@ public class Configurator {
 
     private static Log logger = LogFactory.getLog(Configurator.class);
 
-    /**
-     * Configure the supplied {@link org.milyn.delivery.ContentHandler} instance using the supplied
-     * {@link SmooksResourceConfiguration} and {@link org.milyn.container.ApplicationContext} instances.
-     * @param instance The instance to be configured.
-     * @param config The configuration.
-     * @param appContext Associated application context.
-     * @return The configured ContentHandler instance.
-     * @throws SmooksConfigurationException Invalid field annotations.
-     */
     public static <U> U configure(U instance, SmooksResourceConfiguration config, ApplicationContext appContext) throws SmooksConfigurationException {
         AssertArgument.isNotNull(appContext, "appContext");
 
@@ -66,14 +57,6 @@ public class Configurator {
         return configure(instance, config);
     }
 
-    /**
-     * Configure the supplied {@link org.milyn.delivery.ContentHandler} instance using the supplied
-     * {@link SmooksResourceConfiguration} isntance.
-     * @param instance The instance to be configured.
-     * @param config The configuration.
-     * @return The configured ContentHandler instance.
-     * @throws SmooksConfigurationException Invalid field annotations.
-     */
     public static <U> U configure(U instance, SmooksResourceConfiguration config) throws SmooksConfigurationException {
         AssertArgument.isNotNull(instance, "instance");
         AssertArgument.isNotNull(config, "config");

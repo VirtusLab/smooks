@@ -29,15 +29,15 @@ import org.milyn.javabean.context.BeanContext;
 
 /**
  * XSL {@link org.milyn.delivery.dom.DOMElementVisitor} Creator class.
- * <p/>
+ *
  * Creates {@link org.milyn.delivery.dom.DOMElementVisitor} instances for performing node/element level
  * <a href="http://www.w3.org/Style/XSL/">XSL</a> templating (aka XSLT).
- * <p/>
+ *
  * Template application can be done in a synchronized or unsynchronized fashion by setting
  * the system property "org.milyn.templating.xslt.synchronized".  According to the spec,
  * this should not be necessary.  However, Xalan 2.7.0 (for one) has a bug which results in
  * unsynchronized template application causing invalid transforms.
- * <p/>
+ *
  * <h2>Targeting "xsl" Templates</h2>
  * The following is the basic configuration specification for XSL resources:
  * <pre>
@@ -77,11 +77,11 @@ import org.milyn.javabean.context.BeanContext;
  *
  *     &lt;!-- (Optional) Fail on XSL Transformer Warning.
  *          Default "true".--&gt;
- *     &lt;param name="<b>failOnWarning</b>"&gt;false&lt;/param&gt;</b> &lt;!-- Default "true" --&gt;
+ *     &lt;param name="<b>failOnWarning</b>"&gt;false&lt;/param&gt; &lt;!-- Default "true" --&gt;
  *
  * &lt;/resource-config&gt;
  * </pre>
- * <p/>
+ *
  * <i><u>Example - URI based XSLT spec</u></i>:
  * <pre>
  * &lt;resource-config selector="<i>target-element</i>"&gt;
@@ -89,34 +89,34 @@ import org.milyn.javabean.context.BeanContext;
  *     &lt;resource&gt;/com/acme/order-transform.xsl&lt;/resource&gt;
  * &lt;/resource-config&gt;
  * </pre>
- * <p/>
+ *
  * <i><u>Example - Inlined XSLT spec</u></i>:
  * <pre>
  * &lt;resource-config selector="<i>target-element</i>"&gt;
  *     &lt;!-- 1. Note how we have to specify the resource type when it's inlined. --&gt;
  *     &lt;!-- 2. Note how the inlined XSLT is wrapped as an XML Comment. CDATA Section wrapping also works. --&gt;
  *     &lt;!-- 3. Note if the inlined XSLT is a <a href="#templatelets">templatelet</a>, is-xslt-templatelet=true must be specified. --&gt;
- *     &lt;resource <b color="red">type="xsl"</b>&gt;
+ *     &lt;resource <b style="color: red">type="xsl"</b>&gt;
  *         &lt;!--
  *            <i>Inline XSLT....</i>
  *         --&gt;
  *     &lt;/resource&gt;
- *     <b color="red">&lt;param name="is-xslt-templatelet"&gt;true&lt;/param&gt;</b>
+ *     <b style="color: red">&lt;param name="is-xslt-templatelet"&gt;true&lt;/param&gt;</b>
  * &lt;/resource-config&gt;
  * </pre>
- * <p/>
+ *
  * <h3 id="templatelets">Templatelets</h3>
  * Templatelets are a convenient way of specifying an XSL Stylesheet.  When using "Templatelets", you simply specify the
  * body of an XSL template. This creator then wraps that body to make a complete XSL Stylesheet with a single template matched to the
  * element targeted by the Smooks resource configuration in question.  This feature only applies
  * to inlined XSL resources and in this case, it's <u>OFF</u> by default.  To use this feature,
  * you must specify the "is-xslt-templatelet" parameter with a value of "true".
- * <p/>
+ *
  * This feature will not work in all situations since you'll often need to specify a full stylesheet in order to
  * specify namespaces etc.  It's just here for convenience.
- * <p/>
- * <a href="doc-files/templatelet.xsl" type="text/plain">See the template used to wrap the templatelet</a>.
- * <p/>
+ *
+ * <a href="doc-files/templatelet.xsl">See the template used to wrap the templatelet</a>.
+ *
  * <h3>JavaBean Support</h3>
  * Support for injection of JavaBean values populated by the
  * <a href="http://milyn.codehaus.org/downloads">Smooks JavaBean Cartridge</a> is supported through the

@@ -54,7 +54,7 @@ import org.yaml.snakeyaml.events.Event;
 
 /**
  * YAML to SAX event reader.
- * <p/>
+ *
  * This YAML Reader can be plugged into Smooks in order to convert a
  * YAML based message stream into a stream of SAX events to be consumed by the other
  * Smooks resources.

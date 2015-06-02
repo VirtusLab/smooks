@@ -3,7 +3,7 @@ package org.milyn.db;
 /**
  * The transaction manager manages the transaction
  * of a data source
- * <p />
+ *
  *
  * This transaction manager does nothing and has a default level
  * because it can change in future versions of Smooks.

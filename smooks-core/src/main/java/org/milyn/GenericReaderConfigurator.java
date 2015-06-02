@@ -24,7 +24,7 @@ import java.util.*;
 
 /**
  * Generic reader configurator.
- * <p/>
+ *
  * Specific reader implementations can define specialized configurators.
  * 
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

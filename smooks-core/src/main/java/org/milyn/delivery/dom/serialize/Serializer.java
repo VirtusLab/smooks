@@ -41,7 +41,7 @@ import java.util.List;
 
 /**
  * Node serializer.
- * <p/>
+ *
  * This class uses the {@link org.milyn.delivery.ContentDeliveryConfig} and the
  * {@link org.milyn.delivery.dom.serialize.SerializationUnit} instances defined there on
  * to perform the serialization. 
@@ -120,9 +120,9 @@ public class Serializer {
 	
 	/**
 	 * Serialise the document to the supplied output writer instance.
-	 * <p/>
+	 *
 	 * Adds the DOCTYPE decl if one defined in the Content Delivery Configuration.
-	 * <p/>
+	 *
 	 * If the node is a Document (or DocumentFragment) node the whole node is serialised.  
 	 * Otherwise, only the node child elements are serialised i.e. the node itself is skipped.
 	 * @param writer Output writer.
@@ -172,7 +172,7 @@ public class Serializer {
 
 	/**
 	 * Serialize the DocumentType.
-	 * <p/>
+	 *
 	 * Only called if a DOCTYPE was suppied in the original source and
 	 * no doctype overrides were configured (in .cdrl) for the requesting
 	 * device.

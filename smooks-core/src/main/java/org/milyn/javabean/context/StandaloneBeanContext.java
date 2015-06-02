@@ -400,7 +400,7 @@ public class StandaloneBeanContext implements BeanContext {
 
     /**
 	 * Repository Entry
-	 * <p/>
+	 *
 	 * Represents an entry of a BeanId and provides an platform of all the
 	 * objects that needed for that entry
 	 *

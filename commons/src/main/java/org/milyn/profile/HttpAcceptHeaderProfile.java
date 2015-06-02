@@ -17,16 +17,16 @@
 package org.milyn.profile;
 
 /**
- * HTTP Accept header profile. <p/> This profile implementation exposes the
+ * HTTP Accept header profile.  This profile implementation exposes the
  * requesting useragent's "Accept" header media types as part of the profile
  * set. This class represents a single media type. See RFC2068 section 14.1.
- * <p/> The profile name is of the form
+ *  The profile name is of the form
  * 
  * <pre>
  *  	&quot;accept&quot; &quot;:&quot; &quot;media-range&quot;
  * </pre>
  * 
- * <p/> This class also provides access to the Accept header media parameters
+ *  This class also provides access to the Accept header media parameters
  * via the getParam methods ({@link #getParam(String)} and
  * {@link #getParamNumeric(String, double)}).
  * 
@@ -81,17 +81,6 @@ public class HttpAcceptHeaderProfile extends BasicProfile {
 		return null;
 	}
 
-	/**
-	 * Get the named parameter as a numeric value. <p/> Use this method for
-	 * extracting
-	 * 
-	 * @param name
-	 *            Parameter name.
-	 * @return Parameter value as a float, or <code>defaultVal</code> if not
-	 *         defined.
-	 * @throws NumberFormatException
-	 *             The requested parameter value is a not a numeric value.
-	 */
 	public double getParamNumeric(String name, double defaultVal)
 			throws NumberFormatException {
 		String paramVal = getParam(name);

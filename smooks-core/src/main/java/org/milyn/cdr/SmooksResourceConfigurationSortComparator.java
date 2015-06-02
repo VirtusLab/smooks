@@ -23,19 +23,19 @@ import org.milyn.profile.ProfileSet;
 
 /**
  * Sort Comparator for {@link org.milyn.cdr.SmooksResourceConfiguration} Objects based on their "specificity".
- * <p/>
+ *
  * Before reading this be sure to read the {@link org.milyn.cdr.SmooksResourceConfiguration} class Javadoc.
- * <p/>
+ *
  * As Smooks applies {@link org.milyn.delivery.ContentHandler}s ({@link org.milyn.delivery.dom.DOMElementVisitor DOMElementVisitors} and
  * {@link org.milyn.delivery.dom.serialize.SerializationUnit SerializationUnits}) it may discover that in a given case more than 1 {@link org.milyn.delivery.ContentHandler}
  * can be applied.  How does Smooks decide on the order in which these {@link org.milyn.delivery.ContentHandler}s are to be applied to the content?
- * <p/>
+ *
  * At the moment, Smooks uses this class to calculate a "specificity" rating for each Content Delivery Resource based on its 
  * {@link org.milyn.cdr.SmooksResourceConfiguration &lt;smooks-resource&gt;} configuration, and sorts them in decreasing order of specificity.
- * <p/>
+ *
  * The following outlines how this specificity value is calculated at present.
  * <!-- Just cut-n-paste from the code -->
- * <pre>
+ * <pre>{@code
     // Get the combined specificity of all the profile targeting expressions.
 	{@link org.milyn.cdr.ProfileTargetingExpression}[] profileTargetingExpressions = resourceConfig.{@link org.milyn.cdr.SmooksResourceConfiguration#getProfileTargetingExpressions() getProfileTargetingExpressions()};
 	for(int i = 0; i < profileTargetingExpressions.length; i++) {
@@ -63,7 +63,7 @@ import org.milyn.profile.ProfileSet;
 	// Check the 'namespace' attribute.
 	if(resourceConfig.{@link org.milyn.cdr.SmooksResourceConfiguration#getSelectorNamespaceURI() getSelectorNamespaceURI()} != null) {
 		specificity += 10;
-	}</pre>  
+	}}</pre>
  * For more details on this please refer to the code in this class.
  * 
  * @author tfennelly
@@ -110,7 +110,7 @@ public class SmooksResourceConfigurationSortComparator implements Comparator {
 	
 	/**
 	 * Get the specificity of the SmooksResourceConfiguration.
-	 * <p/>
+	 *
 	 * The "specificity" is evaluated based on the selector and target-profile values.
 	 * @param resourceConfig Resource configuration.
 	 * @return Configuration specificity.

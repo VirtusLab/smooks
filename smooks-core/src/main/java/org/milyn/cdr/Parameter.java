@@ -7,7 +7,7 @@ import org.w3c.dom.Element;
 
 /**
  * SmooksResourceConfiguration Parameter.
- * <p/>
+ *
  * Wrapper for a param.  Handles decoding.
  * @author tfennelly
  */
@@ -93,7 +93,7 @@ public class Parameter {
 
 	/**
 	 * Get the parameter value "decoded" into an Object.
-	 * <p/>
+	 *
 	 * Uses the supplied <code>deliveryConfig</code> to get the {@link ParameterDecoder}
 	 * implementation to be used to decode the parameter value.  Looks up the
 	 * {@link ParameterDecoder} using the parameter type - selector="decoder-<i>&lt;type&gt;</i>".
@@ -143,13 +143,6 @@ public class Parameter {
 		return value;
 	}
 
-    /**
-     * Set the DOM element node associated with the parameter definition.
-     * <p/>
-     * Only relevant for XML based configs.
-     *
-     * @param xml Parameter configuration xml.
-     */
     public Parameter setXML(Element xml) {
         this.xml = xml;
         return this;
@@ -157,7 +150,7 @@ public class Parameter {
 
     /**
      * Get the DOM element node associated with the parameter definition.
-     * <p/>
+     *
      * Only relevant for XML based configs.
      *
      * @return Parameter configuration xml.

@@ -25,7 +25,7 @@ package org.milyn.scribe.register;
  *
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>
  *
- * @param <T> The DAO type
+ * @param <D> The DAO type
  */
 public abstract class AbstractDaoRegister<D> implements DaoRegister<D> {
 

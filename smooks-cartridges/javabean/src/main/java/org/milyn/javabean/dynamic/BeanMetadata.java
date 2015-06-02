@@ -26,7 +26,7 @@ import java.util.Map;
 
 /**
  * Bean metadata.
- * <p/>
+ *
  * This class is used to hold additional data about a model bean instance.
  * 
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
@@ -73,7 +73,7 @@ public class BeanMetadata {
 
     /**
      * Set the XML namespace with which the associated bean instance is associated.
-     * <p/>
+     *
      * If the bean instance was created from a source XML message, the namespace will
      * be set from the namespace of the source XML.  If the bean instance was created and
      * {@link Model#registerBean(Object) registered manually on the Model}, the
@@ -104,7 +104,7 @@ public class BeanMetadata {
 
     /**
      * Set the XML namespace prefix.
-     * <p/>
+     *
      * If the bean instance was created from a source XML message, the prefix will
      * be set from the prefix of the source XML.  If the bean instance was created and
      * {@link Model#registerBean(Object) registered manually on the Model}, the
@@ -124,7 +124,7 @@ public class BeanMetadata {
 
     /**
      * Get the "pre text" associated with the bean.
-     * <p/>
+     *
      * When a {@link ModelBuilder#readModel(java.io.Reader, Class) Model is created/read from a source XML message},
      * the different fragments in the source message are responsible for triggering creation of beans that go into
      * the {@link Model} instance.  The "pre text" of a bean is the XML whitespace, comments, CDATA and non contributing
@@ -139,7 +139,7 @@ public class BeanMetadata {
 
     /**
      * Set the "pre text" associated with the bean.
-     * <p/>
+     *
      * When a {@link ModelBuilder#readModel(java.io.Reader, Class) Model is created/read from a source XML message},
      * the different fragments in the source message are responsible for triggering creation of beans that go into
      * the {@link Model} instance.  The "pre text" of a bean is the XML whitespace, comments, CDATA and non contributing
@@ -207,7 +207,7 @@ public class BeanMetadata {
 
     /**
      * Get user properties/metadata associated with the bean.
-     * <p/>
+     *
      * A mechanism for associating additional "user defined" metadata.
      *
      * @return The user properties/metadata associated with the bean.

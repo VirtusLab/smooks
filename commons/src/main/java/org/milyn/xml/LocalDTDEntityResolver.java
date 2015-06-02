@@ -41,7 +41,7 @@ public class LocalDTDEntityResolver extends LocalEntityResolver {
     }
 
     /**
-     * Public default Constructor <p/> This constructor allows specification of
+     * Public default Constructor  This constructor allows specification of
      * a local file system folder from which DTDs can be loaded.
      *
      * @param localDTDFolder Local DTD folder.

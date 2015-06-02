@@ -4,9 +4,9 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.milyn</groupId>
+        <groupId>org.virtuslab</groupId>
         <artifactId>smooks-examples</artifactId>
-        <version>1.5.2</version>
+        <version>1.5.3</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -26,15 +26,15 @@
 	    <version>5.1.1</version>
             <exclusions>
                 <exclusion>
-                      <groupId>org.milyn</groupId>
+                      <groupId>org.virtuslab</groupId>
                       <artifactId>milyn-smooks-core</artifactId>
                 </exclusion>
                 <exclusion>
-                      <groupId>org.milyn</groupId>
+                      <groupId>org.virtuslab</groupId>
                       <artifactId>milyn-smooks-javabean</artifactId>
                 </exclusion>
                 <exclusion>
-                      <groupId>org.milyn</groupId>
+                      <groupId>org.virtuslab</groupId>
                       <artifactId>milyn-smooks-csv</artifactId>
                 </exclusion>
             </exclusions> 
@@ -45,11 +45,11 @@
 	    <version>5.1.1</version>
             <exclusions>
                 <exclusion>
-                      <groupId>org.milyn</groupId>
+                      <groupId>org.virtuslab</groupId>
                       <artifactId>milyn-smooks-javabean</artifactId>
                 </exclusion>
                 <exclusion>
-                      <groupId>org.milyn</groupId>
+                      <groupId>org.virtuslab</groupId>
                       <artifactId>milyn-smooks-csv</artifactId>
                 </exclusion>
             </exclusions> 
@@ -67,14 +67,14 @@
             <version>1.2.1</version>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-csv</artifactId>
-            <version>1.5.2</version> <!-- base pom version - do not remove this comment -->
+            <version>1.5.3</version> <!-- base pom version - do not remove this comment -->
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-javabean</artifactId>
-            <version>1.5.2</version> <!-- base pom version - do not remove this comment -->
+            <version>1.5.3</version> <!-- base pom version - do not remove this comment -->
         </dependency>
     </dependencies>
 

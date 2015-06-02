@@ -45,7 +45,7 @@ public class ModelSet {
 
     /**
      * ModelSet base beans.
-     * <p/>
+     *
      * A Smooks configuration can have multiple <jb:baseBeans> that can be wired together
      * in all sorts of ways to create models.  This is a Map of these baseBeans.  These
      * baseBeans are used (cloned) to create all possible models (with baseBeans all wired together).
@@ -53,7 +53,7 @@ public class ModelSet {
     private Map<String, Bean> baseBeans = new LinkedHashMap<String, Bean>();
     /**
      * Models.
-     * <p/>
+     *
      * Should contain clones of the same baseBeans as in the baseBeans property (above), but
      * with their full graphs expanded i.e. all the bean wirings resolved and wired into
      * parent baseBeans etc.

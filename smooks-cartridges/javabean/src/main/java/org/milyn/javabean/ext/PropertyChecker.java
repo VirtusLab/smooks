@@ -28,7 +28,7 @@ import java.util.Map;
 
 /**
  * Binding "property" attribute checker.
- * <p/>
+ *
  * The binding "property" attribute should not be specified when binding to a Collection/Array, and must be
  * specified when binding to a non-collection.  This visitor enforces these constraints.
  *

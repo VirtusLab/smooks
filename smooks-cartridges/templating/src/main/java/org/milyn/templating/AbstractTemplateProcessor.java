@@ -53,10 +53,10 @@ import java.util.Set;
 
 /**
  * Abstract template processing unit.
- * <p/>
+ *
  * Defines abstract methods for loading the template in question, as well as convienience methods for
  * processing the template action against the templating result (replace, addto, insertbefore and insertafter).
- * <p/>
+ *
  * See implementations.
  * @author tfennelly
  */

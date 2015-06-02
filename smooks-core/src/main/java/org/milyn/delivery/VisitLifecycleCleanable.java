@@ -26,7 +26,7 @@ public interface VisitLifecycleCleanable extends Visitor {
 
     /**
      * Cleanup the resources allocated by this resource for the specified ExecutionContext.
-     * <p/>
+     *
      * Executes the cleanup at the end of the fragment visit.
      *
      * @param fragment The fragment.

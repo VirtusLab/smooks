@@ -29,10 +29,10 @@ import java.util.Collections;
 
 /**
  * Data decoder.
- * <p/>
+ *
  * A data decoder converts data (encoded in a String) to an Object of some form, determined by
  * the decoder implementation.
- * <p/>
+ *
  * There are a number of pre-installed decoders in the {@link org.milyn.javabean.decoders}
  * package.  DataDecoders are used in a numkber of places in Smooks:
  * <ul>

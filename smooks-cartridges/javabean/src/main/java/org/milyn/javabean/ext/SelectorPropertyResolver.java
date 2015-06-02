@@ -27,7 +27,7 @@ import org.w3c.dom.*;
 
 /**
  * Selector Property Resolver.
- * <p/>
+ *
  * Some binding selectors can be of the form "order/customer/@customerNumber", where the
  * last token in the selector represents an attribute on the customer element (for example).  This
  * extension visitor translates this type of selector into "order/customer" plus a new property

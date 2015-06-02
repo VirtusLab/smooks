@@ -24,7 +24,7 @@ import org.milyn.cdr.SmooksResourceConfiguration;
 
 /**
  * EDI Reader configurator.
- * <p/>
+ *
  * Supports programmatic {@link EDIReader} configuration on a {@link org.milyn.Smooks#setReaderConfig(org.milyn.ReaderConfigurator) Smooks} instance.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

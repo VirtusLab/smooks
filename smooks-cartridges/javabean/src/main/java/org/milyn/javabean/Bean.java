@@ -30,14 +30,14 @@ import java.util.ArrayList;
 
 /**
  * Programmatic Bean Configurator.
- * <p/>
+ *
  * This class can be used to programmatically configure a Smooks instance for performing
  * a Java Bindings on a specific class.  To populate a graph, you simply create a graph of
  * Bean instances by binding Beans onto Beans.
- * <p/>
+ *
  * This class uses a Fluent API (all methods return the Bean instance), making it easy to
  * string configurations together to build up a graph of Bean configuration.
- * <p/>
+ *
  * <h3>Example</h3>
  * Taking the "classic" Order message as an example and binding it into a corresponding
  * Java Object model.
@@ -63,7 +63,7 @@ import java.util.ArrayList;
  *     &lt;/order-items&gt;
  * &lt;/order&gt;
  * </pre>
- * <p/>
+ *
  * <h4>The Java Model</h4>
  * (Not including getters and setters):
  * <pre>
@@ -81,7 +81,7 @@ import java.util.ArrayList;
  *     private double price;
  * }
  * </pre>
- * <p/>
+ *
  * <h4>The Binding Configuration and Execution Code</h4>
  * The configuration code (Note: Smooks instance defined and instantiated globally):
  * <pre>
@@ -102,7 +102,7 @@ import java.util.ArrayList;
  *
  * smooks.addVisitors(orderBean);
  * </pre>
- * <p/>
+ *
  * And the execution code:
  * <pre>
  * JavaResult result = new JavaResult();
@@ -126,7 +126,7 @@ public class Bean extends BindingAppender {
 
     /**
      * Create a Bean binding configuration.
-     * <p/>
+     *
      * The bean instance is created on the root/document fragment.
      *
      * @param beanClass        The bean runtime class.
@@ -139,7 +139,7 @@ public class Bean extends BindingAppender {
 
     /**
      * Create a Bean binding configuration.
-     * <p/>
+     *
      * The bean instance is created on the root/document fragment.
      *
      * @param beanClass        The bean runtime class.
@@ -234,7 +234,7 @@ public class Bean extends BindingAppender {
 
     /**
      * Create a Bean binding configuration.
-     * <p/>
+     *
      * This method binds the configuration to the same {@link Smooks} instance
      * supplied in the constructor.  The beanId is generated.
      *
@@ -249,7 +249,7 @@ public class Bean extends BindingAppender {
 
     /**
      * Create a Bean binding configuration.
-     * <p/>
+     *
      * This method binds the configuration to the same {@link Smooks} instance
      * supplied in the constructor.  The beanId is generated.
      *
@@ -265,7 +265,7 @@ public class Bean extends BindingAppender {
 
     /**
      * Create a Bean binding configuration.
-     * <p/>
+     *
      * This method binds the configuration to the same {@link Smooks} instance
      * supplied in the constructor.
      *
@@ -280,7 +280,7 @@ public class Bean extends BindingAppender {
 
     /**
      * Create a Bean binding configuration.
-     * <p/>
+     *
      * This method binds the configuration to the same {@link Smooks} instance
      * supplied in the constructor.
      *
@@ -298,7 +298,7 @@ public class Bean extends BindingAppender {
     /**
      * Create a binding configuration to bind the data, selected from the message by the
      * dataSelector, to the specified bindingMember (field/method).
-     * <p/>
+     *
      * Discovers the {@link org.milyn.javabean.DataDecoder} through the specified
      * bindingMember.
      *
@@ -363,7 +363,7 @@ public class Bean extends BindingAppender {
     /**
      * Add a bean binding configuration for the specified bindingMember (field/method) to
      * this bean binding config.
-     * <p/>
+     *
      * This method is used to build a binding configuration graph, which in turn configures
      * Smooks to build a Java Object Graph (ala &lt;jb:wiring&gt; configurations).
      *
@@ -402,7 +402,7 @@ public class Bean extends BindingAppender {
 
     /**
      * Add a bean binding configuration to this Collection/array bean binding config.
-     * <p/>
+     *
      * This method checks that this bean's beanClass is a Collection/array, generating an
      * {@link IllegalArgumentException} if the check fails.
      *

@@ -38,7 +38,7 @@ public class BeanRuntimeInfo {
 
     /**
      * The bean classification.
-     * <p/>
+     *
      * We maintain this classification enum because it helps us avoid performing
      * instanceof checks, which are cheap when the instance being checked is
      * an instanceof, but is expensive if it's not.
@@ -57,7 +57,7 @@ public class BeanRuntimeInfo {
 
     /**
      * Bean type classification.
-     * <p/>
+     *
      * We maintain this classification enum because it helps us avoid performing
      * instanceof checks, which are cheap when the instance being checked is
      * an instanceof, but expensive if it's not.
@@ -124,7 +124,7 @@ public class BeanRuntimeInfo {
 
     /**
      * Resolve the Javabean runtime class.
-     * <p/>
+     *
      * Also performs some checks on the bean.
      *
      * @param beanClass The beanClass name.

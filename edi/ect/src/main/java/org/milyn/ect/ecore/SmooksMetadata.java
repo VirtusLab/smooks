@@ -19,52 +19,16 @@ public interface SmooksMetadata {
 	public static final String ANNOTATION_TYPE_KEY = "type";
 	public static final String SEGCODE = "segcode";
 
-	/**
-	 * Returns {@link EAnnotation} or throws {@link IllegalArgumentException}
-	 * 
-	 * @param element
-	 * @return
-	 */
 	public EAnnotation getSmooksAnnotation(EModelElement element);
 
-	/**
-	 * Returns true if given {@link EModelElement} annotated as segment
-	 * 
-	 * @param element
-	 * @return
-	 */
 	public boolean isSegment(EModelElement element);
 
-	/**
-	 * Return segcode or throws {@link IllegalArgumentException}
-	 * 
-	 * @param feature
-	 * @return
-	 */
 	public String getSegcode(EModelElement element);
 
-	/**
-	 * Returns true if given {@link EModelElement} has annotation type group
-	 * 
-	 * @param feature
-	 * @return
-	 */
 	public boolean isSegmentGroup(EModelElement element);
 
-	/**
-	 * Returns true or false or throws {@link IllegalArgumentException}
-	 * 
-	 * @param element
-	 * @return
-	 */
 	public boolean isField(EModelElement element);
 
-	/**
-	 * Returns true of false or throws {@link IllegalArgumentException}
-	 * 
-	 * @param feature
-	 * @return
-	 */
 	public boolean isComponent(EModelElement feature);
 
 	/**

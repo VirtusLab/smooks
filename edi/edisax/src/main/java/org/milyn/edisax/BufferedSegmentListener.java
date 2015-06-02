@@ -17,7 +17,7 @@ package org.milyn.edisax;
 
 /**
  * Buffered Segment listener.
- * <p/>
+ *
  * Implementations of this interface can control when and how the {@link BufferedSegmentReader#moveToNextSegment()} 
  * method returns true (segment exists) or false (segment does not exist).
  * 

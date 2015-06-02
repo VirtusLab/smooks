@@ -32,9 +32,9 @@ import java.util.UUID;
 
 /**
  * Fixed Length {@link java.util.List} Binder class.
- * <p/>
+ *
  * Simple Fixed Length records to Object {@link java.util.List} binding class.
- * <p/>
+ *
  * Exmaple usage:
  * <pre>
  * public class PeopleBinder {

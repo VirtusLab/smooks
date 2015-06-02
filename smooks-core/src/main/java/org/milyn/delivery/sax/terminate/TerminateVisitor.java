@@ -55,9 +55,6 @@ public class TerminateVisitor implements SAXVisitBefore, SAXVisitAfter, Producer
 		}
 	}
 
-	/**
-	 * @param terminateBefore the terminateBefore to set
-	 */
 	@ConfigParam(use = Use.OPTIONAL)
 	public TerminateVisitor setTerminateBefore(boolean terminateBefore) {
 		this.terminateBefore = terminateBefore;

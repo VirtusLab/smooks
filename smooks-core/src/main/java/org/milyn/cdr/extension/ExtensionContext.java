@@ -106,7 +106,7 @@ public class ExtensionContext {
 
     /**
      * Add a resource configuration to the list of resources for this Extension Context.
-     * <p/>
+     *
      * The resource gets added to the {@link #getResourceStack() resourceStack} and the
      * basic list of {@link #getResources() resources}.
      *
@@ -119,7 +119,7 @@ public class ExtensionContext {
 
     /**
      * Add a resource configuration template to the resources stack for this Extension Context.
-     * <p/>
+     *
      * This resource is not added as a resource on the Smooks instance, but is instead available
      * for cloning.
      *
@@ -149,7 +149,7 @@ public class ExtensionContext {
     
     /**
      * Get the active resource configuration list.
-     * <p/>
+     *
      * This is the global config list i.e. not just the config list for the config
      * being processed.
      * 
@@ -201,7 +201,7 @@ public class ExtensionContext {
 
 	/**
 	 * Lookup an existing resource configuration from the global config list.
-	 * <p/>
+	 *
 	 * Note that this is resource config order-dependent.  It will not locate configs that
 	 * have not yet been loaded.
 	 *

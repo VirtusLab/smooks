@@ -17,16 +17,6 @@ package org.milyn.payload;
 
 import javax.xml.transform.Result;
 
-/**
- * An extractor of results produces by Smooks.
- * 
- * Implementors of ResultExtractor are able to extract specific a object from the
- * result of a Smooks filtering process.
- * </p>
- * 
- * @author Daniel Bevenius
- * @since 1.4
- */
 public interface ResultExtractor<T extends Result>
 {
     Object extractFromResult(T result, Export export);

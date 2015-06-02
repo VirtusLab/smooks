@@ -25,10 +25,10 @@ import org.milyn.javabean.context.BeanIdStore;
 
 /**
  * Bean Id List
- * <p/>
+ *
  * Represents a map of BeanId's. Every BeanId has it own unique index. The index
  * is incremental. The index starts with zero.
- * <p/>
+ *
  * Once a BeanId is registered it can never be unregistered.
  *
  *

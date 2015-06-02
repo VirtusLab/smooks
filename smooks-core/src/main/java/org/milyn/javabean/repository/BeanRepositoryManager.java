@@ -22,7 +22,7 @@ import org.milyn.javabean.context.BeanContext;
 
 /**
  * The Bean Repository Manager
- * <p/>
+ *
  * Manages the {@link BeanRepository} of the current {@link ExecutionContext} and the {@link BeanIdRegister}
  * of the current {@link ApplicationContext}. It ensures that both objects are correctly instantiated.
  *
@@ -77,11 +77,6 @@ public class BeanRepositoryManager {
 		return beanIdRegister;
 	}
 
-	/**
-	 * @return the {@link BeanRepository} of the given {@link ExecutionContext}. If the {@link BeanRepository} does not
-	 * 			exist then one is created. The {@link BeanIdRegister} which is bound to the {@link ApplicationContext}
-	 * 			of the given {@link ExecutionContext} is bound to the created {@link BeanRepository}.
-	 */
 	public static BeanRepository getBeanRepository(ExecutionContext executionContext) {
 		BeanRepository beanRepository = (BeanRepository) executionContext.getAttribute(BEAN_REPOSITORY_CONTEXT_KEY);
 

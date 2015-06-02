@@ -23,9 +23,6 @@ public class PositionalParameterContainer implements ParameterContainer<Position
 
 	Object[] values;
 
-	/**
-	 *
-	 */
 	public PositionalParameterContainer(PositionalParameterIndex index) {
 		values = new Object[index.size()];
 	}

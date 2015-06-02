@@ -41,7 +41,7 @@ public class JNDIUtil {
 
     /**
      * Get the JNDI Context.
-     * <p/>
+     *
      * Don't forget to close it when done!
      *
      * @param jndiProperties JNDI properties.
@@ -92,15 +92,6 @@ public class JNDIUtil {
         return object;
     }
 
-    /**
-     * Lookup an object through the JNDI context.
-     *
-     * @param objectName     The name of the object to be looked up.
-     * @param jndiProperties JNDI properties.
-     * @param classLoaders   The {@link ClassLoader ClassLoaders) to be used during the lookup.
-     * @return The object.
-     * @throws NamingException Error getting object.
-     */
     public static Object lookup(final String objectName, final Properties jndiProperties, final ClassLoader[] classLoaders) throws NamingException {
         ClassLoader tcClassLoader = Thread.currentThread().getContextClassLoader();
 

@@ -38,7 +38,7 @@ import java.util.Set;
 
 /**
  * XSD DOM Validator.
- * <p/>
+ *
  * Iterates through the document (DOM) gathering the namespaces.  It validates
  * based on the convention that the gathered namespace XSDs are provided on the
  * classpath.  It uses the namespace path (URI.getPath()), prepending it with "/META-INF"

@@ -37,7 +37,7 @@ import java.util.Stack;
 
 /**
  * DOM Document builder.
- * <p/>
+ *
  * Handler class for DOM construction.
  * 
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
@@ -112,7 +112,7 @@ public class DOMBuilder extends SmooksContentHandler {
 
     /**
      * Set the DOM Element node on which the parsed content it to be added.
-     * <p/>
+     *
      * Used to merge ownerDocument fragments etc.
      * @param appendElement The append DOM element.
      */

@@ -24,7 +24,7 @@ import org.w3c.dom.Node;
 
 /**
  * Fragment.
- * <p/>
+ *
  * Wrapper class for a DOM or SAX Fragment.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

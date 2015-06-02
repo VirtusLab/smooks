@@ -23,8 +23,7 @@ import org.milyn.javabean.lifecycle.BeanLifecycle;
 
 /**
  * BeanRouterObserver is a {@link BeanContextLifecycleObserver} that will route 
- * a specified bean to the configured endpoint. 
- * </p>
+ * a specified bean to the configured endpoint.
  * 
  * @author Daniel Bevenius
  */
@@ -50,7 +49,7 @@ public class BeanRouterObserver implements BeanContextLifecycleObserver
 
     /**
      * Set the condition evaluator for performing the routing.
-     * <p/>
+     *
      * Used to test if the routing is to be performed based on the
      * user configured condition.
      * @param conditionEvaluator The routing condition evaluator.

@@ -9,7 +9,7 @@ import java.util.*;
 /**
  * LocaleAwareDateDecoder is a decoder 'helper' that can be subclassed by Date decoders to enable
  * them to use locale specific date formats.
- * <p/>
+ *
  * Usage (on Java Binding value config using the {@link org.milyn.javabean.decoders.DateDecoder}):
  * <pre>
  * &lt;jb:value property="date" decoder="Date" data="order/@date"&gt;

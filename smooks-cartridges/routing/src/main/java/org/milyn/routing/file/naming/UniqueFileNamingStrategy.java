@@ -19,7 +19,6 @@ import java.rmi.dgc.VMID;
 
 /**
  * Default file naming strategy.
- * </pre>
  * This implementation uses java.rmi.dgc.VMID to generate
  * identifiers that are unique across all Java virtual machines.
  *
@@ -30,7 +29,7 @@ public class UniqueFileNamingStrategy implements NamingStrategy
 {
 	/**
 	 * Will generate a String with the format
-	 * <prefix><name><VMID.toString()><suffix>
+	 * &lt;prefix&gt;&lt;name&gt;&lt;VMID.toString()&gt;&lt;suffix&gt;
 	 */
 	public String generateFileName( final String fileNamePattern, final Object object )
 	{

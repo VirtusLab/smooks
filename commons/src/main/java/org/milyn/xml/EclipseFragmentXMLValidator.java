@@ -43,7 +43,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Eclipse XML Validator.
- * <p/>
+ *
  * Uses the Eclipse based /fragment.xml schema resource files available on the classpath
  * to lookup the schema resources for given namespaces.
  *

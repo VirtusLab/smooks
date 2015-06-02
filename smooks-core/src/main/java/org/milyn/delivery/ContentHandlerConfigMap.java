@@ -21,7 +21,7 @@ import org.milyn.cdr.SmooksResourceConfiguration;
 /**
  * Mapping between a resource configuration and its corresponding resource
  * configuration.
- * <p/>
+ *
  * Obviously this class is only relevant when the resource configuration refers to
  * a {@link ContentHandler}.
  * @author tfennelly

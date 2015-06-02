@@ -36,10 +36,10 @@ import java.nio.charset.Charset;
 /**
  * AbstractOuputStreamResource is the base class for handling output stream
  * resources in Smooks.
- * <p/>
+ *
  * Note that a {@link Writer} can also be opened on a stream resource.  If a {@link Writer}
  * has been opened on a resource, an {@link OutputStream} cannot also be opened (and visa versa).
- * <p/>
+ *
  * Example configuration:
  * <pre>
  * &lt;resource-config selector="#document"&gt;
@@ -75,12 +75,6 @@ public abstract class AbstractOutputStreamResource implements SAXVisitBefore, DO
 
     //	public
 
-	/**
-	 * Retrieve/create an output stream that is appropriate for the concreate implementation
-	 *
-	 * @param executionContext Execution Context.
-	 * @return OutputStream specific to the concreate implementation
-	 */
 	public abstract OutputStream getOutputStream( final ExecutionContext executionContext ) throws IOException;
 
     /**
@@ -99,11 +93,6 @@ public abstract class AbstractOutputStreamResource implements SAXVisitBefore, DO
         return false;
     }
 
-    /**
-	 * Set the name of this resource
-	 *
-	 * @param resourceName The name of the resource
-	 */
     public AbstractOutputStreamResource setResourceName(String resourceName) {
         AssertArgument.isNotNullAndNotEmpty(resourceName, "resourceName");
         this.resourceName = resourceName;
@@ -180,7 +169,7 @@ public abstract class AbstractOutputStreamResource implements SAXVisitBefore, DO
 
     /**
      * Get a {@link Writer} to the named {@link OutputStream} Resource.
-     * <p/>
+     *
      * Wraps the {@link OutputStream} in a {@link Writer}.  Uses the "writerEncoding"
      * param to set the encoding on the {@link Writer}.
      *
@@ -229,7 +218,7 @@ public abstract class AbstractOutputStreamResource implements SAXVisitBefore, DO
 
     /**
 	 * Close the resource output stream.
-     * <p/>
+     *
      * Classes overriding this method must call super on this method. This will
      * probably need to be done before performing any aditional cleanup.
 	 *

@@ -17,7 +17,7 @@ package org.milyn.delivery.dom;
 
 /**
  * DOM Phase phase enumerations.
- * <p/>
+ *
  * Used in conjunction with the {@link org.milyn.delivery.dom.Phase}
  * annotation to specify the Visit Phase during which a {@link org.milyn.delivery.dom.DOMElementVisitor}
  * is to be applied.

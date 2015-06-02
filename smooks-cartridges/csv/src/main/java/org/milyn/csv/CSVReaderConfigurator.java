@@ -27,7 +27,7 @@ import org.milyn.flatfile.FlatFileReader;
 
 /**
  * CSV Reader configurator.
- * <p/>
+ *
  * Supports programmatic {@link CSVReader} configuration on a
  * {@link org.milyn.Smooks#setReaderConfig(org.milyn.ReaderConfigurator) Smooks}
  * instance.

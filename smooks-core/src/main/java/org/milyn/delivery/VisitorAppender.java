@@ -17,7 +17,7 @@ package org.milyn.delivery;
 
 /**
  * Vistor appender.
- * <p/>
+ *
  * A visitor appender is somewhat like a {@link ConfigurationExpander},
  * accept it appends fully configured Visitor instances.
  *

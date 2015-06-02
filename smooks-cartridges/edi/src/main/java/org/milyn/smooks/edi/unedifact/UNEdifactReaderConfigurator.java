@@ -25,7 +25,7 @@ import org.milyn.cdr.SmooksResourceConfiguration;
 
 /**
  * UN/EDIFACT Reader configurator.
- * <p/>
+ *
  * Supports programmatic {@link org.milyn.smooks.edi.EDIReader} configuration on a {@link org.milyn.Smooks#setReaderConfig(org.milyn.ReaderConfigurator) Smooks} instance.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>
@@ -35,23 +35,12 @@ public class UNEdifactReaderConfigurator implements ReaderConfigurator {
     private String mappingModel;
     private String targetProfile;
     
-    /**
-     * Configure UNEdifactReader to dynamically look-up mapping
-     * models in the classpath
-     * 
-     * @param mappingModel
-     */
     public UNEdifactReaderConfigurator() {
         this.mappingModel = "";
     }
 
     
     
-    /**
-     * Specific mapping models
-     * 
-     * @param mappingModel
-     */
     public UNEdifactReaderConfigurator(String mappingModel) {
         AssertArgument.isNotNullAndNotEmpty(mappingModel, "mappingModel");
         this.mappingModel = mappingModel;

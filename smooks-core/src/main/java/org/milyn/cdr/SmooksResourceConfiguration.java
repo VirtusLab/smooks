@@ -46,23 +46,23 @@ import javax.xml.namespace.QName;
 
 /**
  * Smooks Resource Targeting Configuration.
- * <p/>
+ *
  * A Smooks <b>Resource</b> is anything that can be used by Smooks in the process of analysing or
  * transforming a data stream.  They could be pieces
  * of Java logic (SAX or DOM element {@link Visitor} implementations), some text or script resource, or perhaps
  * simply a configuration parameter (see {@link org.milyn.cdr.ParameterAccessor}).
- * <p/>
+ *
  * <h2 id="restargeting">What is Resource Targeting?</h2>
  * Smooks works by "targeting" {@link Visitor} resources at message fragments.
  * This typically means targeting a piece of tranformation logic (XSLT, Java, Groovy etc)
  * at a specific fragment of that message.  The fragment may
  * include as much or as little of the document as required.  Smooks also allows you to target multilpe
  * resources at the same fragment.
- * <p/>
- * <h2 id="restargeting">Resource Targeting Configurations</h2>
+ *
+ * <h2>Resource Targeting Configurations</h2>
  * Smooks can be manually/programmatically configured (through code), but the easiest way of working is through XML.  The follwoing
  * are a few sample configurations.  Explanations follow the samples.
- * <p/>
+ *
  * <b>A basic sample</b>.  Note that it is not using any profiling.  The <b>resource-config</b> element maps directly to an instance of this class.
  * <pre>
  * <i>&lt;?xml version='1.0'?&gt;
@@ -74,7 +74,7 @@ import javax.xml.namespace.QName;
  *          &lt;resource&gt;{@link org.milyn.delivery.dom.DOMElementVisitor com.acme.transform.MyJavaOrderItemTransformer}&lt;/resource&gt;
  *      &lt;/resource-config&gt;</b>
  * &lt;/smooks-resource-list&gt;</i></pre>
- * <p/>
+ *
  * <b>A more complex sample</b>, using profiling.  So resource 1 is targeted at both "message-exchange-1" and "message-exchange-2",
  * whereas resource 2 is only targeted at "message-exchange-1" and resource 3 at "message-exchange-2" (see {@link org.milyn.Smooks#createExecutionContext(String)}).
  * <pre>
@@ -96,12 +96,11 @@ import javax.xml.namespace.QName;
  *          &lt;param name="execution-param-X"&gt;param-value-forC&lt;/param&gt;
  *      &lt;/resource-config&gt;
  * &lt;/smooks-resource-list&gt;</i></pre>
- * <p/>
+ *
  * <h3 id="attribdefs">Attribute Definitions</h3>
  * <ul>
  * <li><b id="useragent">target-profile</b>: A list of 1 or more {@link ProfileTargetingExpression profile targeting expressions}.
  * (supports wildcards "*").
- * </ol>
  * </li>
  * <li><b id="selector">selector</b>: Selector string.  Used by Smooks to "lookup" a resource configuration.
  * This is typically the message fragment name (partial XPath support), but as mentioned above, not all resources are
@@ -109,8 +108,8 @@ import javax.xml.namespace.QName;
  * "target-fragment". This attribute supports a list of comma separated selectors, allowing you to target a
  * single resource at multiple selector (e.g. fragments).  Where the resource is a {@link Visitor} implementation, the selector
  * is treated as an XPath expression (full XPath spec not supported), otherwise the selector value is treated as an opaque value.
- * <p/>
- * <br/>
+ *
+ * <br>
  * Example selectors:
  * <ol>
  * <li>For a {@link Visitor} implementation, use the target fragment name e.g. "order", "address", "address/name", "item[2]/price[text() = 99.99]" etc. 
@@ -121,18 +120,18 @@ import javax.xml.namespace.QName;
  * or document root node fragment.</li>
  * <li>Targeting a specific {@link org.milyn.xml.SmooksXMLReader} at a specific profile.</li>
  * </ol>
- * <p/>
+ *
  * </li>
  * <li><b id="namespace">selector-namespace</b>: The XML namespace of the selector target for this resource.  This is used
  * to target {@link Visitor} implementations at fragments from a
  * specific XML namespace e.g. "http://www.w3.org/2002/xforms".  If not defined, the resource
  * is targeted at all namespces.
- * <p/>
+ *
  * Note that since Smooks v1.3, namespace URI-to-prefix mappings can be configured through the "smooks-core" configuration namespace.  Then,
  * selectors can be configured with namespace prefixes, removing the need to use the "selector-namespace" configuration.
  * </li>
  * </ul>
- * <p/>
+ *
  * <h2 id="conditions">Resource Targeting Configurations</h2>
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
@@ -573,7 +572,7 @@ public class SmooksResourceConfiguration {
     /**
      * Is this resource defined inline in the configuration, or is it
      * referenced through a URI.
-     * <p/>
+     *
      * Note that this method also returns false if the resource is undefined (null).
      *
      * @return True if the resource is defined inline, otherwise false.
@@ -608,7 +607,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Explicitly set the resource type.
-     * <p/>
+     *
      * E.g. "class", "xsl", "groovy" etc.
      *
      * @param resourceType The resource type.
@@ -628,7 +627,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Get the contextual selector definition for this SmooksResourceConfiguration.
-     * <p/>
+     *
      * See details about the "selector" attribute in the
      * <a href="#attribdefs">Attribute Definitions</a> section.
      *
@@ -668,10 +667,10 @@ public class SmooksResourceConfiguration {
     /**
      * Get the name of the target element where the {@link #getSelector() selector}
      * is targeting the resource at an XML element.
-     * <p/>
+     *
      * Accomodates the fact that element based selectors can be contextual. This method
      * is not relevant where the selector is not targeting an XML element.
-     * <p/>
+     *
      * See details about the "selector" attribute in the
      * <a href="#attribdefs">Attribute Definitions</a> section.
      *
@@ -684,10 +683,10 @@ public class SmooksResourceConfiguration {
     /**
      * Get the {@link QName} of the target element where the {@link #getSelector() selector}
      * is targeting the resource at an XML element.
-     * <p/>
+     *
      * Accomodates the fact that element based selectors can be contextual. This method
      * is not relevant where the selector is not targeting an XML element.
-     * <p/>
+     *
      * See details about the "selector" attribute in the
      * <a href="#attribdefs">Attribute Definitions</a> section.
      *
@@ -769,7 +768,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Is this resource config a default applied resource.
-     * <p/>
+     *
      * Some resources (e.g. {@link org.milyn.delivery.dom.serialize.DefaultSerializationUnit} or
      * {@link org.milyn.delivery.sax.DefaultSAXElementSerializer}) are applied by default when no other
      * resources are targeted at an element.
@@ -782,7 +781,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Set this resource config as a default applied resource.
-     * <p/>
+     *
      * Some resources (e.g. {@link org.milyn.delivery.dom.serialize.DefaultSerializationUnit} or
      * {@link org.milyn.delivery.sax.DefaultSAXElementSerializer}) are applied by default when no other
      * resources are targeted at an element.
@@ -793,20 +792,6 @@ public class SmooksResourceConfiguration {
         this.defaultResource = defaultResource;
     }
 
-    /**
-     * Get the resource "type" for this resource.
-     * <p/>
-     * Determines the type through the following checks (in order):
-     * <ol>
-     * <li>Is it a Java resource. See {@link #isJavaResource()}.  If it is, return "class".</li>
-     * <li>Is the "restype" resource paramater specified.  If it is, return it's value. Ala DTD v1.0</li>
-     * <li>Is the resource type explicitly set on this configuration.  If it is, return it's
-     * value. Ala the "type" attribute on the resource element on DTD v2.0</li>
-     * <li>Return the resource path file extension e.g. "xsl".</li>
-     * </ol>
-     *
-     * @return
-     */
     public String getResourceType() {
         String restype;
 
@@ -875,7 +860,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Set the named SmooksResourceConfiguration parameter value (default type - String).
-     * <p/>
+     *
      * Overwrites previous value of the same name.
      *
      * @param name  Parameter name.
@@ -890,7 +875,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Set the named SmooksResourceConfiguration parameter value (with type).
-     * <p/>
+     *
      * Overwrites previous value of the same name.
      *
      * @param name  Parameter name.
@@ -925,7 +910,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Get the named SmooksResourceConfiguration {@link Parameter parameter}.
-     * <p/>
+     *
      * If there is more than one of the named parameters defined, the first
      * defined value is returned.
      *
@@ -1076,7 +1061,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Is this selector defininition an XML based definition.
-     * <p/>
+     *
      * I.e. is the selector attribute value prefixed with "xmldef:".
      *
      * @return True if this selector defininition is an XML based definition, otherwise false.
@@ -1094,7 +1079,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Get the resource as a byte array.
-     * <p/>
+     *
      * If the resource data is not inlined in the configuration (in a "resdata" param), it will be
      * resolved using the {@link URIResourceLocator} i.e. the path will be enterpretted as a {@link java.net.URI}.
      * If the resource doesn't resolve to a stream producing URI, the resource string will be converted to
@@ -1228,7 +1213,7 @@ public class SmooksResourceConfiguration {
 
     /**
      * Is the resource selector contextual.
-     * <p/>
+     *
      * See details about the "selector" attribute in the
      * <a href="#attribdefs">Attribute Definitions</a> section.
      *
@@ -1241,10 +1226,10 @@ public class SmooksResourceConfiguration {
     /**
      * Is this resource configuration targeted at the specified DOM element
      * in context.
-     * <p/>
+     *
      * See details about the "selector" attribute in the
      * <a href="#attribdefs">Attribute Definitions</a> section.
-     * <p/>
+     *
      * Note this doesn't perform any namespace checking.
      *
      * @param element The element to check against.
@@ -1302,10 +1287,10 @@ public class SmooksResourceConfiguration {
     /**
      * Is this resource configuration targeted at the specified SAX element
      * in context.
-     * <p/>
+     *
      * See details about the "selector" attribute in the
      * <a href="#attribdefs">Attribute Definitions</a> section.
-     * <p/>
+     *
      * Note this doesn't perform any namespace checking.
      *
      * @param element The element to check against.
@@ -1482,16 +1467,6 @@ public class SmooksResourceConfiguration {
         return true;
     }
 
-    /**
-     * Is this configuration targeted at the supplied DOM element.
-     * <p/>
-     * Checks that the element is in the correct namespace and is a contextual
-     * match for the configuration.
-     *
-     * @param element The element to be checked.
-     * @param executionContext
-     * @return True if this configuration is targeted at the supplied element, otherwise false.
-     */
     public boolean isTargetedAtElement(Element element, ExecutionContext executionContext) {
         if (!assertConditionTrue()) {
             return false;
@@ -1535,16 +1510,6 @@ public class SmooksResourceConfiguration {
         return true;
     }
 
-    /**
-     * Is this configuration targeted at the supplied SAX element.
-     * <p/>
-     * Checks that the element is in the correct namespace and is a contextual
-     * match for the configuration.
-     *
-     * @param element The element to be checked.
-     * @param executionContext
-     * @return True if this configuration is targeted at the supplied element, otherwise false.
-     */
     public boolean isTargetedAtElement(SAXElement element, ExecutionContext executionContext) {
         if (expressionEvaluator != null && !assertConditionTrue()) {
             return false;

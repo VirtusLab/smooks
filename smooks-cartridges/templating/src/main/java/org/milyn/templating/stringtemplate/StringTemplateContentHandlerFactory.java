@@ -43,10 +43,10 @@ import org.w3c.dom.Node;
 
 /**
  * StringTemplate {@link org.milyn.delivery.dom.DOMElementVisitor} Creator class.
- * <p/>
+ *
  * Creates {@link org.milyn.delivery.dom.DOMElementVisitor} instances for applying
  * <a href="http://www.stringtemplate.org/">StringTemplate</a> transformations (i.e. ".st" files).
- * <p/>
+ *
  * This templating solution relies on the <a href="http://milyn.codehaus.org/downloads">Smooks JavaBean Cartridge</a>
  * to perform the JavaBean population that's required by <a href="http://www.stringtemplate.org/">StringTemplate</a>.
  *
@@ -62,7 +62,7 @@ import org.w3c.dom.Node;
  *          2. be added to ("addto") the target element, or
  *          3. be inserted before ("insertbefore") the target element, or
  *          4. be inserted after ("insertafter") the target element.
- *          5. be bound to ("bindto") a {@link BeanContext} variable named by the "bindId" param.
+ *          5. be bound to ("bindto") a {@link org.milyn.javabean.context.BeanContext} variable named by the "bindId" param.
  *          Default "replace".--&gt;
  *     &lt;param name="<b>action</b>"&gt;<i>replace/addto/insertbefore/insertafter</i>&lt;/param&gt;
  *

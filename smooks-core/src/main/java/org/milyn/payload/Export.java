@@ -28,24 +28,6 @@ import java.util.List;
 import java.util.Set;
 
 
-/**
- * An Export instance represents information about the type of data that Smooks can produce/export.
- * </p>
- * 
- * An Export instance must have a 'type' which is the class type of Smooks produces when filtering.
- * </p>
- * An Export can optionally have a name which is simply used as an identifier so that the calling 
- * process can easliy identify this export
- * </p>
- * An Export may also optionally have an 'extract' attribute which can be used when only a sub-part 
- * of the data is to be considered for exporting. 
- * For example, this could be used to specify that  the calling process is only interested in a specific object instance
- * in a {@link JavaResult}
- * </p>
- * 
- * @author Daniel Bevenius
- * @since 1.4
- */
 public class Export implements ContentHandler<Export>
 {
     @ConfigParam (use = Use.OPTIONAL)

@@ -35,7 +35,7 @@ import org.xml.sax.SAXException;
 
 /**
  * Test for http://jira.codehaus.org/browse/MILYN-424.
- * <p/>
+ *
  * Test and fix contributed thanks to Clemens Fuchslocher.
  * 
  * @author Clemens Fuchslocher

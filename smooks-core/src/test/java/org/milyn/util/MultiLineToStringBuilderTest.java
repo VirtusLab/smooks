@@ -31,10 +31,10 @@ public class MultiLineToStringBuilderTest extends TestCase {
 		context.getBeanContext().addBean("emptyList", Collections.emptyList(), null);
 		context.getBeanContext().addBean("emptyArray", new String[0], null);
 
-		Map<String, String> stringMap = new HashMap<String, String>();
+		Map<String, String> stringMap = new LinkedHashMap<String, String>();
 		stringMap.put("v1", "some text");
-		stringMap.put("v2", "other text");
 		stringMap.put("v3", null);
+		stringMap.put("v2", "other text");
 
 		context.getBeanContext().addBean("stringMap", stringMap, null);
 

@@ -81,7 +81,7 @@ public class DefaultProfileStore implements ProfileStore {
 
     /**
      * Expand out the profile sets in this profile store.
-     * <p/>
+     *
      * Expanding means taking sub-profiles that are in themselves the base profile
      * of another profile set, and inserting the sub-profiles into the profile set.
      */

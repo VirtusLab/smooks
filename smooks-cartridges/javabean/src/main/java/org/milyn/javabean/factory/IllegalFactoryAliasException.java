@@ -22,29 +22,16 @@ package org.milyn.javabean.factory;
  */
 public class IllegalFactoryAliasException extends FactoryException {
 
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @param message
-	 */
 	public IllegalFactoryAliasException(String message) {
 		super(message);
 	}
 
-	/**
-	 * @param cause
-	 */
 	public IllegalFactoryAliasException(Throwable cause) {
 		super(cause);
 	}
 
-	/**
-	 * @param message
-	 * @param cause
-	 */
 	public IllegalFactoryAliasException(String message, Throwable cause) {
 		super(message, cause);
 	}

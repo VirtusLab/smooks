@@ -33,7 +33,7 @@ import java.util.*;
 
 /**
  * Element details as described by the SAX even model API.
- * <p/>
+ *
  * {@link org.milyn.delivery.sax.SAXVisitor} implementations will be passed
  * an instance of this class for each of the event methods of
  * {@link org.milyn.delivery.sax.SAXVisitor} implementations.
@@ -43,13 +43,13 @@ import java.util.*;
  * {@link org.milyn.delivery.sax.SAXVisitor} implementations can take care of
  * serializing the elements at which they are targeted themselves.  Alternatively, they
  * can use the {@link org.milyn.delivery.sax.SAXElementWriterUtil} class.
- * <p/>
+ *
  * {@link org.milyn.delivery.sax.SAXVisitor} implementations can also control the serialization
  * of their "child elements" by {@link #setWriter(java.io.Writer, SAXVisitor) setting the writer}
  * on the SAXElement instance they receive.  This works because Smooks passes the
  * writer instance that's set on a SAXElement instance to all of the SAXElement
  * instances created for child elements.
- * <p/>
+ *
  * Only one {@link SAXVisitor} can have access to the {@link java.io.Writer writer}
  * for any individual {@link SAXElement}.  The first visitor to request access to
  * the writer via the {@link SAXElement#getWriter(SAXVisitor)} method "owns" the writer
@@ -149,7 +149,7 @@ public class SAXElement {
 
     /**
      * Create a copy of the attributes.
-     * <p/>
+     *
      * This needs to be done because some SAX parsers reuse the same {@link Attributes} instance
      * across SAX events.
      *
@@ -164,7 +164,7 @@ public class SAXElement {
 
     /**
      * Turn on {@link SAXText text} accumulation for this {@link SAXElement}.
-     * <p/>
+     *
      * For performance reasons, {@link SAXText Text} accumulation is not on by default.
      * @see TextConsumer
      */
@@ -196,7 +196,7 @@ public class SAXElement {
 
     /**
      * Add a text object to this instance.
-     * <p/>
+     *
      * Utility method, userd mainly for testing.
      *
      * @param text The text to be added.
@@ -209,7 +209,7 @@ public class SAXElement {
 
     /**
      * Add a text object to this instance.
-     * <p/>
+     *
      * Utility method, userd mainly for testing.
      *
      * @param text The text to be added.
@@ -227,7 +227,7 @@ public class SAXElement {
     /**
      * Get the {@link SAXText} objects associated with this {@link SAXElement},
      * as an {@link #accumulateText() accumulated} String.
-     * <p/>
+     *
      * This method will produce a string containing all {@link TextType} {@link SAXText}
      * objects associated with this {@link SAXElement}.  If you need to filter out specific
      * {@link TextType} {@link SAXText} objects, use the {@link #getText()} method and manually
@@ -267,7 +267,7 @@ public class SAXElement {
 
     /**
      * Get the writer to which this element should be writen to.
-     * <p/>
+     *
      * See <a href="#element-writing">element writing</a>.
      *
      * @param visitor The visitor requesting access to element writer.
@@ -283,7 +283,7 @@ public class SAXElement {
 
     /**
      * Set the writer to which this element should be writen to.
-     * <p/>
+     *
      * See <a href="#element-writing">element writing</a>.
      *
      * @param writer  The element writer.
@@ -300,7 +300,7 @@ public class SAXElement {
     /**
      * Is the supplied {@link SAXVisitor} the owner of the {@link Writer} associated
      * with this {@link SAXElement} instance.
-     * <p/>
+     *
      * See <a href="#element-writing">element writing</a>.
      *
      * @param visitor The visitor being checked.

@@ -23,7 +23,7 @@ import org.milyn.flatfile.variablefield.VariableFieldRecordParserConfigurator;
 
 /**
  * CSV Record Parser configurator.
- * <p/>
+ *
  * Supports programmatic configuration of {@link CSVRecordParserFactory} and
  * {@link CSVRecordParser}.
  * 

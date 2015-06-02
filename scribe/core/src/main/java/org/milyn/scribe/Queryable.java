@@ -41,7 +41,6 @@ public interface Queryable {
 	 * @param parameters the array of parameters
 	 * @return the located entity, a collection of located entities or null if no
 	 * entities are located.
-	 * @throws OperationNotSupportedException if the operation is not supported
 	 */
 	Object lookupByQuery(String query, Object ... parameters);
 
@@ -56,7 +55,6 @@ public interface Queryable {
 	 * @param parameters the map of parameters
 	 * @return the located entity, a collection of located entities or null if no
 	 * entities are located.
-	 * @throws OperationNotSupportedException if the operation is not supported
 	 */
 	Object lookupByQuery(String query, Map<String, ?> parameters);
 

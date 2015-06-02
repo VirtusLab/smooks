@@ -22,7 +22,7 @@ import org.milyn.smooks.camel.processor.SmooksProcessor;
 
 /**
  * Smook Camel Component.
- * <p/>
+ *
  * 
  * Example usage:
  * 

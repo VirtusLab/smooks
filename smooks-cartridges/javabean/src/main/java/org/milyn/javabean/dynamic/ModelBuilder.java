@@ -48,13 +48,13 @@ import org.xml.sax.SAXException;
 
 /**
  * Dynamic Model Builder.
- * <p/>
+ *
  * Useful for constructing configuration model etc.  Allows you to build a config model
  * for a dynamic configuration namespace i.e. a config namespace that is evolving and being 
  * extended all the time.  New namespaces can be easily added or extended.  All that's required
  * is to define the new config XSD and the Smooks Java Binding config to bind the data in the 
  * config namespace into the target Java model.
- * <p/>
+ *
  * The namespaces all need to be configured in a "descriptor" .properties file located on the classpath.
  * Here's an example:
  * <pre>

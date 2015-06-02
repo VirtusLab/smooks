@@ -22,7 +22,7 @@ import org.milyn.smooks.camel.Coordinate;
 
 /**
  * Converts a JavaResult to a Coordinate object. 
- * <p/>
+ *
  * This converter is only intended for testing purposes.
  * 
  * @author Daniel Bevenius

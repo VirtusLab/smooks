@@ -119,11 +119,6 @@ public class BeanRouter implements SAXVisitAfter, Consumer, ExecutionLifecycleIn
         return this;
     }
 
-    /**
-     * Set the correlationId header name.
-     *
-     * @return This router instance.
-     */
     public BeanRouter setCorrelationIdName(String correlationIdName) {
         AssertArgument.isNotNullAndNotEmpty(correlationIdName, "correlationIdName");
         this.correlationIdName = correlationIdName;

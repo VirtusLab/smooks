@@ -18,11 +18,8 @@ package org.milyn.ect.maven;
 import org.apache.maven.model.Resource;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
+import org.apache.maven.plugins.annotations.*;
 import org.apache.maven.project.MavenProject;
-import org.jfrog.maven.annomojo.annotations.MojoGoal;
-import org.jfrog.maven.annomojo.annotations.MojoParameter;
-import org.jfrog.maven.annomojo.annotations.MojoPhase;
-import org.jfrog.maven.annomojo.annotations.MojoRequiresDependencyResolution;
 import org.milyn.ect.ECTUnEdifactExecutor;
 import org.milyn.ect.EdiParseException;
 
@@ -33,21 +30,27 @@ import java.io.File;
  * 
  * @author bardl
  */
-@MojoGoal("generate")
-@MojoPhase("generate-sources")
-@MojoRequiresDependencyResolution
+@Mojo(name = "generate", requiresDependencyResolution = ResolutionScope.RUNTIME)
+@Execute(phase = LifecyclePhase.GENERATE_SOURCES, goal = "generate")
 public class ECTMojo extends AbstractMojo {
 
-    @MojoParameter(expression = "${project}", required = true, readonly = true)
+    @Parameter(defaultValue = "${project}", required = true, readonly = true)
     private MavenProject project;
 
-    @MojoParameter(required = true, description = "The message definition file.  Depends on the message definition type ('srcType') e.g. for UN/EDIFACT, this is a ZIP file that can be downloaded from the web.")
+    /**
+     * The message definition file.
+     * Depends on the message definition type ('srcType') e.g. for UN/EDIFACT, this is a ZIP file that can be downloaded from the web.
+     */
+    @Parameter(required = true)
     private File src;
 
-    @MojoParameter(required = true, description = "The EDI message definition type.  Currently Supports 'UNEDIFACT' only.")
+    /**
+     * The EDI message definition type.  Currently Supports 'UNEDIFACT' only.
+     */
+    @Parameter(required = true)
     private String srcType ;
 
-    @MojoParameter(expression = "target/ect", required = false)
+    @Parameter(defaultValue = "target/ect", required = false)
     private File destDir;
 
     public void execute() throws MojoExecutionException {

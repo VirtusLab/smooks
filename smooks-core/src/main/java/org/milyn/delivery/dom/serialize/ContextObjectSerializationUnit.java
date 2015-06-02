@@ -31,7 +31,7 @@ import java.io.Writer;
 
 /**
  * {@link ExecutionContext} object serializer.
- * <p/>
+ *
  * Outputs an object bound to the {@link ExecutionContext}.  The location of the object (context key)
  * must be specified on the "key" attribute.
  *

@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  * EDI directory model.
- * <p/>
+ *
  * Contains the mapping models for all message in an EDI directory/specification e.g.
  * for UN/EDIFACT it contains EDI mapping models for all the messages in a
  * UN/EDIFACT directory specification zip file.
@@ -56,7 +56,7 @@ public class EdiDirectory {
 
     /**
      * Get the message models.
-     * <p/>
+     *
      * This list does not contain the {@link #getCommonModel() common} model.
      *
      * @return The message models.

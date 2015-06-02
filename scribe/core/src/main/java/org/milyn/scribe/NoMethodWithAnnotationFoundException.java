@@ -34,24 +34,14 @@ public class NoMethodWithAnnotationFoundException extends RuntimeException {
 	public NoMethodWithAnnotationFoundException() {
 	}
 
-	/**
-	 * @param message
-	 */
 	public NoMethodWithAnnotationFoundException(String message) {
 		super(message);
 	}
 
-	/**
-	 * @param cause
-	 */
 	public NoMethodWithAnnotationFoundException(Throwable cause) {
 		super(cause);
 	}
 
-	/**
-	 * @param message
-	 * @param cause
-	 */
 	public NoMethodWithAnnotationFoundException(String message, Throwable cause) {
 		super(message, cause);
 	}

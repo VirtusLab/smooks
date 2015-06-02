@@ -13,9 +13,6 @@ public class ExternalTransactionManager implements TransactionManager {
 
 	private boolean autoCommit;
 
-    /**
-     * @param connection
-     */
     public ExternalTransactionManager(Connection connection, boolean autoCommit, boolean isSetAutoCommitAllowed) {
     	AssertArgument.isNotNull(connection, "connection");
 

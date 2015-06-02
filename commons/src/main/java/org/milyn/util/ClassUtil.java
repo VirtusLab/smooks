@@ -246,7 +246,8 @@ public class ClassUtil {
      * @param fileName The name of the file containing the list of classes,
      * one class name per line.
      * @param instanceOf The instanceof filter.
-     * @return List<Class<T>>	list of the classes contained in the file.
+     * @param <T> generic parameter
+     * @return List	list of the classes contained in the file.
      */
     public static <T> List<Class<T>> getClasses(final String fileName, Class<T> instanceOf) {
     	AssertArgument.isNotNull( fileName, "fileName" );
@@ -363,9 +364,9 @@ public class ClassUtil {
 	 * Checks if the class in the first parameter is assignable
 	 * to one of the classes in the second or any later parameter.
 	 *
-	 * @param toFind
-	 * @param classes
-	 * @return
+	 * @param toFind class to find
+	 * @param classes classes collection
+	 * @return if class is in collection
 	 */
 	public static boolean containsAssignableClass(final Class<?> toFind, final Class<?> ... classes) {
 		return indexOffFirstAssignableClass(toFind, classes) != -1;
@@ -423,9 +424,9 @@ public class ClassUtil {
 
     /**
 	 *
-	 * @param toFind
-	 * @param classes
-	 * @return
+	 * @param toFind class to find
+	 * @param classes classes collection
+	 * @return index of searched class
 	 */
 	public static int indexOffFirstAssignableClass(final Class<?> toFind, final Class<?> ... classes) {
 

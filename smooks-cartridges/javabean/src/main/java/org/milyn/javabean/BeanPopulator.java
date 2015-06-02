@@ -37,7 +37,7 @@ import java.util.*;
  * Populate an <b><code>Order</code></b> bean with <b><code>Header</code></b> and <b><code>OrderItem</code></b>
  * beans (OrderItems added to a list).
  *
- * <h4>Input XML</h4>
+ * <h3>Input XML</h3>
  * <pre>
  * &lt;order&gt;
  *     &lt;header&gt;

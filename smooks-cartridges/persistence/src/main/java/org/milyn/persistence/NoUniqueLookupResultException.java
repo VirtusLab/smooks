@@ -23,22 +23,12 @@ import org.milyn.SmooksException;
  */
 public class NoUniqueLookupResultException extends SmooksException {
 
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = -8531504732429373509L;
 
-	/**
-	 * @param message
-	 */
 	public NoUniqueLookupResultException(final String message) {
 		super(message);
 	}
 
-	/**
-	 * @param message
-	 * @param cause
-	 */
 	public NoUniqueLookupResultException(final String message, final Throwable cause) {
 		super(message, cause);
 	}

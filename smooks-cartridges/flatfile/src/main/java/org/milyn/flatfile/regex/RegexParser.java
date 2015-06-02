@@ -30,7 +30,7 @@ import org.xml.sax.InputSource;
 
 /**
  * Regex record parser.
- * <p/>
+ *
  * If there are no groups defined in the regexPattern this parser will use the
  * pattern to split the record into fields. If groups are defined, it will
  * extract the record field data from the groups defined in the pattern.

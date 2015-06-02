@@ -58,9 +58,9 @@ import java.util.Map;
 
 /**
  * <a href="http://freemarker.org/">FreeMarker</a> template application ProcessingUnit.
- * <p/>
+ *
  * See {@link org.milyn.templating.freemarker.FreeMarkerContentHandlerFactory}.
- * <p/>
+ *
  * <b>NOTE</b> that this visitor supports the extra "<b>useNodeModel</b>" parameter when
  * using DOM based filtering.  When set to true (default=false), the targeted
  * DOM element will be attached to the model that is passed to the FreeMarker
@@ -97,7 +97,6 @@ public class FreeMarkerTemplateProcessor extends AbstractTemplateProcessor imple
     /**
      * Programmatically configure the FreeMarker Templating Visitor.
      * @param templatingConfiguration The templating configuration.
-     * @return This Visitor instance.
      */
     public FreeMarkerTemplateProcessor(TemplatingConfiguration templatingConfiguration) {
         super.setTemplatingConfiguration(templatingConfiguration);

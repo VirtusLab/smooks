@@ -43,9 +43,6 @@ public class AnnotatedDaoInvoker implements DaoInvoker {
 
 	final private AnnotatedDaoRuntimeInfo daoRuntimeInfo;
 
-	/**
-	 * @param dao
-	 */
 	public AnnotatedDaoInvoker(final Object dao, final AnnotatedDaoRuntimeInfo daoRuntimeInfo) {
 		AssertArgument.isNotNull(dao, "dao");
 		AssertArgument.isNotNull(daoRuntimeInfo, "daoRuntimeInfo");

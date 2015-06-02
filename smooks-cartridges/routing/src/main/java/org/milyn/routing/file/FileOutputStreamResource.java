@@ -46,7 +46,7 @@ import org.milyn.util.FreeMarkerTemplate;
 /**
  * FileOutputStreamResouce is a {@link AbstractOutputStreamResource} implementation
  * that handles file output streams.
- * <p/>
+ *
  *
  * Example configuration:
  * <pre>

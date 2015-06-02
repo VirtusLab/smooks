@@ -27,7 +27,7 @@ import java.util.Map.Entry;
 
 /**
  * Bean Result Cleanup resource.
- * <p/>
+ *
  * Execution Lifecycle Cleanable resource that performs Java result cleaup.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

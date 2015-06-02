@@ -30,19 +30,19 @@ import org.milyn.util.ClassUtil;
 
 /**
  * {@link java.net.URI} resource locator.
- * <p/>
- * Loads resources from a {@link java.net.URI} i.e. "file://", "http://", "classpath:/" etc. <p/> Note,
+ *
+ * Loads resources from a {@link java.net.URI} i.e. "file://", "http://", "classpath:/" etc.  Note,
  * it adds support for referencing classpath based resources through a
  * {@link java.net.URI} e.g. "classpath:/org/milyn/x/my-resource.xml" references
  * a "/org/milyn/x/my-resource.xml" resource on the classpath.
- * <p/>
+ *
  * This class resolves resources based on whether or not the requested resource {@link URI} has
  * a URI scheme specified.  If it has a scheme, it simply resolves the resource by creating a
  * {@link URL} instance from the URI and opening a stream on that URL.  If the URI doesn't have a scheme,
  * this class will attempt to resolve the resource against the local filesystem and classpath
  * (in that order).  In all cases (scheme or no scheme), the resource URI is first resolved
  * against base URI, with the resulting URI being the one that's used.
- * <p/>
+ *
  * As already stated, all resource URIs are
  * {@link URI#resolve(String) resolved} against a "base URI".  This base URI can be set through the
  * {@link #setBaseURI(java.net.URI)} method, or via the System property "org.milyn.resource.baseuri".
@@ -164,7 +164,7 @@ public class URIResourceLocator implements ContainerResourceLocator {
 
     /**
      * Resolve the supplied uri against the baseURI.
-     * <p/>
+     *
      * Only resolved against the base URI if 'uri' is not absolute.
      *
      * @param uri URI to be resolved.
@@ -223,7 +223,7 @@ public class URIResourceLocator implements ContainerResourceLocator {
 
     /**
      * Get the system defined base URI.
-     * <p/>
+     *
      * Defined by the system property {@link #BASE_URI_SYSKEY}.
 	 * @return System base URI.
 	 */

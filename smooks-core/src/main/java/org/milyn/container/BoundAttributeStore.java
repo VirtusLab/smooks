@@ -20,7 +20,7 @@ import java.util.Map;
 
 /**
  * BoundAttributeStore interface definition.
- * <p/>
+ *
  * Defines methods for binding, getting and removing named objects on
  * an implementing class.
  * @author tfennelly
@@ -31,7 +31,7 @@ public interface BoundAttributeStore {
 	 * Binds an object to this {@link org.milyn.container.BoundAttributeStore} implementation, using the name
 	 * specified. If an object of the same name is already bound, the object
 	 * is replaced.
-	 * <p/>
+	 *
 	 * @param key The key against which the object is bound; cannot be null.
 	 * @param value The object to be bound; cannot be null.
 	 */

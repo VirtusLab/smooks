@@ -34,7 +34,6 @@ import org.milyn.io.FileUtils;
 /**
  * ResourceMergerTask is an ANT task that delegate to {@link ResourceMerger}
  * to merge jars and in the process merge string base resource files.
- * </p>
  * 
  * @author Daniel Bevenius
  * @since 1.4

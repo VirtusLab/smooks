@@ -17,7 +17,7 @@ package org.milyn.xml.hierarchy;
 
 /**
  * Hierarchy change {@link org.xml.sax.XMLReader reader}.
- * <p/>
+ *
  * Interface to allow Smooks to listen for {@link org.xml.sax.XMLReader} changes
  * in reader implementations.
  *

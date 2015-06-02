@@ -15,7 +15,7 @@ import org.milyn.payload.JavaSource;
 
 /**
  * The Bean Context Manager
- * <p/>
+ *
  * Creates {@link StandaloneBeanContext} that share the same {@link BeanIdStore}.
  *
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

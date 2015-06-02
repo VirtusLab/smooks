@@ -42,7 +42,7 @@ import org.w3c.dom.Element;
 
 /**
  * DAO Flusher
- * <p />
+ *
  * This DAO flusher calls the flush method of a DAO.
  *
  * <h3>Configuration</h3>

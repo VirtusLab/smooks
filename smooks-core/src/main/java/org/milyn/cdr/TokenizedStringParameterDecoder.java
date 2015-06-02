@@ -27,16 +27,16 @@ import org.milyn.delivery.ContentDeliveryConfig;
 /**
  * {@link ParameterDecoder} used to tokenize a parameter values into a {@link java.util.List}
  * or {@link java.util.HashSet}.
- * <p/>
+ *
  * Tokenizes parameter values into a {@link java.util.List} (param-type="string-list")
  * or {@link java.util.HashSet} (param-type="string-hashset") using {@link java.util.StringTokenizer}.
- * <p/>
+ *
  * Two default configurations of this decoder are pre-installed for all profiles.  They're named
  * "string-list" and "string-hashset".
  * 
  * <h3 id="exampleusage">Example Usage</h3>
  * The following example illustrates use of the pre-installed "string-hashset" decoder:
- * <p/>
+ *
  * <b>Configuration</b>:
  * <pre>
  * &lt;resource-config target-profile="html4" selector="XXX"&gt;
@@ -45,14 +45,14 @@ import org.milyn.delivery.ContentDeliveryConfig;
  *          p,h1,h2,h3,h4,h5,h6,div,ul,ol,dl,menu,dir,pre,hr,blockquote,address,center,noframes,isindex,fieldset,table
  *      &lt;/param&gt;
  * &lt;/resource-config&gt;</pre>
- * <p/>
- * <b>Usage</b>:<br/>
+ *
+ * <b>Usage</b>:<br>
  * ... and "com.acme.XXXContentDeliveryUnit" accesses this parameter value as follows:
  * <pre>
  * {@link org.milyn.cdr.Parameter} param = {@link org.milyn.cdr.SmooksResourceConfiguration resourceConfig}.{@link org.milyn.cdr.SmooksResourceConfiguration#getParameter(String) getParameter("blockLevelElements")};
  * {@link java.util.HashSet} blockLevelElements = (HashSet)param.{@link org.milyn.cdr.Parameter#getValue(ContentDeliveryConfig) getValue(ContentDeliveryConfig)}; 
  * </pre>
- * <p/>
+ *
  * Note, we will make this filter easier in the next release.  You'll be able to call a method such
  * as "getDecodedParameter" on the {@link SmooksResourceConfiguration}, returning a decoded parameter Object.
  * 

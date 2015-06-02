@@ -5,7 +5,7 @@ import org.milyn.rules.BasicRuleEvalResult;
 /**
  * MVEL RuleEvalResult.
  *
- * @author <a href="mailto:julien.sirocchi@nexse.com">Julien Sirocchi</a>
+ * @author Julien Sirocchi
  */
 public class MVELRuleEvalResult extends BasicRuleEvalResult {
 
@@ -16,9 +16,6 @@ public class MVELRuleEvalResult extends BasicRuleEvalResult {
     */
    private String text;
 
-   /**
-    * Creates a RuleEvalResult that indicates a successfully executed rule.
-    */
    public MVELRuleEvalResult(final boolean matched, final String ruleName, final String ruleProviderName, final String text) {
        super(matched, ruleName, ruleProviderName);
        this.text = text;

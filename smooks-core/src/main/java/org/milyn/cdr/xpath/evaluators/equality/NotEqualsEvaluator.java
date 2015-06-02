@@ -25,7 +25,7 @@ import java.util.Properties;
 
 /**
  * Simple "!=" predicate evaluator.
- * <p/>
+ *
  * Works for element text or attributes.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

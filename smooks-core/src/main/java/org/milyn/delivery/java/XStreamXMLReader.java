@@ -28,7 +28,7 @@ import java.util.List;
 
 /**
  * XStream based {@link JavaXMLReader}.
- * <p/>
+ *
  * This is the default Java {@link XMLReader} for Smooks.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

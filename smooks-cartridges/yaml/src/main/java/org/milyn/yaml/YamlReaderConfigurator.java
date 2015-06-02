@@ -28,7 +28,7 @@ import java.util.Map;
 
 /**
  * YAML Reader configurator.
- * <p/>
+ *
  * Supports programmatic {@link YamlReader} configuration on a {@link org.milyn.Smooks#setReaderConfig(org.milyn.ReaderConfigurator) Smooks} instance.
  *
  * @author <a href="mailto:maurice@zeijen.net">maurice@zeijen.net</a>

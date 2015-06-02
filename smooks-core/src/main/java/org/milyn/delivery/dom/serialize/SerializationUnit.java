@@ -30,24 +30,24 @@ import java.io.Writer;
 
 /**
  * W3C Node Serailization interface definition.
- * <p/>
+ *
  * Implementations of this interface are applied to the content during the
  * <a href="../SmooksDOMFilter.html#phases">Serialisation phase</a>.
- * <p/>
+ *
  * This interface allows element targeted (by device, profile, DTD info etc)
  * serialization code to be implemented.  It gives control over how an
  * element is "printed" to the target device.
- * <p/>
+ *
  * Serialization Units are defined in the .cdrl file (in .cdrar file(s)) in the very
  * same way as any other content delivery resource (Assembly Units, Processing Units, 
  * DTDs etc).
- * <p/>
+ *
  * Implementations must be stateless in nature.
- * <p/>
+ *
  * Only one Serialisation Unit is applied to each element.  If more than one 
  * Serialization Unit is applicable to a given element, the most specific Serialization 
  * Unit is choosen.  See {@link org.milyn.cdr.SmooksResourceConfigurationSortComparator}.
- * <p/>
+ *
  * See <a href="../package-summary.html">Delivery Overview</a>.
  * @author tfennelly
  */
@@ -56,7 +56,7 @@ public interface SerializationUnit extends Visitor {
 	/**
 	 * Write the element start portion; the element name and it's
 	 * attributes.
-	 * <p/>
+	 *
 	 * EG: &lt;a href="http://www.x.com"&gt;
 	 * @param element The element start to write.
 	 * @param writer The writer to be written to.
@@ -67,7 +67,7 @@ public interface SerializationUnit extends Visitor {
 
 	/**
 	 * Write the element end portion; close the element.
-	 * <p/>
+	 *
 	 * EG: &lt;/a&gt;
 	 * @param element The element end to write.
 	 * @param writer The writer to be written to.
@@ -114,7 +114,7 @@ public interface SerializationUnit extends Visitor {
 
 	/**
 	 * Write element Node object.
-	 * <p/>
+	 *
 	 * Called to write DOM types not covered by the other methods on 
 	 * this interface.
 	 * @param node The node to write.

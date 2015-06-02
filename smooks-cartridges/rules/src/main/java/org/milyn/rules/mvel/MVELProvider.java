@@ -37,7 +37,7 @@ import java.util.List;
 
 /**
  * <a href="http://mvel.codehaus.org/">MVEL</a> Rule Provider.
- * <p/>
+ *
  * Rules must be specified in Comma Separated Value files (CSV).  These can be edited
  * using a Spreadsheet application (Excel or OpenOffice).
  *

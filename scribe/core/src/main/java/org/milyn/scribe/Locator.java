@@ -44,7 +44,6 @@ public interface Locator {
 	 * @param parameters the array of parameters
 	 * @return the located entity, a collection of located entities or null if no
 	 * entities are located.
-	 * @throws OperationNotSupportedException if the operation is not supported
 	 */
 	Object lookup(String name, Object ... parameters);
 
@@ -59,7 +58,6 @@ public interface Locator {
 	 * @param parameters the map of parameters
 	 * @return the located entity, a collection of located entities or null if no
 	 * entities are located.
-	 * @throws OperationNotSupportedException if the operation is not supported
 	 */
 	Object lookup(String name, Map<String, ?> parameters);
 

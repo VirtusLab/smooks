@@ -22,7 +22,7 @@ import java.util.ArrayList;
 /**
  * This is a specialized StringWriter that tracks the writes to make sure we don't
  * write the same buffer segment multiple times.
- * <p/>
+ *
  * See JIRA: http://jira.codehaus.org/browse/MILYN-238
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a> 

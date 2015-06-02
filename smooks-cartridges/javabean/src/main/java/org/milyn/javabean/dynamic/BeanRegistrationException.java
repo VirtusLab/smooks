@@ -20,7 +20,7 @@ import org.milyn.SmooksException;
 
 /**
  * Bean Registration Exception.
- * <p/>
+ *
  * <b>See factory methods.</b>.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
@@ -37,7 +37,7 @@ public class BeanRegistrationException extends SmooksException {
 
     /**
      * Throw a {@link BeanRegistrationException} exception for the specified "unregistered" bean instance.
-     * <p/>
+     *
      * This exception is thrown when one of the root bean instances for a namespace used within
      * a model doesn't have registered {@link org.milyn.javabean.dynamic.BeanMetadata}
      * (via the {@link Model#registerBean(Object)}).
@@ -63,7 +63,7 @@ public class BeanRegistrationException extends SmooksException {
     /**
      * Throw a {@link BeanRegistrationException} exception for a bean that is not annotated with the
      * {@link org.milyn.javabean.dynamic.serialize.DefaultNamespace} annotation.
-     * <p/>
+     *
      * All namespace root bean types must be annotated with the {@link org.milyn.javabean.dynamic.serialize.DefaultNamespace}
      * annotation.
      *

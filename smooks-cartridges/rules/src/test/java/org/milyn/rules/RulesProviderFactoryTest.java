@@ -34,7 +34,7 @@ import org.xml.sax.SAXException;
 
 /**
  * Unit test for RuleProviderFactory.
- * <p/>
+ *
  *
  * @author <a href="mailto:danielbevenius@gmail.com">Daniel Bevenius</a>
  */

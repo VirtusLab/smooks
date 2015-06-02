@@ -31,7 +31,7 @@ import java.io.Writer;
 
 /**
  * Ghost element serialization unit.
- * <p/>
+ *
  * A ghost element can be used to "wrap" other DOM content.  The Ghost element itself
  * is not serialized, but it's child content is.
  *

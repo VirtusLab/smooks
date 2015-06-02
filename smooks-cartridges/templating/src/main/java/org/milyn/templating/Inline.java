@@ -17,7 +17,7 @@ package org.milyn.templating;
 
 /**
  * Inline template usage.
- * <p/>
+ *
  * Inline the templating result relative to the target message fragment.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

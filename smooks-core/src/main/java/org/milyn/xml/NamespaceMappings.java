@@ -30,7 +30,7 @@ import org.milyn.namespace.NamespaceDeclarationStack;
 
 /**
  * Namespace Mappings.
- * <p/>
+ *
  * This handler loads namespace prefix-to-uri mappings into the {@link ApplicationContext}.
  * 
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>
@@ -95,10 +95,6 @@ public class NamespaceMappings implements ApplicationContextInitializer {
         executionContext.setAttribute(NamespaceDeclarationStack.class, namespaceDeclarationStack);
     }
 
-    /**
-     * Get the {@link NamespaceDeclarationStack} for the current message from the current {@link ExecutionContext}.
-     * @param executionContext The execution context.
-     */
     public static NamespaceDeclarationStack getNamespaceDeclarationStack(ExecutionContext executionContext) {
         return (NamespaceDeclarationStack) executionContext.getAttribute(NamespaceDeclarationStack.class);
     }

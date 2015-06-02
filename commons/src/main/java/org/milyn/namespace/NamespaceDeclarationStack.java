@@ -54,7 +54,7 @@ public class NamespaceDeclarationStack {
      * @param namespace Element namespace.
 	 * @param attributes optional attributes or null, single element could declare multiple namespaces
 	 * @return modified attributes declaration in case additional prefix mapping should be included
-	 * @throws SAXException
+	 * @throws SAXException parsing error
 	 */
 	public Attributes pushNamespaces(String qName, String namespace, Attributes attributes) throws SAXException {
         if(attributes == null || attributes.getLength() == 0) {
@@ -126,7 +126,7 @@ public class NamespaceDeclarationStack {
      * Pop element out of the namespace declaration stack and notifying
      * {@link ContentHandler} if required.
      *
-     * @throws SAXException
+     * @throws SAXException parsing error
      */
     public void popNamespaces() throws SAXException {
         Map<String, String> namespaces = namespaceStack.pop();

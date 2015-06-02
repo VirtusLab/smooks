@@ -34,17 +34,6 @@ import org.milyn.delivery.annotation.Initialize;
 import org.milyn.payload.ResultExtractor;
 import org.milyn.util.ClassUtil;
 
-/**
- * An Exports instance holds a Map of {@link Export}s that Smooks
- * produces/exports.
- * </p>
- * The map uses the type of of result as its key and the {@link Export}
- * as its value.
- * 
- * @author Daniel Bevenius
- * @since 1.4
- * 
- */
 public class Exports implements ContentHandler<Exports>
 {
     private static final Exports NULL_EXPORTS = new Exports();
@@ -161,18 +150,7 @@ public class Exports implements ContentHandler<Exports>
         Exports exports = getExports(appContext);
         exports.addExport(export);
     }
-    
-    /**
-     * Will return the Objects contained in the results array. If the corresponding
-     * {@link Export} for that result type was configured with an extract property 
-     * only that portion of the result will be returned.
-     * 
-     * @param results The results produced by a Smooks filtering operation.
-     * @param exports The exports.
-     * @return List<Object> Either the results unchanged if no 'extract' was configured
-     * or if an 'extract' was configured in the corresponding Export then only the
-     * object identified will be returned in the list of objects.
-     */
+
     public static List<Object> extractResults(final Result[] results, final Exports exports)
     {
         final List<Object> objects = new ArrayList<Object>();

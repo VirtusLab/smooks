@@ -30,7 +30,7 @@ import java.util.Properties;
 
 /**
  * Simple equality predicate evaluator.
- * <p/>
+ *
  * Works for element text or attributes. Covers Equality and Relational XPath expressions.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

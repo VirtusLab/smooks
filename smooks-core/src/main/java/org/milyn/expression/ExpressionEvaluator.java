@@ -47,12 +47,6 @@ public interface ExpressionEvaluator {
      */
     public boolean eval(Object contextObject) throws ExpressionEvaluationException;
 
-    /**
-     * Evaluate an expression against the supplied Map variable, returning the eval result.
-     * @param contextObject
-     * @return Expression evaluation result.
-     * @throws ExpressionEvaluationException Invalid expression evaluation (implementation specific).
-     */
     public Object getValue(Object contextObject) throws ExpressionEvaluationException;
 
     /**

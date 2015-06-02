@@ -104,7 +104,7 @@ public abstract class LocaleAwareDecoder implements DataDecoder, Configurable
 
     /**
      * Get the configured {@link Locale}.
-     * <p/>
+     *
      * Does not return the default locale if locale is not configured.  The implementation
      * can interpret non-configuration in whatever way makes sense to that implementation,
      * including defaulting it to the default locale.

@@ -32,7 +32,7 @@ import org.w3c.dom.Element;
 /**
  * Map a property value onto the current {@link SmooksResourceConfiguration} based on an
  * element attribute value.
- * <p/>
+ *
  * The value is set on the {@link SmooksResourceConfiguration} returned from the top
  * of the {@link org.milyn.cdr.extension.ExtensionContext#getResourceStack() ExtensionContext resourece stack}.
  *

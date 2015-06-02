@@ -19,7 +19,7 @@ import java.lang.annotation.*;
 
 /**
  * Resource Type annotation.
- * <p/>
+ *
  * Used on {@link org.milyn.delivery.ContentHandlerFactory} implementations for specifying the type of resource
  * processed.
  *
@@ -30,9 +30,5 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 public @interface Resource {
 
-    /**
-     * Resource type value.
-     * @return
-     */
-    public String type();
+    String type();
 }

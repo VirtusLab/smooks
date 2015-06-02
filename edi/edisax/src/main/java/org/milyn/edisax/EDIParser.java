@@ -61,7 +61,7 @@ import javax.xml.XMLConstants;
 
 /**
  * EDI Parser.
- * <p/>
+ *
  * Generates a stream of SAX events from an EDI message stream based on the supplied
  * {@link #setMappingModel(EdifactModel) mapping model}.
  * 
@@ -84,7 +84,7 @@ import javax.xml.XMLConstants;
  * the parser.  This model must be based on the 
  * <a href="http://www.milyn.org/schema/edi-message-mapping-1.0.xsd">edi-message-mapping-1.0.xsd</a>
  * schema.
- * <p/>
+ *
  * From this schema you can see that segment groups are supported (nested segments), including groups within groups,
  * repeating segments and repeating segment groups.  Be sure to review the 
  * <a href="http://www.milyn.org/schema/edi-message-mapping-1.0.xsd">schema</a>.
@@ -93,9 +93,9 @@ import javax.xml.XMLConstants;
  * The following illustration attempts to create a visualisation of the mapping process.  The "input-message.edi" file
  * specifies the EDI input, "edi-to-xml-order-mapping.xml" describes how to map that EDI message to SAX events and
  * "expected.xml" illustrates the XML that would result from applying the mapping.
- * <p/>
- * <img src="doc-files/edi-mapping.png" />
- * <p/>
+ *
+ * <img src="doc-files/edi-mapping.png" alt="">
+ *
  * So the above illustration attempts to highlight the following:
  * <ol>
  * 	<li>How the message delimiters (segment, field, component and sub-component) are specified in the mapping.  In particular, how special 
@@ -128,7 +128,7 @@ import javax.xml.XMLConstants;
  * <h3>Required Values</h3>
  * &lt;field&gt;, &lt;component&gt; and &lt;sub-component&gt; configurations support a "required" attribute, which
  * flags that &lt;field&gt;, &lt;component&gt; or &lt;sub-component&gt; as requiring a value.
- * <p/>
+ *
  * By default, values are not required (fields, components and sub-components).
  *
  * <h3>Truncation</h3>
@@ -136,7 +136,7 @@ import javax.xml.XMLConstants;
  * segment, this means that parser errors will not be generated when that segment does not specify trailing
  * fields that are not "required" (see "required" attribute above). Likewise for fields/components and
  * components/sub-components.
- * <p/>
+ *
  * By default, segments, fields, and components are not truncatable.
  *
  * @author tfennelly
@@ -170,7 +170,7 @@ public class EDIParser implements XMLReader {
 
     /**
      * Parse the supplied mapping model config path and return the generated EdiMap.
-     * <p/>
+     *
      * Can be used to set the mapping model to be used during the parsing operation.
      * See {@link #setMappingModel(EdifactModel)}.
      * @param mappingConfig Config path.  Must conform with the
@@ -216,7 +216,7 @@ public class EDIParser implements XMLReader {
 
     /**
      * Parse the supplied mapping model config stream and return the generated EdiMap.
-     * <p/>
+     *
      * Can be used to set the mapping model to be used during the parsing operation.
      * See {@link #setMappingModel(EdifactModel)}.
      * @param mappingConfigStream Config stream.  Must conform with the
@@ -233,7 +233,7 @@ public class EDIParser implements XMLReader {
 
     /**
      * Parse the supplied mapping model config stream and return the generated EdiMap.
-     * <p/>
+     *
      * Can be used to set the mapping model to be used during the parsing operation.
      * See {@link #setMappingModel(EdifactModel)}.
      * @param mappingConfigStream Config stream.  Must conform with the
@@ -258,7 +258,7 @@ public class EDIParser implements XMLReader {
 
     /**
      * Parse the supplied mapping model config stream and return the generated EdiMap.
-     * <p/>
+     *
      * Can be used to set the mapping model to be used during the parsing operation.
      * See {@link #setMappingModel(org.milyn.edisax.model.EdifactModel)}.
      * @param mappingConfigStream Config stream.  Must conform with the
@@ -275,7 +275,7 @@ public class EDIParser implements XMLReader {
 
     /**
      * Parse the supplied mapping model config stream and return the generated EdiMap.
-     * <p/>
+     *
      * Can be used to set the mapping model to be used during the parsing operation.
      * See {@link #setMappingModel(org.milyn.edisax.model.EdifactModel)}.
      * @param mappingConfigStream Config stream.  Must conform with the
@@ -335,7 +335,7 @@ public class EDIParser implements XMLReader {
 
 	/**
 	 * Set the EDI mapping model to be used in all subsequent parse operations.
-	 * <p/>
+	 *
 	 * The model can be generated through a call to the {@link EDIParser}.
 	 * 
 	 * @param mappingModel The mapping model.
@@ -390,9 +390,6 @@ public class EDIParser implements XMLReader {
         }
     }
     
-    /**
-     * Parse an EDI message, using a supplied segment reader.
-     */
     public void parse() throws IOException, SAXException {
         if(contentHandler == null) {
             throw new IllegalStateException("'contentHandler' not set.  Cannot parse EDI stream.");
@@ -440,7 +437,7 @@ public class EDIParser implements XMLReader {
 
     /**
      * Map a list of EDI Segments to SAX events.
-     * <p/>
+     *
      * Reads the segments from the input stream and maps them based on the supplied list of expected segments.
 	 * @param expectedSegments The list of expected segments.
      * @throws IOException Error reading an EDI segment from the input stream.
@@ -452,7 +449,7 @@ public class EDIParser implements XMLReader {
 
     /**
      * Map a list of EDI Segments to SAX events.
-     * <p/>
+     *
      * Reads the segments from the input stream and maps them based on the supplied list of expected segments.
 	 * @param expectedSegments The list of expected segments.
      * @param preLoadedSegmentFields Preloaded segment.  This can happen in the case of a segmentGroup.

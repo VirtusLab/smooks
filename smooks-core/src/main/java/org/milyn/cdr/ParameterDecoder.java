@@ -20,7 +20,7 @@ import org.milyn.delivery.ContentHandler;
 
 /**
  * Abstract Parameter Decoder.
- * <p/>
+ *
  * Decodes a parameter {@link java.lang.String} value to an {@link java.lang.Object}.
  * The actual decoded {@link java.lang.Object} type depends on the implementation.
  * @author tfennelly

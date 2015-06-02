@@ -42,7 +42,7 @@ import javax.xml.namespace.QName;
 
 /**
  * Static variable binding visitor.
- * <p/>
+ *
  * Binds resource paramater variables into the bean context (managed by the
  * {@link BeanContext}).  The paramater values are all bound
  * into a bean accessor Map named "statvar", so variables bound in this way

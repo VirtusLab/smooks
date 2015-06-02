@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
  * Reader configurator.
- * <p/>
+ *
  * Implementation are responsible creating the {@link org.milyn.cdr.SmooksResourceConfiguration} for
  * the Reader to be used by a Smooks instance.
  *

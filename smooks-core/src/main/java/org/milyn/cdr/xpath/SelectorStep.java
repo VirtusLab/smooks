@@ -43,7 +43,7 @@ import javassist.CannotCompileException;
 
 /**
  * XPath Expression Evaluator.
- * <p/>
+ *
  * Implemenations evaluate a single step in an XPath expression.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>
@@ -94,7 +94,7 @@ public class SelectorStep {
     /**
      *
      * Public constructor.
-     * <p/>
+     *
      * Allows asssociation of an attribute step.  XPath expressions can have the
      * form "xxx/@abc", where the attribute "abc" is on the element "xxx".
      *
@@ -288,7 +288,7 @@ public class SelectorStep {
 
     /**
      * Is this StepSelector instance targeted at the specified namespace.
-     * <p/>
+     *
      * If the StepSelector namespace is null, it automatically matches and no
      * comparison is made against the supplied namespace.
      *
@@ -308,7 +308,7 @@ public class SelectorStep {
 
     /**
      * Does this step require access to the element text content.
-     * <p/>
+     *
      * Does this step include a 'text()' predicate at any level.
      *
      * @return True if the step requires access to the element's text content, otherwise false.

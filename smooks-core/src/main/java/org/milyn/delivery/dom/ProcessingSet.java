@@ -25,7 +25,7 @@ import org.milyn.delivery.dom.DOMElementVisitor;
 
 /**
  * Processing set.
- * <p/>
+ *
  * The set of ProcessingUnit to be applied to an Element.
  * @author tfennelly
  */

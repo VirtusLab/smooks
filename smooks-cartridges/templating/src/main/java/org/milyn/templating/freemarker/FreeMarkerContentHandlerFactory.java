@@ -12,7 +12,7 @@ import org.milyn.javabean.context.BeanContext;
 
 /**
  * <a href="http://freemarker.org/">FreeMarker</a> templating {@link org.milyn.delivery.Visitor} Creator class.
- * <p/>
+ *
  * This templating solution relies on the <a href="http://milyn.codehaus.org/downloads">Smooks JavaBean Cartridge</a>
  * to perform the JavaBean population that's required by <a href="http://freemarker.org/">FreeMarker</a> (for the data model).
  *
@@ -50,7 +50,7 @@ import org.milyn.javabean.context.BeanContext;
  *
  * &lt;/resource-config&gt;
  * </pre>
- * <p/>
+ *
  * <i><u>Example - URI based FreeMarker spec</u></i>:
  * <pre>
  * &lt;resource-config selector="<i>target-element</i>"&gt;
@@ -58,13 +58,13 @@ import org.milyn.javabean.context.BeanContext;
  *     &lt;resource&gt;/com/acme/order-transform.ftl&lt;/resource&gt;
  * &lt;/resource-config&gt;
  * </pre>
- * <p/>
+ *
  * <i><u>Example - Inlined FreeMarker spec</u></i>:
  * <pre>
  * &lt;resource-config selector="<i>target-element</i>"&gt;
  *     &lt;!-- 1. Note how we have to specify the resource type when it's inlined. --&gt;
  *     &lt;!-- 2. Note how the inlined FreeMarker template is wrapped as an XML Comment. CDATA Section wrapping also works. --&gt;
- *     &lt;resource <b color="red">type="ftl"</b>&gt;
+ *     &lt;resource <b style="color: red">type="ftl"</b>&gt;
  *         &lt;!--
  *            <i>Inline FreeMarker Template....</i>
  *         --&gt;

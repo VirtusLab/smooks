@@ -21,7 +21,7 @@ import org.milyn.util.ClassUtil;
 
 /**
  * Class decoder.
- * <p/>
+ *
  * Decodes the supplied data as a Class name to return a Class instance.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

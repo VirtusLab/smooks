@@ -56,7 +56,7 @@ import javax.xml.namespace.QName;
 
 /**
  * DAO Deleter
- * <p />
+ *
  * This DAO deleter calls the delete method of a DAO, using a entity bean from
  * the bean context as parameter.
  *

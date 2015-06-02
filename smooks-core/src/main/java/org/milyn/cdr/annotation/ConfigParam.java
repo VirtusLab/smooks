@@ -19,29 +19,6 @@ import org.milyn.javabean.DataDecoder;
 
 import java.lang.annotation.*;
 
-/**
- * Configuration paramater field annotation.
- * <p/>
- * Helps supports reflective injection of {@link org.milyn.delivery.ContentHandler} paramaters
- * from its {@link org.milyn.cdr.SmooksResourceConfiguration} instance.  To inject the whole
- * {@link org.milyn.cdr.SmooksResourceConfiguration} instance, use the {@link @org.milyn.cdr.annotation.Config}
- * annotation.
- *
- * <h3>Usage</h3>
- * Where the paramater name is the same as the field name:
- * <pre>
- *     &#64;ConfigParam(decoder={@link org.milyn.javabean.decoders.IntegerDecoder}.class)
- *     private int maxDigits;
- * </pre>
- * Where the paramater name is NOT the same as the field name:
- * <pre>
- *     &#64;ConfigParam(name="max-digits", decoder={@link org.milyn.javabean.decoders.IntegerDecoder}.class)
- *     private int maxDigits;
- * </pre>
- *
- * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
- * @see Configurator
- */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD})
@@ -56,7 +33,7 @@ public @interface ConfigParam {
 
     /**
      * Paramater required or optional.
-     * <p/>
+     *
      * Defaults to required.
      *
      * @return Paramater usage.
@@ -65,7 +42,7 @@ public @interface ConfigParam {
 
     /**
      * The default paramater value.
-     * <p/>
+     *
      * Only relevant when use=OPTIONAL and the paramater is not defined on the configuration..
      *
      * @return The default paramater value (un-decoded).

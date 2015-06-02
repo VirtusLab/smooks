@@ -18,7 +18,7 @@ package org.milyn.javabean;
 
 /**
  * Data encoder.
- * <p/>
+ *
  * This is an extension interface for adding encode capability to a
  * {@link org.milyn.javabean.DataDecoder} implementation.
  *

@@ -66,7 +66,7 @@ public class BeanWriter {
     /**
      * Iterates through all classes defined in ClassModel and write all the beans to the
      * supplied writer.
-     * <p/>
+     *
      * Used mainly for test purposes.
      * 
      * @param model The {@link org.milyn.ejc.ClassModel}.

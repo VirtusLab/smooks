@@ -43,7 +43,7 @@ import java.util.HashMap;
  * Turning off event stream generation can make sense in many situations.  In some use cases event stream
  * generation may add no value and may just reduces performance e.g. where you simply wish to apply a
  * template to the supplied Java Object(s).
- * <p/>
+ *
  * Smooks must generate at least 1 event to which configured resources can be targeted (e.g. a templating
  * resource).  When event stream generation is turned off, Smooks simply generates what we call a "Null Source"
  * document event.  In XML, it could be represented as "&lt;nullsource-document/&gt;".  So when event stream
@@ -115,7 +115,7 @@ public class JavaSource extends FilterSource {
 
     /**
      * Is SAX event stream generation required for the processing of this JavaSource.
-     * <p/>
+     *
      * Default is <code>true</code>.
      *
      * @return True if SAX event stream generation is required, otherwise false.

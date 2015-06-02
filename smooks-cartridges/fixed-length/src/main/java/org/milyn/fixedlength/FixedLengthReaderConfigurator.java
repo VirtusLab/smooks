@@ -27,7 +27,7 @@ import java.util.List;
 
 /**
  * Fixed Length Reader configurator.
- * <p/>
+ *
  * Supports programmatic {@link FixedLengthReader} configuration on a {@link org.milyn.Smooks#setReaderConfig(org.milyn.ReaderConfigurator) Smooks} instance.
  *
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

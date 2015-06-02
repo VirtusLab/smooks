@@ -77,6 +77,7 @@ public class AbstractBinding {
      * Add Smooks binding configurations to the binding instance.
      *
      * @param smooksConfigURI Smooks configuration.
+     * @return binding
      * @throws IOException  Error reading resource stream.
      * @throws SAXException Error parsing the resource stream.
      */
@@ -91,6 +92,7 @@ public class AbstractBinding {
      * Add Smooks binding configurations to the binding instance.
      *
      * @param smooksConfigStream Smooks configuration.
+     * @return binding
      * @throws IOException  Error reading resource stream.
      * @throws SAXException Error parsing the resource stream.
      */
@@ -101,9 +103,6 @@ public class AbstractBinding {
         return this;
     }
 
-    /**
-     * Initialize the binding instance.
-     */
     public AbstractBinding intiailize() {
         assertNotInitialized();
         smooks.createExecutionContext();
@@ -125,6 +124,7 @@ public class AbstractBinding {
      * Set the execution report output path.
      *
      * @param reportPath The execution report output path.
+     * @return binding
      */
     public AbstractBinding setReportPath(String reportPath) {
         this.reportPath = reportPath;
@@ -133,7 +133,7 @@ public class AbstractBinding {
 
     /**
      * Bind the input source to the specified type.
-     * <p/>
+     *
      * In order to make a cleaner API, implementing classes should create a more
      * appropriately named method based on the target binding format, that just
      * delegates to this method e.g. {@link org.milyn.javabean.binding.xml.XMLBinding#fromXML(javax.xml.transform.Source, Class)}
@@ -141,6 +141,7 @@ public class AbstractBinding {
      *
      * @param inputSource The input source.
      * @param toType      The target type.
+     * @param <T> generic parameter
      * @return The target binding type instance.
      * @throws IOException Error binding source to target type.
      */

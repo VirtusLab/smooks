@@ -34,7 +34,7 @@ import java.lang.reflect.Modifier;
  *  <li><b>some.package.SomeFactorySingleton#getFactoryMethod.createObject</b><br>
  *  	 	This defines that the 'getFactoryMethod' of the class 'some.package.SomeFactorySingleton'
  * 			should be called to retrieve the factory object on which the 'createObject' should
- * 			be called for creating the target object.<br/>
+ * 			be called for creating the target object.<br>
  * 			The factory retrieval method should never return <code>null</code>. This
  * 			will result in a {@link NullPointerException}.
  * </ol>
@@ -49,10 +49,6 @@ public class BasicFactoryDefinitionParser extends
 		AbstractCachingFactoryDefinitionParser {
 
 
-	/**
-	 * Parses the factory definition and creates a {@link StaticMethodFactory}
-	 * or {@link FactoryInstanceFactory#} accordingly.
-	 */
 	@Override
 	protected Factory<?> createFactory(String factoryDefinition) {
 

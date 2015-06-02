@@ -35,20 +35,20 @@ import java.util.Set;
 
 /**
  * Bean Repository
- * <p/>
+ *
  * This class represents a repository of bean's and the means to get and
  * set there instances.
- * <p/>
+ *
  * This class uses a {@link BeanIdRegister} to optimize the access performance. If
  * all the {@link BeanId} objects are registered with the BeanIdList before this object
  * is created then you get direct access performance. If you regularly register new
  * {@link BeanId} objects with the {@link BeanIdRegister}, after this object is created
  * then the BeanRepository needs to sync up with the {@link BeanIdRegister}. That
  * sync process takes some time, so it is adviced to register all the BeanId's up front.
- * <p/>
+ *
  * Only {@link BeanId} objects from the {@link BeanIdRegister}, which is set on
  * this BeanRepository, can be used with almost all of the methods.
- * <p/>
+ *
  * For ease of use it is also possible to get the bean by it's beanId name. This has however
  * not the direct access performance because a Map lookup is done. It is advised to use
  * the {@link BeanId} to get the bean from the repository.
@@ -59,12 +59,6 @@ import java.util.Set;
 @Deprecated
 public class BeanRepository {
 
-	/**
-     * Get the {@link BeanRepository} of the given {@link ExecutionContext}.
-     *
-     * @return the {@link BeanRepository} of the given {@link ExecutionContext}.
-     * @see {@link BeanRepositoryManager#getBeanRepository(org.milyn.container.ExecutionContext)}.
-     */
     public static BeanRepository getInstance(ExecutionContext executionContext) {
         return BeanRepositoryManager.getBeanRepository(executionContext);
     }

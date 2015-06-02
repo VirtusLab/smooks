@@ -26,10 +26,10 @@ import org.w3c.dom.Element;
 
 /**
  * Renames/replaces an element in the document <u>during the processing phase</u>.
- * <p/>
+ *
  * The element is visited by this Processing Unit after it's child content
  * has been iterated over.
- * <p/>
+ *
  * See {@link DomUtils#renameElement(org.w3c.dom.Element, java.lang.String, boolean, boolean)}.
  * 
  * <h3>.cdrl Configuration</h3>

@@ -40,15 +40,6 @@ public class BeanContextLifecycleEvent {
 
 	private final Object bean;
 
-
-    /**
-     * Public constructor.
-	 * @param executionContext
-     * @param source Source fragment name.
-	 * @param beanId Source bean.
-	 * @param lifecycle Lifecycle.
-	 * @param bean Bean instance.
-	 */
 	public BeanContextLifecycleEvent(ExecutionContext executionContext, Fragment source, BeanLifecycle lifecycle, BeanId beanId, Object bean) {
 
 		this.executionContext = executionContext;

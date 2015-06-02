@@ -21,7 +21,7 @@ import org.milyn.javabean.DecodeType;
 
 /**
  * String data decoder.
- * <p/>
+ *
  * This decoded does nothing.  Simply returns the String data unmodified.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

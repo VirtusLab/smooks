@@ -21,7 +21,7 @@ import java.util.List;
  * JavaSourceWithEventStream is a wrapper around a {@link JavaSource}
  * which has disabled eventStreaming ({@link JavaSource#isEventStreamRequired()})
  * by default.
- * <p/>
+ *
  * Note that even though event streaming is disabled by default when an instance
  * of this class is created, it might later get changed as this class simply
  * extends JavaSource.

@@ -23,7 +23,7 @@ import org.milyn.container.ExecutionContext;
 
 /**
  * Filter bypass interface.
- * <p/>
+ *
  * In some cases, the Smooks fragment filtering process (SAX/DOM) can be bypassed
  * if there is just a single visitor resource applied to the <i>#document</i>
  * fragment.  This interface allows a visitor to mark itself as such a visitor.
@@ -34,7 +34,7 @@ public interface FilterBypass {
 
 	/**
 	 * Bypass the Smooks Filter process.
-	 * <p/>
+	 *
 	 * If the Filter bypass was not applied, the normal Smooks Fragment Filtering
 	 * process will be proceed.
 	 * 

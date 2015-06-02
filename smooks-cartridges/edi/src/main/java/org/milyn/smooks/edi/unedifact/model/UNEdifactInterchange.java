@@ -31,7 +31,7 @@ public interface UNEdifactInterchange extends Serializable {
 
     /**
      * Write the interchange to the specified writer.
-     * <p/>
+     *
      * Uses the default UN/EDIFACT delimiter set.
      *
      * @param writer The target writer.

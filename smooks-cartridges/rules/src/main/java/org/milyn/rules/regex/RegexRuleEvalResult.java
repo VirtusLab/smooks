@@ -43,9 +43,6 @@ public class RegexRuleEvalResult extends BasicRuleEvalResult
      */
     private String text;
 
-    /**
-     * Creates a RuleEvalResult that indicates a successfully executed rule.
-     */
     public RegexRuleEvalResult(final boolean matched, final String ruleName, final String ruleProviderName, final Pattern pattern, final String text)
     {
         super(matched, ruleName, ruleProviderName);

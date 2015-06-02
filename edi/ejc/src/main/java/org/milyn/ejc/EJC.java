@@ -42,7 +42,7 @@ import java.util.Set;
  * <li>{@link org.milyn.ejc.BindingWriter} - generates a bindingfile from {@link org.milyn.ejc.ClassModel}.</li>
  * </ol>
  *
- * <b>Example of how to execute the EJC:</b><br/>
+ * <b>Example of how to execute the EJC:</b><br>
  * EJC -p "package.name" -d "place/classes/in/directory/"  "path/to/edi-mapping-config"
  *
  * @author bardl  

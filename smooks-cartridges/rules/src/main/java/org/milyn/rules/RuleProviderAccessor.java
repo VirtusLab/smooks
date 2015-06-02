@@ -90,7 +90,7 @@ public final class RuleProviderAccessor
      * Gets the Map of RuleProviders that exist in the Smooks AppcliationContext.
      *
      * @param context The Smooks {@link ApplicationContext}.
-     * @return Map<String, RuleProvider> The Map of rule providers. The String key is the name of the rule provider.
+     * @return Map&lt;String, RuleProvider&gt; The Map of rule providers. The String key is the name of the rule provider.
      */
     @SuppressWarnings("unchecked")
     public static Map<String, RuleProvider> getRuleProviders(final ApplicationContext context)

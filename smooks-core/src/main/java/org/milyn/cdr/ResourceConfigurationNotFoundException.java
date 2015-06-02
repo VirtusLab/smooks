@@ -18,7 +18,7 @@ package org.milyn.cdr;
 
 /**
  * Thrown when an request is made to load an unknown CDRArchiveEntry.
- * <p/>
+ *
  * An unknown CDRArchiveEntry is defined as an entry which was not loaded from 
  * any of the loaded cdrar files.
  * @author tfennelly

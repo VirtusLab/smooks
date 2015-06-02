@@ -29,7 +29,7 @@ import org.milyn.delivery.annotation.Initialize;
 /**
  * RulesProviderFactory is responsible for creating {@link RuleProvider}s
  * and installing those providers in the Smooks {@link ApplicationContext}.
- * <p/>
+ *
  *
  * @author <a href="mailto:danielbevenius@gmail.com">Daniel Bevenius</a>
  */
@@ -67,7 +67,7 @@ public final class RulesProviderFactory implements ContentHandler<RuleProvider>
     /**
      * Creates and installs the configured rule provider.
      *
-     * @throws SmooksConfigurationException
+     * @throws SmooksConfigurationException smooks configuration error
      */
     @Initialize
     public void installRuleProvider() throws SmooksConfigurationException

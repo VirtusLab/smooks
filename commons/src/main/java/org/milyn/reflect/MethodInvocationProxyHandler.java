@@ -25,9 +25,9 @@ import java.util.Map;
 
 /**
  * Utility class for capturing method invocation statistics.
- * <p/>
+ *
  * Useful for testing.
- * <p/>
+ *
  * <b>Note</b>: <i>Be careful how you use this class.  It doesn't filter out
  * recursive/internal method calls i.e. you could eat memory with this class
  * if not carefull. Ideally, it should only log external Object invocations.</i>
@@ -68,7 +68,7 @@ public class MethodInvocationProxyHandler<T> implements InvocationHandler {
 
     /**
      * Get the complete method call list.
-     * <p/>
+     *
      * This is the list of method calls, ordered by the order in which the
      * calls were made.
      *
@@ -80,7 +80,7 @@ public class MethodInvocationProxyHandler<T> implements InvocationHandler {
 
     /**
      * Get the call list for a specific method.
-     * <p/>
+     *
      * Overloaded method calls are bundled together.
      *
      * @param methodName The method name.
@@ -100,7 +100,7 @@ public class MethodInvocationProxyHandler<T> implements InvocationHandler {
 
     /**
      * Get the call map.
-     * <p/>
+     *
      * This is the {@link #getCallList() call list} sorted by method name.  Overloaded method
      * calls are bundled together.
      *

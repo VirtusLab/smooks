@@ -36,19 +36,19 @@ import com.wutka.dtd.DTDPCData;
 
 /**
  * DTD Datastore class.
- * <p/>
+ *
  * Simple class providing a query interface to the underlying DTD DOM implementation.
  * The intension is to hide this underlying implementation as much as possible so it 
  * can be changed in the future.  See {@link DTDObjectContainer}.  
- * <p/>
+ *
  * At the moment this class uses the com.wutka DTD parser.  We've also tried some 
  * other DTD parsers but they all had the same missing feature which was that they 
  * didn't keep attribute typing info (implemented using entities).  This would
  * be a very valuable feature for the purposes of this module.
- * <p/>
- * <b>Example</b>:<br/>
+ *
+ * <b>Example</b>:<br>
  * In the example below, it would have been usefull to have been able to look at
- * the xmlns attibute and recognise the fact that it was used to hold URI data.<br/>
+ * the xmlns attibute and recognise the fact that it was used to hold URI data.<br>
  * <pre>
  * &lt;!ELEMENT html (head, body)&gt;
  * &lt;!ATTLIST html
@@ -57,14 +57,14 @@ import com.wutka.dtd.DTDPCData;
  * 		xmlns       %URI;          #FIXED 'http://www.w3.org/1999/xhtml'
  * &gt;
  * </pre>
- * where <i>URI</i> is defined as:<br/>
+ * where <i>URI</i> is defined as:<br>
  * <pre>
  * &lt;!ENTITY % URI "CDATA"&gt;
  * 		&lt;!-- a Uniform Resource Identifier, see [RFC2396] --&gt;
  * </pre>
  * If this information was available we could target {@link org.milyn.delivery.ContentHandler}s
  * at elements containing "URI" attributes.  
- * <p/>
+ *
  * Another examples of this idea of using DTD ENTITY definitions to target
  * {@link org.milyn.delivery.ContentHandler}s at specific elements (rather than using the element names)
  * might be using ENTITYs like the following (from http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd):
@@ -137,7 +137,7 @@ public class DTDStore {
 	
 	/**
 	 * Container class for the underlying DTD implementation.
-	 * <p/>
+	 *
 	 * We're trying to hide the underlying implementation in the belief that it will
 	 * probably change in the future.
 	 * @author tfennelly
@@ -151,7 +151,7 @@ public class DTDStore {
 		/**
 		 * DTD Element child element names. An optimization to save iterating over 
 		 * the DTD element contents (DTDItem etc).
-		 * <p/>
+		 *
 		 * "*" for PC Data.
 		 */
 		private Hashtable elementElements = new Hashtable();
@@ -171,7 +171,7 @@ public class DTDStore {
 
 		/**
 		 * Get the child elements for the named element.
-		 * <p/>
+		 *
 		 * PCData is returned as a "*" list entry.
 		 * @param elementName Element name.
 		 * @return List of allowed element names ({@link String}s).
@@ -250,7 +250,7 @@ public class DTDStore {
 		/**
 		 * Get the DTD elements whose content spec is represented in the DTD DOM 
 		 * by the specified runtime class.
-		 * <p/>
+		 *
 		 * Runtimes - DTDEmpty, DTDAny, DTDMixed, DTDPCData
 		 * @param dtdItemRuntime - DTDEmpty, DTDAny, DTDMixed, DTDPCData
 		 * @param isInstance Desired results of the isinstance check.

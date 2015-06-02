@@ -18,7 +18,7 @@ package org.milyn.rules;
 /**
  * RuleEvalResult is the returned result from a {@link RuleProvider#evaluate(String, CharSequence, org.milyn.container.ExecutionContext)}
  * invocation.
- * <p/>
+ *
  *
  * Concrete RuleProviders may implement their own custom result that are more specific to the technology
  * used.

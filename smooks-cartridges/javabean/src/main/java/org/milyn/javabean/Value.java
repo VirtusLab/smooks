@@ -22,13 +22,13 @@ import org.milyn.javabean.ext.SelectorPropertyResolver;
 
 /**
  * Programmatic Value Configurator.
- * <p/>
+ *
  * This class can be used to programmatically configure a Smooks instance for creating value
  * objects using the Smooks DataDecoders.
- * <p/>
+ *
  * This class uses a Fluent API (all methods return the Bean instance), making it easy to
  * string configurations together.
- * <p/>
+ *
  * <h3>Example</h3>
  * Taking the "classic" Order message as an example and getting the order number and
  * name as Value Objects in the form of an Integer and String.
@@ -45,7 +45,7 @@ import org.milyn.javabean.ext.SelectorPropertyResolver;
  *     &lt;/order-items&gt;
  * &lt;/order&gt;
  * </pre>
- * <p/>
+ *
  * <h4>The Binding Configuration and Execution Code</h4>
  * The configuration code (Note: Smooks instance defined and instantiated globally):
  * <pre>
@@ -59,7 +59,7 @@ import org.milyn.javabean.ext.SelectorPropertyResolver;
  * smooks.addVisitors(customerNumberValue);
  * smooks.addVisitors(customerNameValue);
  * </pre>
- * <p/>
+ *
  * And the execution code:
  * <pre>
  * JavaResult result = new JavaResult();
@@ -122,12 +122,6 @@ public class Value extends BindingAppender {
 		return this;
 	}
 
-	/**
-	 * The default value for if the data is null or empty
-	 *
-	 * @param targetNamespace The default value
-	 * @return <code>this</code> Value configuration instance.
-	 */
 	public Value setDefaultValue(String defaultValue) {
 		this.defaultValue = defaultValue;
 
@@ -146,13 +140,6 @@ public class Value extends BindingAppender {
 		return this;
 	}
 
-	/**
-	 * The {@link org.milyn.javabean.DataDecoder} to be used for decoding
-     * the data value.
-	 *
-	 * @param targetNamespace The {@link org.milyn.javabean.DataDecoder}
-	 * @return <code>this</code> Value configuration instance.
-	 */
 	public Value setDecoder(DataDecoder dataDecoder) {
 		this.decoder = dataDecoder;
 

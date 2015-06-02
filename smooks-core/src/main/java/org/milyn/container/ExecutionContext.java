@@ -45,7 +45,7 @@ public interface ExecutionContext extends BoundAttributeStore {
 
     /**
      * Get the document source URI.
-     * <p/>
+     *
      * If the document source URI is not set for the context, implementations should
      * return the {@link #DOCUMENT_URI} constant.
      *
@@ -62,7 +62,7 @@ public interface ExecutionContext extends BoundAttributeStore {
 
     /**
      * Get the set of profiles at which this execution context is targeted.
-     * <p/>
+     *
      * Basically, the set of profiles for which this execution context is to perform
      * transformation/analysis.
      *
@@ -95,10 +95,10 @@ public interface ExecutionContext extends BoundAttributeStore {
 
     /**
      * Set the ExecutionEventListener for the {@link ExecutionContext}.
-     * <p/>
+     *
      * Allows calling code to listen to (and capture data on) specific
      * context execution events e.g. the targeting of resources.
-     * <p/>
+     *
      * Note, this is not a logging facility and should be used with care.
      * It's overuse should be avoided as it can have a serious negative effect
      * on performance.  By default, no listenrs are applied and so no overhead
@@ -136,7 +136,7 @@ public interface ExecutionContext extends BoundAttributeStore {
 
     /**
      * Get a global configuration parameter associated with this execution context.
-     * <p/>
+     *
      * For more fine grained control, see the {@link org.milyn.cdr.ParameterAccessor} class.
      * @param name The name of the parameter.
      * @return The parameter value, or null if the parameter is not configured.
@@ -145,7 +145,7 @@ public interface ExecutionContext extends BoundAttributeStore {
 
     /**
      * Get a global configuration parameter associated with this execution context.
-     * <p/>
+     *
      * For more fine grained control, see the {@link org.milyn.cdr.ParameterAccessor} class.
      * @param name The name of the parameter.
      * @param defaultVal The default value to be returned if the configuration parameter is not set.
@@ -155,10 +155,10 @@ public interface ExecutionContext extends BoundAttributeStore {
 
     /**
      * Is default serialization on for this execution context.
-     * <p/>
+     *
      * This is controlled by the {@link org.milyn.delivery.Filter#DEFAULT_SERIALIZATION_ON}
      * global param.  Default Serialization is on by default.
-     * <p/>
+     *
      * <b>Example Configuration:</b>
      * <pre>
      * &lt;params&gt;

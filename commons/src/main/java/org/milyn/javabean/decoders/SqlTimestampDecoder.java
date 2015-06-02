@@ -7,10 +7,10 @@ import org.milyn.javabean.DecodeType;
 
 /**
 * {@link java.sql.Timestamp} data decoder.
-* <p/>
+*
 * Extends {@link org.milyn.javabean.decoders.DateDecoder} and returns
 * a java.sql.Timestamp instance.
-* <p/>
+*
 *
 * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>
 */

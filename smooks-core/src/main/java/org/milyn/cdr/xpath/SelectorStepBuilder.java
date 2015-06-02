@@ -48,7 +48,7 @@ public class SelectorStepBuilder {
 
     /**
      * Construct a set of selector steps from the specified selector (ala XPath expresssion steps).
-     * <p/>
+     *
      * This process does not configure the namespaces on the steps.  The {@link SelectorStep#setNamespaces(SelectorStep[],java.util.Properties)}
      * method needs to be called to configure the namespaces.
      *
@@ -66,7 +66,7 @@ public class SelectorStepBuilder {
 
     /**
      * Construct a set of selector steps from the specified selector (ala XPath expresssion steps).
-     * <p/>
+     *
      * This process does not configure the namespaces on the steps.  The {@link SelectorStep#setNamespaces(SelectorStep[],java.util.Properties)}
      * method needs to be called to configure the namespaces.
      *
@@ -215,7 +215,7 @@ public class SelectorStepBuilder {
 
     /**
      * Normalize the selector expression to an XPath expression.
-     * <p/>
+     *
      * Historically, the Smooks selectors support some tokens not supported by the XPath spec.
      * This method normalizes a selector expression to be a valid XPath expression.
      *

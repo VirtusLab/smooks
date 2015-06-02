@@ -36,7 +36,7 @@ public class DollarBraceDecoder {
 
     /**
      * Get the ${} tokens from the supplied string.
-     * <p/>
+     *
      * For example, if the input string is "xxxx ${A} xxxxx ${B} ...", this method
      * will return a List containing 2 String, "A" and "B".
      *
@@ -60,7 +60,7 @@ public class DollarBraceDecoder {
 
     /**
      * Replace all the ${} tokens with the specified String.
-     * <p/>
+     *
      * For example, if the input string is "xxxx ${A} xxxxx ${B} ..." and the
      * replacement String "?", this method will return "xxxx ? xxxxx ? ...".
      *

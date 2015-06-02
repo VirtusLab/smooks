@@ -21,7 +21,7 @@ import org.milyn.expression.ExpressionEvaluationException;
 
 /**
  * Invalid evaluator.
- * <p/>
+ *
  * ExpressionEvaluator is an abstract interface, subtyped by different evaluator
  * types.  At time of writing we only supported evaluator type was
  * ExecutionContextExpressionEvaluator.

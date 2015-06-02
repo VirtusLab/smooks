@@ -27,11 +27,11 @@ import org.milyn.delivery.sax.SAXVisitor;
 
 /**
  * Fragment Text Consumer {@link SAXVisitor} Annotation.
- * <p/>
+ *
  * Because SAX is a streaming model, you need to tell Smooks to accumulate text events
  * for a specific fragment.  For performance reasons, Smooks would never accumulate these
  * events by default, because that could result in a significant memory/performance overhead.
- * <p/> 
+ *
  * This annotation results in {@link SAXElement#accumulateText() text accumulation}
  * being turned on for the fragment targeted by the annotated {@link SAXVisitor} instance.
  * The text event data can then be accessed through the parent {@link SAXElement} instance.

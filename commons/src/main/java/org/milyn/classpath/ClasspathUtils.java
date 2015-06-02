@@ -25,12 +25,12 @@ public abstract class ClasspathUtils {
     /**
      * Convert the Java-class-file-name to the equivalent Java-class-name (dot 
      * delimited package name).
-     * <p/>
-     * EG:<br/>
-     * a/b/c/X.class converts to a.b.c.X<br/>
-     * a/b/c/X converts to a.b.c.X<br/>
-     * a.b.c.X converts to a.b.c.X<br/>
-     * a.b.c.X.class converts to a.b.c.X<br/>
+     *
+     * EG:<br>
+     * a/b/c/X.class converts to a.b.c.X<br>
+     * a/b/c/X converts to a.b.c.X<br>
+     * a.b.c.X converts to a.b.c.X<br>
+     * a.b.c.X.class converts to a.b.c.X<br>
      * @param fileName The file name String to be translated.
      * @return Java Class runtime name representation of the supplied file name String.
      */
@@ -63,12 +63,12 @@ public abstract class ClasspathUtils {
     /**
      * Convert the Java-class-name (dot delimited package name)to the 
      * equivalent Java-class-file-name .
-     * <p/>
-     * EG:<br/>
-     * a.b.c.X converts to a/b/c/X.class<br/>
-     * a.b.c.X.class converts to a/b/c/X.class<br/>
-     * a/b/c/X.class converts to a/b/c/X.class<br/>
-     * a/b/c/X converts to a/b/c/X.class<br/>
+     *
+     * EG:<br>
+     * a.b.c.X converts to a/b/c/X.class<br>
+     * a.b.c.X.class converts to a/b/c/X.class<br>
+     * a/b/c/X.class converts to a/b/c/X.class<br>
+     * a/b/c/X converts to a/b/c/X.class<br>
      * @param className The class name string to be translated.
      * @return The file name representaion of the supplied runtime class String.
      */

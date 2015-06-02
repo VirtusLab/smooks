@@ -46,13 +46,6 @@ public class ResourceTargetingEvent extends ElementProcessingEvent implements Re
         this.metadata = metadata;
     }
 
-    /**
-     * Event constructor.
-     * @param element The element ({@link org.milyn.delivery.sax.SAXElement}/{@link org.w3c.dom.Element})
-     * being targeted by the resource.
-     * @param resourceConfig The resource configuration.
-     * @param metadata Optional event metadata.
-     */
     public ResourceTargetingEvent(Object element, SmooksResourceConfiguration resourceConfig, VisitSequence sequence, Object... metadata) {
         this(element, resourceConfig, metadata);
         this.sequence = sequence;

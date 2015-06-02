@@ -21,7 +21,6 @@ import org.osgi.framework.ServiceRegistration;
 /**
  * SmooksServiceFactory is a {@link ServiceFactory} implementation that
  * enables the creation of per-bundle {@link SmooksOSGIFactory} implementations.
- * </p>
  * 
  * @author Daniel Bevenius
  *

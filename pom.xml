@@ -9,10 +9,10 @@
         <version>4</version>
     </parent>
 
-    <groupId>org.milyn</groupId>
+    <groupId>org.virtuslab</groupId>
     <artifactId>milyn</artifactId>
     <packaging>pom</packaging>
-    <version>1.5.2</version> <!-- base pom version - do not remove this comment -->
+    <version>1.5.3</version> <!-- base pom version - do not remove this comment -->
     <name>Milyn (Base POM)</name>
     <url>http://milyn.codehaus.org</url>
 
@@ -22,7 +22,7 @@
         <xerces.version>2.9.1</xerces.version>
         <xalan.version>2.7.1</xalan.version>
         <xml_apis.version>1.3.02</xml_apis.version>
-        <xstream.version>1.4.1</xstream.version>
+        <xstream.version>1.4.8</xstream.version>
         <commons_lang.version>2.4</commons_lang.version>
         <nekohtml.version>0.9.5</nekohtml.version>
         <dtdparser.version>1.21</dtdparser.version>
@@ -30,7 +30,7 @@
         <opencsv.version>2.3</opencsv.version>
         <ant.version>1.7.0</ant.version>
         <javassist.version>3.10.0.GA</javassist.version>
-        <mvel.version>2.0.17</mvel.version>
+        <mvel.version>2.2.4.Final</mvel.version>
         <groovy.version>1.5.7</groovy.version>
         <jaxen.version>1.1.1</jaxen.version>
         <javax.transaction.version>1.1</javax.transaction.version>
@@ -58,7 +58,7 @@
         <module>edi/edi-test</module>
         <!-- module>edi/edi-utils</module -->
 
-        <module>smooks-examples</module>
+        <!--<module>smooks-examples</module>-->
     </modules>
 
     <dependencies>
@@ -95,10 +95,10 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.3</version>
                 <configuration>
                     <source>1.5</source>
-                    <target>1.5</target>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -111,7 +111,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.9</version>
+                <version>2.18</version>
                 <configuration>
                     <environmentVariables>
                         <org.milyn.xml.XsdValidator.SchemaFactory>org.apache.xerces.jaxp.validation.XMLSchemaFactory</org.milyn.xml.XsdValidator.SchemaFactory>
@@ -131,10 +131,22 @@
                     <execution>
                         <id>attach-sources</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.5</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
             </plugin>
         </plugins>
         <resources>
@@ -177,7 +189,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.7</version>
+                        <version>2.10.3</version>
                         <executions>
                             <execution>
                                 <id>attach-javadoc</id>
@@ -197,6 +209,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -217,7 +230,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.7</version>
+                <version>2.10</version>
                 <configuration>
                     <overview>${basedir}/src/main/java/overview.html</overview>
                     <links>
@@ -289,7 +302,7 @@
             <dependency>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.9</version>
+                <version>2.18</version>
             </dependency>
             <dependency>
                 <groupId>jaxen</groupId>

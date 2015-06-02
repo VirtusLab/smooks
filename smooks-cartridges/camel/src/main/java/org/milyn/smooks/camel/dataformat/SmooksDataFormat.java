@@ -42,7 +42,7 @@ import org.milyn.smooks.camel.processor.SmooksProcessor;
  * capable of transforming from one dataformat to another and back again.
  * This means that what is marshaled can be unmarshaled by an instance of this
  * class.
- * <p/>
+ *
  * 
  * A smooks configuration for a SmooksDataFormat should not utilize Smooks
  * features such as routing that might allocated system resources. The reason
@@ -50,7 +50,7 @@ import org.milyn.smooks.camel.processor.SmooksProcessor;
  * close those resources. If you need to use these Smooks features please take a
  * look at the {@link SmooksComponent} or {@link SmooksProcessor} as they hook
  * into Camels lifecycle manegment and will close resources correctly.
- * <p/>
+ *
  * 
  * @author Christian Mueller
  * @author Daniel Bevenius
@@ -69,7 +69,6 @@ public class SmooksDataFormat implements DataFormat, CamelContextAware, Service
     
     /**
      * Marshals the Object 'fromBody' to an OutputStream 'toStream'
-     * </p>
      * 
      * The Camel framework will call this method from {@link MarshalProcessor#process(Exchange)}
      * and it will take care of setting the Out Message's body to the bytes written to the toStream
@@ -91,16 +90,6 @@ public class SmooksDataFormat implements DataFormat, CamelContextAware, Service
         toStream.write(stringResult.getResult().getBytes(execContext.getContentEncoding()));
     }
 
-    /**
-     * Unmarshals the fromStream to an Object.
-     * </p>
-     * The Camel framework will call this method from {@link UnMarshalProcessor#process(Exchange)}
-     * and it will take care of setting the returned Object on the Out Message's body.
-     * 
-     * @param exchange The Camel {@link Exchange}.
-     * @param fromStream The InputStream that will be unmarshalled into an Object instance.
-     * 
-     */
     public Object unmarshal(final Exchange exchange, final InputStream fromStream) throws Exception
     {
         final ExecutionContext execContext = smooks.createExecutionContext();

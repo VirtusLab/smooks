@@ -50,7 +50,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * {@link org.milyn.cdr.SmooksResourceConfiguration} context store.
- * <p/>
+ *
  * Stores the {@link org.milyn.cdr.SmooksResourceConfiguration SmooksResourceConfigurations}
  * for a given container context in the form of 
  * {@link org.milyn.cdr.SmooksResourceConfigurationList} entries.  Also maintains
@@ -170,7 +170,7 @@ public class SmooksResourceConfigurationStore {
 
     /**
 	 * Load all .cdrl files listed in the BufferedReader stream.
-	 * <p/>
+	 *
 	 * Because this method uses the ContainerResourceLocator it may be possible
 	 * to load external cdrl files.  If the ContainerResourceLocator is a
 	 * ServletResourceLocator the lines in the BufferedReader param can contain
@@ -206,16 +206,6 @@ public class SmooksResourceConfigurationStore {
         }
 	}
 
-    /**
-     * Register the set of resources specified in the supplied XML configuration
-     * stream.
-     * @param baseURI The base URI to be associated with the configuration stream.
-     * @param resourceConfigStream XML resource configuration stream.
-     * @return The SmooksResourceConfigurationList created from the added resource configuration.
-     * @throws SAXException Error parsing the resource stream.
-     * @throws IOException Error reading resource stream.
-     * @see SmooksResourceConfiguration
-     */
     public SmooksResourceConfigurationList registerResources(String baseURI, InputStream resourceConfigStream) throws SAXException, IOException, URISyntaxException {
         SmooksResourceConfigurationList configList;
 
@@ -270,7 +260,7 @@ public class SmooksResourceConfigurationStore {
 
     /**
      * Register a {@link SmooksResourceConfiguration} on this context store.
-     * <p/>
+     *
      * The config gets added to the default resource list.
      * @param resourceConfig The Content Delivery Resource definition to be registered.
      */
@@ -281,11 +271,6 @@ public class SmooksResourceConfigurationStore {
         defaultList.add(resourceConfig);
     }
 
-    /**
-     * Add a {@link SmooksResourceConfigurationList} to this store.
-     *
-     * @return All the SmooksResourceConfigurationList instances added on this store.
-     */
     public void addSmooksResourceConfigurationList(SmooksResourceConfigurationList resourceList) {
         processAppContextInitializers(resourceList);
         configLists.add(resourceList);
@@ -407,7 +392,7 @@ public class SmooksResourceConfigurationStore {
     /**
      * Get the {@link org.milyn.delivery.ContentHandlerFactory} for a resource based on the
      * supplied resource type.
-     * <p/>
+     *
      * Note that {@link org.milyn.delivery.ContentHandlerFactory} implementations must be  configured under a selector value of "cdu-creator".
      * @param type {@link org.milyn.delivery.ContentHandlerFactory} type e.g. "class", "xsl" etc.
      * @return {@link org.milyn.delivery.ContentHandlerFactory} for the resource.

@@ -19,7 +19,7 @@ import java.lang.annotation.*;
 
 /**
  * Phase phase annotation.
- * <p/>
+ *
  * Used in conjunction with the {@link VisitPhase} enumeration
  * to specify the Visit Phase during which a {@link org.milyn.delivery.dom.DOMElementVisitor}
  * is to be applied.

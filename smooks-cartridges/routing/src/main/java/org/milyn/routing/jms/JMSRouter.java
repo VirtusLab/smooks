@@ -58,17 +58,17 @@ import org.milyn.util.FreeMarkerTemplate;
 import org.w3c.dom.Element;
 
 /**
- * <p/>
+ *
  * Router is a Visitor for DOM or SAX elements. It sends the content
  * as a JMS Message object to the configured destination.
- * <p/>
+ *
  * The type of the JMS Message is determined by the "messageType" config param.
- * <p/>
+ *
  * Example configuration:
  * <pre>
  * &lt;resource-config selector="orderItems"&gt;
  *    &lt;resource&gt;org.milyn.routing.jms.JMSRouter&lt;/resource&gt;
- *    &lt;param name="beanId">beanId&lt;/param&gt;
+ *    &lt;param name="beanId"&gt;beanId&lt;/param&gt;
  *    &lt;param name="destinationName"&gt;/queue/smooksRouterQueue&lt;/param&gt;
  * &lt;/resource-config&gt;
  *	....
@@ -425,12 +425,11 @@ public class JMSRouter implements DOMElementVisitor, SAXVisitBefore, SAXVisitAft
 
     /**
      * Sets the following MessageProducer properties:
-     * <lu>
-     * 	<li>TimeToLive
-     * 	<li>Priority
-     * 	<li>DeliveryMode
-     * </lu>
-     * <p>
+     * <ul>
+     * 	<li>TimeToLive</li>
+     * 	<li>Priority</li>
+     * 	<li>DeliveryMode</li>
+     * </ul>
      * Subclasses may override this behaviour.
      */
 	protected void setMessageProducerProperties() throws SmooksConfigurationException

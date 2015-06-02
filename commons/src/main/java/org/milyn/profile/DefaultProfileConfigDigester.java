@@ -25,12 +25,12 @@ import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 /**
- * Default device profile XML configuration digester. <p/> The profile
+ * Default device profile XML configuration digester.  The profile
  * configuration is supplied in a well defined XML format. This XML format is
  * defined in <a href="doc-files/device-profile-1.0.txt">device-profile-1.0.dtd</a>
  * and a sample XML is defined in <a
  * href="doc-files/device-profile-sample-1.0.txt">device-profile-sample.xml</a>.
- * <p/> Uses XPath to parse the XML and construct the ProfileStore instance.
+ *  Uses XPath to parse the XML and construct the ProfileStore instance.
  * 
  * @author tfennelly
  */

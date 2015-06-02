@@ -39,12 +39,6 @@ public class MethodCall {
         this.callArgs = callArgs;
     }
 
-    /**
-     * Get the call index.
-     * <p/>
-     * The call "index" is just 
-     * @return
-     */
     public int getCallIndex() {
         return callIndex;
     }

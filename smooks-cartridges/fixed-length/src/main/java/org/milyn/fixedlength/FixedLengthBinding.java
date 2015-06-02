@@ -19,7 +19,7 @@ import org.milyn.assertion.AssertArgument;
 
 /**
  * Fixed Lenght Binding configuration.
- * <p/>
+ *
  * For more complex bindings, use the main java binding framwework.
  *
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

@@ -36,11 +36,11 @@ import javax.xml.transform.Source;
 
 /**
  * Smooks DOM data stream parser.
- * <p/>
+ *
  * This parser can be configured to use a SAX Parser targeted at a specific data stream type.
  * This lets you parse a stream of any type, convert it to a stream of SAX event and so treat the stream
  * as an XML data stream, even when the stream is non-XML.
- * <p/>
+ *
  * If the configured parser implements the {@link org.milyn.xml.SmooksXMLReader}, the configuration will be
  * passed to the parser via {@link org.milyn.cdr.annotation.ConfigParam} annotaions on config properties
  * defined on the implementation.
@@ -63,7 +63,7 @@ public class DOMParser extends AbstractParser {
 
 	/**
 	 * Public constructor.
-	 * <p/>
+	 *
 	 * This constructor attempts to lookup a SAX Parser config under the "org.xml.sax.driver" selector string.
 	 * See <a href="#parserconfig">.cdrl Configuration</a>.
 	 * @param execContext The execution context that the parser is being instantiated on behalf of.
@@ -99,7 +99,7 @@ public class DOMParser extends AbstractParser {
       /**
   	 * Append the content, behind the supplied input stream, to suplied
   	 * document element.
-  	 * <p/>
+  	 *
   	 * Used to merge document fragments into a document.
   	 * @param source Source content stream to be parsed.
   	 * @param appendElement DOM element to which the content fragment is to

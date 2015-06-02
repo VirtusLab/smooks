@@ -22,7 +22,7 @@ import java.util.Set;
 
 /**
  * Java type model.
- * <p/>
+ *
  * Includes generic typing.
  *
  * @author bardl

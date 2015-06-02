@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.milyn</groupId>
+    <groupId>org.virtuslab</groupId>
     <artifactId>milyn-smooks-javabean-perfcomp</artifactId>
-    <version>1.5.1</version> <!-- base pom version - do not remove this comment -->
+    <version>1.5.3</version> <!-- base pom version - do not remove this comment -->
     
     <properties>
     	<smooks.version>1.4</smooks.version>
@@ -15,14 +15,14 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>testres</artifactId>
             <version>${smooks.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-javabean</artifactId>
             <version>${smooks.version}</version>
         </dependency>
@@ -48,7 +48,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.5</source>
-                    <target>1.5</target>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
 			<plugin>

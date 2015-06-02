@@ -27,9 +27,6 @@ public class SingleDaoRegister<T> extends AbstractDaoRegister<T> {
 
 	private final T dao;
 
-	/**
-	 * @param dao
-	 */
 	public SingleDaoRegister(T dao) {
 		this.dao = dao;
 	}
@@ -52,7 +49,7 @@ public class SingleDaoRegister<T> extends AbstractDaoRegister<T> {
 			return true;
 		}
 
-		if(obj instanceof SingleDaoRegister == false) {
+		if(!(obj instanceof SingleDaoRegister)) {
 			return false;
 		}
 

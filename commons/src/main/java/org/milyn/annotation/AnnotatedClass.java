@@ -36,10 +36,6 @@ public interface AnnotatedClass {
 	 */
 	Annotation[] getAllAnnotations();
 
-	/**
-	 * @param annotationClass to find an annotation.
-	 * @return the inherited or declared annotation of the specified class.
-	 */
 	<T extends Annotation> T getAnnotation(Class<T> annotationClass);
 
 	/**
@@ -55,10 +51,5 @@ public interface AnnotatedClass {
 	 */
 	AnnotatedMethod getAnnotatedMethod(String name, Class<?>[] parameterType);
 
-	/**
-	 * @param public method of the annotated class.
-	 * @return the annotation wrapping for the method (null if the method
-	 * is not declared in the class)
-	 */
 	AnnotatedMethod getAnnotatedMethod(Method method);
 }

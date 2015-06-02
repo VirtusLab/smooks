@@ -25,7 +25,7 @@ import org.milyn.smooks.camel.dataformat.Customer;
 
 /**
  * Converts a JavaResult to a Customer object. 
- * <p/>
+ *
  * This converter is only intended for testing purposes.
  * 
  * @author Daniel Bevenius

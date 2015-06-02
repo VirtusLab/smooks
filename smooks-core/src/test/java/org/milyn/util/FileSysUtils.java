@@ -50,7 +50,7 @@ public abstract class FileSysUtils {
 
 	/**
 	 * Get a "project" file.
-	 * <p/>
+	 *
 	 * @param path File path relative to the project root. 
 	 * @return Smooks project file.
 	 */

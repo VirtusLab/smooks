@@ -83,7 +83,7 @@ public abstract class DomUtils {
 	
 	/**
 	 * Replace one node with a list of nodes.
-	 * <p/>
+	 *
 	 * Clones the NodeList elements.
 	 * @param newNodes New nodes - added in same location as oldNode.
 	 * @param oldNode Old node - removed.
@@ -272,7 +272,7 @@ public abstract class DomUtils {
 
 	/**
 	 * Remove the supplied element from its containing document.
-	 * <p/>
+	 *
 	 * Tries to manage scenarios where a request is made to remove the root element.
 	 * Cannot remove the root element in any of the following situations:
 	 * <ul>
@@ -335,9 +335,9 @@ public abstract class DomUtils {
 
 	/**
 	 * Copy the nodes of a NodeList into the supplied list.
-	 * <p/>
+	 *
 	 * This is not a clone.  It's just a copy of the node references.
-	 * <p/>
+	 *
 	 * Allows iteration over the Nodelist using the copy in the knowledge that
 	 * the list will remain the same length.  Using the NodeList can result in problems
 	 * because elements can get removed from the list while we're iterating over it.
@@ -452,7 +452,7 @@ public abstract class DomUtils {
 
 	/**
 	 * Get the name from the supplied element.
-	 * <p/>
+	 *
 	 * Returns the {@link Node#getLocalName() localName} of the element
 	 * if set (namespaced element), otherwise the 
 	 * element's {@link Element#getTagName() tagName} is returned.
@@ -473,7 +473,7 @@ public abstract class DomUtils {
 	
 	/**
 	 * Get attribute value, returning <code>null</code> if unset.
-	 * <p/>
+	 *
 	 * Some DOM implementations return an empty string for an unset
 	 * attribute.
 	 * @param element The DOM element.
@@ -486,7 +486,7 @@ public abstract class DomUtils {
 	
 	/**
 	 * Get attribute value, returning <code>null</code> if unset.
-	 * <p/>
+	 *
 	 * Some DOM implementations return an empty string for an unset
 	 * attribute.
 	 * @param element The DOM element.
@@ -556,7 +556,7 @@ public abstract class DomUtils {
 	/**
 	 * Count the DOM nodes of the supplied type (nodeType) before the supplied
 	 * node, not including the node itself.
-	 * <p/>
+	 *
 	 * Counts the sibling nodes.
 	 * @param node Node whose siblings are to be counted.
 	 * @param nodeType The DOM {@link Node} type of the siblings to be counted. 
@@ -592,7 +592,7 @@ public abstract class DomUtils {
 	/**
 	 * Count the DOM nodes of the supplied type (nodeType) between the supplied
 	 * sibling nodes, not including the nodes themselves.
-	 * <p/>
+	 *
 	 * Counts the sibling nodes.
 	 * @param node1 First sibling node.
 	 * @param node2 Second sibling node.
@@ -636,7 +636,7 @@ public abstract class DomUtils {
 
 	/**
 	 * Count the DOM nodes before the supplied node, not including the node itself.
-	 * <p/>
+	 *
 	 * Counts the sibling nodes.
 	 * @param node Node whose siblings are to be counted.
 	 * @return The number of siblings before the supplied node.
@@ -669,7 +669,7 @@ public abstract class DomUtils {
 	/**
 	 * Count the DOM nodes between the supplied sibling nodes, not including 
 	 * the nodes themselves.
-	 * <p/>
+	 *
 	 * Counts the sibling nodes.
 	 * @param node1 First sibling node.
 	 * @param node2 Second sibling node.
@@ -708,7 +708,7 @@ public abstract class DomUtils {
 	/**
 	 * Count the DOM element nodes before the supplied node, having the specified 
 	 * tag name, not including the node itself.
-	 * <p/>
+	 *
 	 * Counts the sibling nodes.
 	 * @param node Node whose element siblings are to be counted.
 	 * @param tagName The tag name of the sibling elements to be counted. 
@@ -776,12 +776,6 @@ public abstract class DomUtils {
 		return text.toString();
 	}
 
-	/**
-	 * Get all the text DOM sibling nodes before the supplied node and 
-	 * concatenate them together into a single String.
-	 * @param node1 Test node.
-	 * @return String containing the concatentated text.
-	 */
 	public static String getTextBetween(Node node1, Node node2) {
 		AssertArgument.isNotNull(node1, "node1");
 		AssertArgument.isNotNull(node2, "node2");
@@ -827,7 +821,7 @@ public abstract class DomUtils {
 	
 	/**
 	 * Construct the XPath of the supplied DOM Node.
-	 * <p/>
+	 *
 	 * Supports element, comment and cdata sections DOM Node types.
 	 * @param node DOM node for XPath generation.
 	 * @return XPath string representation of the supplied DOM Node.
@@ -948,40 +942,10 @@ public abstract class DomUtils {
 		element.appendChild(literal);
 	}
 
-	/**
-	 * Get the child element having the supplied localname, position
-	 * and namespace.
-	 * <p/>
-	 * Can be used instead of XPath.
-	 * @param parent Parent element to be searched.
-	 * @param localname Localname of the element required.
-	 * @param position The position of the element relative to other sibling
-	 * elements having the same name (and namespace if specified) e.g. if
-	 * searching for the 2nd &ltinput&gt; element, this param needs to
-	 * have a value of 2. 
-     * @return The element at the requested position, or null if no such child
-     * element exists on the parent element.
-	 */
 	public static Element getElement(Element parent, String localname, int position) {
 		return getElement(parent, localname, position, null);
 	}
 
-	/**
-	 * Get the child element having the supplied localname, position
-	 * and namespace.
-	 * <p/>
-	 * Can be used instead of XPath.
-	 * @param parent Parent element to be searched.
-	 * @param localname Localname of the element required.
-	 * @param position The position of the element relative to other sibling
-	 * elements having the same name (and namespace if specified) e.g. if
-	 * searching for the 2nd &ltinput&gt; element, this param needs to
-	 * have a value of 2. 
-	 * @param namespaceURI Namespace URI of the required element, or null
-	 * if a namespace comparison is not to be performed.
-	 * @return The element at the requested position, or null if no such child
-	 * element exists on the parent element.
-	 */
 	public static Element getElement(Element parent, String localname, int position, String namespaceURI) {
 		List elements = getElements(parent, localname, namespaceURI);
 
@@ -995,7 +959,7 @@ public abstract class DomUtils {
 
 	/**
 	 * Get the child elements having the supplied localname and namespace.
-	 * <p/>
+	 *
 	 * Can be used instead of XPath.
 	 * @param parent Parent element to be searched.
 	 * @param localname Localname of the element required.  Supports "*" wildcards.
@@ -1012,7 +976,7 @@ public abstract class DomUtils {
 
 	/**
 	 * Get the child elements having the supplied localname and namespace.
-	 * <p/>
+	 *
 	 * Can be used instead of XPath.
 	 * @param nodeList List of DOM nodes on which to perform the search.
 	 * @param localname Localname of the element required.  Supports "*" wildcards.

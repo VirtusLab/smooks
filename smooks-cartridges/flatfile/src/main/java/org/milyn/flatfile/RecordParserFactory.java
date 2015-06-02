@@ -18,7 +18,7 @@ package org.milyn.flatfile;
 
 /**
  * {@link RecordParser} factory class.
- * <p/>
+ *
  * Configurable be the Smooks {@link org.milyn.cdr.annotation.Configurator}
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

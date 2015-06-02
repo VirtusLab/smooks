@@ -23,7 +23,7 @@ import java.lang.annotation.Target;
 
 /**
  * EDI Message marker annotation.
- * <p/>
+ *
  * Used on EDI messages for wiring into message exchanges/interchanges (e.g. UN/EDIFACT)
  * by bean type.
  * 

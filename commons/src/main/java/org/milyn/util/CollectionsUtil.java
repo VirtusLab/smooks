@@ -33,6 +33,7 @@ public class CollectionsUtil {
     /**
      * Create an Object {@link Set} from the supplied objects.
      * @param objects The objects to be added to the set.
+     * @param <T> generic type parameter
      * @return The {@link Set}.
      */
     public static <T> Set<T> toSet(T... objects) {
@@ -44,6 +45,7 @@ public class CollectionsUtil {
     /**
      * Create an Object {@link List} from the supplied objects.
      * @param objects The objects to be added to the list.
+     * @param <T> generic parameter
      * @return The {@link List}.
      */
     public static <T> List<T> toList(T... objects) {
@@ -55,6 +57,7 @@ public class CollectionsUtil {
     /**
      * Create an Object {@link List} from the supplied Enumeration of objects.
      * @param objects The objects to be added to the list.
+     * @param <T> generic parameter
      * @return The {@link List}.
      */
     public static <T> List<T> toList(Enumeration<T> objects) {

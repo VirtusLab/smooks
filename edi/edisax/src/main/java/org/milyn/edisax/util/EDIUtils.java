@@ -635,13 +635,6 @@ public class EDIUtils {
         }
     }
 
-	/**
-	 * Convert {@link Description} to the string representation
-	 * that is used for lookup in the hashmaps
-	 * 
-	 * @param description
-	 * @return
-	 */
 	public static String toLookupName(Description description) {
 		return description.getName() + ":"
 				+ description.getVersion();

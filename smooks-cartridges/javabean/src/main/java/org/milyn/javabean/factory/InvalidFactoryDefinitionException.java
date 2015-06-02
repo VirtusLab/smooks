@@ -22,29 +22,16 @@ package org.milyn.javabean.factory;
  */
 public class InvalidFactoryDefinitionException extends FactoryException {
 
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @param message
-	 */
 	public InvalidFactoryDefinitionException(String message) {
 		super(message);
 	}
 
-	/**
-	 * @param cause
-	 */
 	public InvalidFactoryDefinitionException(Throwable cause) {
 		super(cause);
 	}
 
-	/**
-	 * @param message
-	 * @param cause
-	 */
 	public InvalidFactoryDefinitionException(String message, Throwable cause) {
 		super(message, cause);
 	}

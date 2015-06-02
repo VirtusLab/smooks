@@ -20,7 +20,7 @@ import org.milyn.delivery.Visitor;
 
 /**
  * Object Consumer interface.
- * <p/>
+ *
  * A consumer is a {@link org.milyn.delivery.Visitor} that "consumes" a named object that has been added to the
  * {@link ExecutionContext} by a {@link Producer} of some sort.
  *
@@ -32,7 +32,7 @@ public interface Consumer extends Visitor {
 
     /**
      * Does this consumer consume the specified named object.
-     * <p/>
+     *
      * The named object would be a product of a {@link Producer} that is executing
      * on the same element.  The consumer should only return <code>false</code> if it knows for
      * certain that it doesn't consumer the specified named object.  If uncertain, it should

@@ -28,14 +28,14 @@ import org.milyn.javabean.context.BeanContext;
 
 /**
  * Javabean Cartridge bean Map expression evaluator.
- * <p/>
+ *
  * Evaluates <a href="http://mvel.codehaus.org/">MVEL</a> expressions on java objects
  * bound to the supplied {@link ExecutionContext} via the {@link BeanContext}.
- * <p/>
+ *
  * Cab be used to selectively target resources based on the
  * contents of the java objects bound to the supplied {@link ExecutionContext}
  * via the {@link BeanContext}.
- * <p/>
+ *
  * The special EC variable gives access to the EditingContext.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

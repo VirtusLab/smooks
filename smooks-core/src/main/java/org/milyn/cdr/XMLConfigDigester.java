@@ -76,7 +76,7 @@ public final class XMLConfigDigester {
 
     /**
      * Private constructor.
-     * <p/>
+     *
      * Never make this constructor (or any other) public.  It's only called from 2 places:
      * <ul>
      *  <li>From the {@link #digestConfig(java.io.InputStream, String)} method.</li>
@@ -97,37 +97,10 @@ public final class XMLConfigDigester {
         configStack.push(new SmooksConfig("root-config"));
     }
 
-    /**
-     * Digest the XML Smooks configuration stream.
-     *
-     * @param stream  The stream.
-     * @param baseURI The base URI to be associated with the configuration stream.
-     * @param extendedConfigDigesters Config digesters.
-     * @return A {@link SmooksResourceConfigurationList} containing the list of
-     *         {@link SmooksResourceConfiguration SmooksResourceConfigurations} defined in the
-     *         XML configuration.
-     * @throws SAXException Error parsing the XML stream.
-     * @throws IOException  Error reading the XML stream.
-     * @throws SmooksConfigurationException  Invalid configuration..
-     */
     public static SmooksResourceConfigurationList digestConfig(InputStream stream, String baseURI, Map<String, Smooks> extendedConfigDigesters) throws SAXException, IOException, URISyntaxException, SmooksConfigurationException {
         return digestConfig(stream, baseURI, extendedConfigDigesters, null);
     }
 
-    /**
-     * Digest the XML Smooks configuration stream.
-     *
-     * @param stream  The stream.
-     * @param baseURI The base URI to be associated with the configuration stream.
-     * @param extendedConfigDigesters Config digesters.
-     * @param classLoader The ClassLoader to be used.
-     * @return A {@link SmooksResourceConfigurationList} containing the list of
-     *         {@link SmooksResourceConfiguration SmooksResourceConfigurations} defined in the
-     *         XML configuration.
-     * @throws SAXException Error parsing the XML stream.
-     * @throws IOException  Error reading the XML stream.
-     * @throws SmooksConfigurationException  Invalid configuration..
-     */
     public static SmooksResourceConfigurationList digestConfig(InputStream stream, String baseURI, Map<String, Smooks> extendedConfigDigesters, ClassLoader classLoader) throws SAXException, IOException, URISyntaxException, SmooksConfigurationException {
         SmooksResourceConfigurationList list = new SmooksResourceConfigurationList(baseURI);
 
@@ -144,34 +117,10 @@ public final class XMLConfigDigester {
         return list;
     }
 
-    /**
-     * Digest the XML Smooks configuration stream.
-     *
-     * @param stream  The stream.
-     * @param baseURI The base URI to be associated with the configuration stream.
-     * @return A {@link SmooksResourceConfigurationList} containing the list of
-     *         {@link SmooksResourceConfiguration SmooksResourceConfigurations} defined in the
-     *         XML configuration.
-     * @throws SAXException Error parsing the XML stream.
-     * @throws IOException  Error reading the XML stream.
-     * @throws SmooksConfigurationException  Invalid configuration..
-     */
     public static SmooksResourceConfigurationList digestConfig(InputStream stream, String baseURI) throws SAXException, IOException, URISyntaxException, SmooksConfigurationException {
         return digestConfig(stream, baseURI, (ClassLoader) null);
     }
 
-    /**
-     * Digest the XML Smooks configuration stream.
-     *
-     * @param stream  The stream.
-     * @param baseURI The base URI to be associated with the configuration stream.
-     * @return A {@link SmooksResourceConfigurationList} containing the list of
-     *         {@link SmooksResourceConfiguration SmooksResourceConfigurations} defined in the
-     *         XML configuration.
-     * @throws SAXException Error parsing the XML stream.
-     * @throws IOException  Error reading the XML stream.
-     * @throws SmooksConfigurationException  Invalid configuration..
-     */
     public static SmooksResourceConfigurationList digestConfig(InputStream stream, String baseURI, ClassLoader classLoader) throws SAXException, IOException, URISyntaxException, SmooksConfigurationException {
         SmooksResourceConfigurationList list = new SmooksResourceConfigurationList(baseURI);
 

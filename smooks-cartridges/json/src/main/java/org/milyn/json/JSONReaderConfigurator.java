@@ -28,7 +28,7 @@ import java.util.Map;
 
 /**
  * JSON Reader configurator.
- * <p/>
+ *
  * Supports programmatic {@link JSONReader} configuration on a {@link org.milyn.Smooks#setReaderConfig(org.milyn.ReaderConfigurator) Smooks} instance.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

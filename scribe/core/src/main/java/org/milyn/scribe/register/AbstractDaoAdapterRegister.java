@@ -102,7 +102,7 @@ public abstract class AbstractDaoAdapterRegister<D, A> extends AbstractDaoRegist
 	 * {@link AbstractDaoAdapterRegister} class.
 	 *
 	 * @param adaptable The object that will be adapted by a Dao Adapter
-	 * @return
+	 * @return D
 	 */
 	protected abstract D createAdapter(A adaptable);
 

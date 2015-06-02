@@ -52,7 +52,7 @@ public class BeanBindingExtendedConfigTest extends TestCase {
         assertOrderOK(order, true);
 
         Map headerHash = (Map) result.getBean("headerBeanHash");
-        assertEquals("{privatePerson=, customer=Joe, date=Wed Nov 15 13:45:28 EST 2006}", headerHash.toString());
+        assertEquals("{date=Wed Nov 15 13:45:28 EST 2006, privatePerson=, customer=Joe}", headerHash.toString());
     }
 
 	/**

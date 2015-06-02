@@ -28,9 +28,6 @@ public class FlushMethod {
 
 	final Method method;
 
-	/**
-	 *
-	 */
 	public FlushMethod(final Method method) {
 		AssertArgument.isNotNull(method, "method");
 

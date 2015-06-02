@@ -40,9 +40,6 @@ public class LookupMethod {
 
 	private boolean namedParameters = false;
 
-	/**
-	 *
-	 */
 	public LookupMethod(final Method method) {
 		AssertArgument.isNotNull(method, "method");
 
@@ -51,9 +48,6 @@ public class LookupMethod {
 		analyzeParameters();
 	}
 
-	/**
-	 *
-	 */
 	private void analyzeParameters() {
 
 		final AnnotatedMethod aMethod = AnnotationManager.getAnnotatedClass(method.getDeclaringClass()).getAnnotatedMethod(method);
@@ -129,11 +123,6 @@ public class LookupMethod {
 
 	}
 
-	/**
-	 * @param obj
-	 * @param args
-	 * @return
-	 */
 	public Object invoke(final Object obj, Object ... args) {
 		try {
 			return method.invoke(obj, args);

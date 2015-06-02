@@ -76,7 +76,7 @@ public abstract class FileUtils {
 
     /**
      * Delete directory structure.
-     * <p/>
+     *
      * Performs a recursive delete.
      *
      * @param dir The directory to be deleted.

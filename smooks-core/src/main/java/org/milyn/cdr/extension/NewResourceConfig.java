@@ -26,7 +26,7 @@ import org.w3c.dom.Element;
 
 /**
  * Create a new {@link SmooksResourceConfiguration}.
- * <p/>
+ *
  * The new {@link SmooksResourceConfiguration} is added to the {@link ExtensionContext}.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

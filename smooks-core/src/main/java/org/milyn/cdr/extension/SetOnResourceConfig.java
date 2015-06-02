@@ -28,7 +28,7 @@ import java.util.EmptyStackException;
 
 /**
  * Set a static value on the current {@link org.milyn.cdr.SmooksResourceConfiguration}.
- * <p/>
+ *
  * The value is set on the {@link org.milyn.cdr.SmooksResourceConfiguration} returned from the top
  * of the {@link org.milyn.cdr.extension.ExtensionContext#getResourceStack() ExtensionContext resourece stack}.
  *

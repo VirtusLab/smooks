@@ -30,7 +30,7 @@ import java.util.List;
 
 /**
  * Unknown element data reaper.
- * <p/>
+ *
  * Models can sometimes be created from XML which contains valid elements that are not being mapped into the model.
  * We don't want to loose this data in the model, so we capture it as "pre
  * 

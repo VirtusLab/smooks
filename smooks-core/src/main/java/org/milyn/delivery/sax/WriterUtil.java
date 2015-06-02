@@ -17,7 +17,7 @@ package org.milyn.delivery.sax;
 
 /**
  * Deprecated.
- * <p/>
+ *
  * Use {@link SAXElementWriterUtil}.
  * 
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

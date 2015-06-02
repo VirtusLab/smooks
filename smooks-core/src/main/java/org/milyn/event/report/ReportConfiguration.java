@@ -73,7 +73,7 @@ public class ReportConfiguration {
 
     /**
      * Set a list of {@link org.milyn.event.ExecutionEvent event} types on which to filter.
-     * <p/>
+     *
      * The listener will only capture {@link org.milyn.event.ExecutionEvent event} types
      * provided in this list.  If not set, all events will be captured.
      *
@@ -93,7 +93,7 @@ public class ReportConfiguration {
 
     /**
      * Should the writer be closed automatically after the report is completed.
-     * <p/>
+     *
      * Default true.
      *
      * @param autoCloseWriter True if the writer is to be closed, otherwise false.

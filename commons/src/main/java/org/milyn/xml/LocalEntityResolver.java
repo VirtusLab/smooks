@@ -43,7 +43,7 @@ public abstract class LocalEntityResolver implements EntityResolver {
 	private File localEntityFolder = null;
 
 	/**
-	 * Entity entity lookup table. <p/> Contains preread Entity entity byte arrays.
+	 * Entity entity lookup table.  Contains preread Entity entity byte arrays.
 	 */
 	private static Hashtable entities = new Hashtable();
 
@@ -62,7 +62,7 @@ public abstract class LocalEntityResolver implements EntityResolver {
     }
 
 	/**
-	 * Public default Constructor <p/> This constructor allows specification of
+	 * Public default Constructor  This constructor allows specification of
 	 * a local file system folder from which Entitys can be loaded.
 	 *
 	 * @param localEntityFolder
@@ -142,7 +142,7 @@ public abstract class LocalEntityResolver implements EntityResolver {
 
     /**
      * Get the document type.
-     * <p/>
+     *
      * This is a bit of a hack.  There's a way of getting the DOM
      * parser to populate the DocumentType.
      *

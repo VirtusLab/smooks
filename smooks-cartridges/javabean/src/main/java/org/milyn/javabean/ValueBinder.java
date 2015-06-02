@@ -48,14 +48,14 @@ import javax.xml.namespace.QName;
 
 /**
  * Value Binder.
- * <p/>
+ *
  * This class can be used to configure a Smooks instance for creating value
  * objects using the Smooks DataDecoders.
- * <h3>XML Schema & Namespace</h3>
+ * <h3>XML Schema &amp; Namespace</h3>
  * The Value Binder XML configuration schema is in the following XML Schema Namespace:
- * <p/>
+ *
  * <a href="http://www.milyn.org/xsd/smooks/javabean-1.3.xsd"><b>http://www.milyn.org/xsd/smooks/javabean-1.3.xsd</b></a>
- * <p/>
+ *
  * The value binder element is '&lt;value&gt;'. Take a look in the schema for all
  * the configuration attributes.
  *
@@ -138,10 +138,7 @@ public class ValueBinder implements DOMElementVisitor, SAXVisitBefore, SAXVisitA
     public ValueBinder() {
 	}
 
-    /**
-     * @param beanId
-     */
-	public ValueBinder(String beanId) {
+    public ValueBinder(String beanId) {
 		this.beanIdName = beanId;
 	}
 

@@ -25,11 +25,11 @@ import java.io.Writer;
 
 /**
  * SAX Text.
- * <p/>
+ *
  * This class provides a wrapper around the char array supplied by the
  * SAXParser/XMLReader.  It help provide an optimization by allowing the process
  * to avoid String construction where possible.
- * <p/>
+ *
  * <i><b><u>NOTE</u></b>: References to instances of this type should not be cached.  If you
  * need to cache the character data housed in this class, you should use either the
  * {@link #getText()} or {@link #toString()} methods.</i>
@@ -64,7 +64,7 @@ public class SAXText {
 
     /**
      * Get the raw text, unwrapped.
-     * <p/>
+     *
      * This method differs from the {@link #toString()} implementation because
      * it doesn't wrap the test based on it's {@link #getType() type}.
      *
@@ -85,7 +85,7 @@ public class SAXText {
 
     /**
      * Get the "wrapped" text as a String.
-     * <p/>
+     *
      * Wraps the underlying characters based on the text {@link #getType() type}.
      * See {@link #getType()}. 
      *
@@ -135,7 +135,7 @@ public class SAXText {
 
     /**
      * Write the text to the supplied writer.
-     * <p/>
+     *
      * It wraps the text based on its {@link #getType() type}.
      *
      * @param writer The writer.
@@ -147,7 +147,7 @@ public class SAXText {
 
     /**
      * Write the text to the supplied writer.
-     * <p/>
+     *
      * It wraps the text based on its {@link #getType() type}.
      *
      * @param writer The writer.

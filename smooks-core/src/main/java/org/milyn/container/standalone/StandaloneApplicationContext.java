@@ -35,7 +35,7 @@ import org.milyn.resource.URIResourceLocator;
 
 /**
  * Standalone container execution context for Smooks.
- * <p/>
+ *
  * This context allows Smooks to be executed outside the likes of a
  * Servlet Container.
  * @author tfennelly
@@ -50,9 +50,6 @@ public class StandaloneApplicationContext implements ApplicationContext {
     private List<BeanContextLifecycleObserver> beanContextObservers = new ArrayList<BeanContextLifecycleObserver>();
     private ClassLoader classLoader;
 
-    /**
-     * Public constructor.
-     */
     public StandaloneApplicationContext(boolean registerInstalledResources) {
         resourceLocator = new URIResourceLocator();
         ((URIResourceLocator)resourceLocator).setBaseURI(URI.create(URIResourceLocator.SCHEME_CLASSPATH + ":/"));

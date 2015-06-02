@@ -35,13 +35,6 @@ public abstract class BeanUtils {
 
     private static Log logger = LogFactory.getLog(BeanUtils.class);
 
-    /**
-     * Create the bean setter method instance for this visitor.
-     *
-     * @param setterName The setter method name.
-     * @param setterParamType
-     * @return The bean setter method.
-     */
     public static Method createSetterMethod(String setterName, Object bean, Class<?> setterParamType) {
         Method beanSetterMethod = ClassUtil.getSetterMethod(setterName, bean, setterParamType);
 
@@ -88,6 +81,7 @@ public abstract class BeanUtils {
     /**
      * Get the bean instance on which this populator instance is to set data.
      *
+     * @param beanId bean id
      * @param execContext The execution context.
      * @return The bean instance.
      * @deprecated

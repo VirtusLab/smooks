@@ -22,13 +22,13 @@ import java.util.Set;
 
 /**
  * Object Producer interface.
- * <p/>
+ *
  * A producer is a {@link org.milyn.delivery.Visitor} that "produces" a named object that is added to the
  * {@link ExecutionContext} for use by a {@link Consumer} of some sort.  Note that a {@link org.milyn.delivery.Visitor}
  * does not qualify as a producer just because it "produces" something.  It is only a producer
  * if it produces something that is added to the {@link ExecutionContext} for use by a
  * {@link Consumer}.
- * <p/>
+ *
  * The {@link Producer}/{@link Consumer} interfaces allows us to order the execution of multiple
  * {@link org.milyn.delivery.Visitor} instances, targetted at the same element selector, based on what the {@link org.milyn.delivery.Visitor}
  * produces and/or consumes.

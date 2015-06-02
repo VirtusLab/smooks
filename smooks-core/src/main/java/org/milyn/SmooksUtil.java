@@ -44,7 +44,7 @@ public abstract class SmooksUtil {
 
     /**
      * Manually register a set of profiles with the profile store associated with the supplied {@link org.milyn.Smooks} instance.
-     * <p/>
+     *
      * ProfileSets will typically be registered via the config, but it is useful
      * to be able to perform this task manually.
      *
@@ -79,10 +79,7 @@ public abstract class SmooksUtil {
 
     /**
      * Utility method to filter the content in the specified {@link InputStream} for the specified {@link org.milyn.container.ExecutionContext}.
-     * <p/>
-     * Useful for testing purposes.  In a real scenario, use
-     * {@link Smooks#filter(org.milyn.container.ExecutionContext,javax.xml.transform.Source,javax.xml.transform.Result)}.
-     * <p/>
+     *
      * The content of the returned String is totally dependent on the configured
      * {@link org.milyn.delivery.dom.DOMElementVisitor} and {@link org.milyn.delivery.dom.serialize.SerializationUnit}
      * implementations.
@@ -91,7 +88,7 @@ public abstract class SmooksUtil {
      * @param stream           Stream to be processed.  Will be closed before returning.
      * @param smooks           The {@link Smooks} instance through which to perform the filter and serialize operations.
      * @return The Smooks processed content buffer.
-     * @throws IOException     Exception using or closing the supplied InputStream.
+     * @throws SmooksException     Exception using or closing the supplied InputStream.
      * @throws SmooksException Excepting processing content stream.
      */
     public static String filterAndSerialize(ExecutionContext executionContext, InputStream stream, Smooks smooks) throws SmooksException {

@@ -32,9 +32,9 @@ import java.io.InputStreamReader;
 
 /**
  * CSV {@link List} Binder class.
- * <p/>
+ *
  * Simple CSV to Object {@link List} binding class.
- * <p/>
+ *
  * Exmaple usage:
  * <pre>
  * public class PeopleBinder {

@@ -49,7 +49,6 @@ import org.w3c.dom.Element;
 
 /**
  *
- * </p>
  * A Validator uses a predefined Rule that performs the actual validator for a Validator. This way a Validator does not know
  * about the technology used for the validation and users can mix and max different rules as appropriate to the use case they
  * have. For example, one problem might be solve nicely with a regular expression but another might be easier to sovle using
@@ -66,19 +65,18 @@ import org.w3c.dom.Element;
  * }</pre>
  * Options:
  * <ul>
- *  <li><b><i>on</b></i>
+ *  <li><b><i>on</i></b>
  *  The fragement that the validation will be performed upon. </li>
  *
- *  <li><b><i>rule</b></i>
+ *  <li><b><i>rule</i></b>
  *  Is the name of a previously defined in a rules element. The rule itself is identified by ruleProviderName.ruleName.
  *  So taking the above example addressing is the ruleProviderName and email is the rule name. In this case email
  *  identifies a regular expression but if you were to change the provider that might change and a differnet technology
  *  could be used to validate an email address.</li>
  *
- *  <li><b><i>onFail</b></i>
+ *  <li><b><i>onFail</i></b>
  *  The onFail attribute in the validation configuration specified what action should be taken when a rule matches.
- *  This is all about reporting back valdiation failures.
- *  </li>
+ *  This is all about reporting back valdiation failures.</li>
  *
  * </ul>
  *

@@ -25,7 +25,7 @@ import org.w3c.dom.Element;
 
 /**
  * Create a new {@link org.milyn.cdr.SmooksResourceConfiguration} by cloning the current resource.
- * <p/>
+ *
  * The cloned {@link org.milyn.cdr.SmooksResourceConfiguration} is added to the {@link org.milyn.cdr.extension.ExtensionContext}.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

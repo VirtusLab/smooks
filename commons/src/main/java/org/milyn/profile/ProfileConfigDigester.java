@@ -22,23 +22,16 @@ import java.io.InputStream;
 import org.xml.sax.SAXException;
 
 /**
- * Stream based profile configuration digester interface. <p/> Construct a
+ * Stream based profile configuration digester interface.  Construct a
  * ProfileStore from an input stream. Most likely this stream would be of an XML
  * format but this is implementation dependent - could be a serialised
- * ProfileStore stream with the digester performing the deserialisation. <p/>
+ * ProfileStore stream with the digester performing the deserialisation.
  * Implementations must provide a default/empty constructor.
  * 
  * @author tfennelly
  */
 public interface ProfileConfigDigester {
 
-	/**
-	 * Parse the device profile configuration stream.
-	 * 
-	 * @param input
-	 *            The input stream instance.
-	 * @return ProfileStore instance.
-	 */
-	public abstract ProfileStore parse(InputStream input) throws SAXException,
+	ProfileStore parse(InputStream input) throws SAXException,
 			IOException;
 }

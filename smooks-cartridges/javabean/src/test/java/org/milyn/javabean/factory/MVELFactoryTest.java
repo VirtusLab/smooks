@@ -34,7 +34,7 @@ public class MVELFactoryTest  extends TestCase {
 
 		ExecutionContext context = new MockExecutionContext();
 
-		Factory<Map<?, ?>> factory = new MVELFactory<Map<?, ?>>("new java.util.TreeMap");
+		Factory<Map<?, ?>> factory = new MVELFactory<Map<?, ?>>("new java.util.TreeMap()");
 
 		Map<?, ?> map = factory.create(context);
 

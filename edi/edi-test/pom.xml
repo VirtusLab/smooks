@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.milyn</groupId>
+        <groupId>org.virtuslab</groupId>
         <artifactId>milyn</artifactId>
-        <version>1.5.2</version> <!-- base pom version - do not remove this comment -->
+        <version>1.5.3</version> <!-- base pom version - do not remove this comment -->
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <name>EDI Test Utilities</name>
@@ -60,30 +60,30 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-ejc</artifactId>
             <version>${project.version}</version>
             <exclusions>
                 <exclusion>
-                    <groupId>org.milyn</groupId>
+                    <groupId>org.virtuslab</groupId>
                     <artifactId>testres</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-routing</artifactId>
             <version>${project.version}</version>
             <exclusions>
                 <exclusion>
-                    <groupId>org.milyn</groupId>
+                    <groupId>org.virtuslab</groupId>
                     <artifactId>testres</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
 
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>testres</artifactId>
             <version>${project.version}</version>
         </dependency>

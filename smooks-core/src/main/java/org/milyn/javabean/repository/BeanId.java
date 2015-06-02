@@ -23,10 +23,10 @@ import org.milyn.javabean.context.BeanIdStore;
 
 /**
  * Bean Id
- * <p />
+ *
  * The BeanId represents the id of a bean. It is used to set  and
  * retrieve instance of the bean from the BeanRepository.
- * <p />
+ *
  * The String representation of the BeanId is registered with a {@link BeanIdRegister}
  * and there by coupled to that {@link BeanIdRegister}. The BeanId holds the original
  * {@link String} beanId,also called beanIdName. It also holds the index of
@@ -45,34 +45,17 @@ public class BeanId {
 
 	private SmooksResourceConfiguration createResourceConfig;
 
-	/**
-	 * @param index
-	 * @param name
-	 */
 	public BeanId(BeanIdStore beanIdStore, int index, String beanId) {
 		this.beanIdStore = beanIdStore;
 		this.index = index;
 		this.name = beanId;
 	}
 
-	/**
-	 * Set the {@link SmooksResourceConfiguration} associated with the
-	 * {@link BeanInstanceCreator} that is creating the bean with which this
-	 * {@link BeanId} instance is associated.
-	 * @param createResourceConfig The {@link SmooksResourceConfiguration} of the creator.
-	 * @return This object instance.
-	 */
 	public BeanId setCreateResourceConfiguration(SmooksResourceConfiguration createResourceConfig) {
 		this.createResourceConfig = createResourceConfig;
 		return this;
 	}
 
-	/**
-	 * Get the {@link SmooksResourceConfiguration} associated with the
-	 * {@link BeanInstanceCreator} that is creating the bean with which this
-	 * {@link BeanId} instance is associated.
-	 * @return The {@link SmooksResourceConfiguration} of the creator.
-	 */
 	public SmooksResourceConfiguration getCreateResourceConfiguration() {
 		return createResourceConfig;
 	}

@@ -1,5 +1,5 @@
 /*
-Ò Milyn - Copyright (C) 2006 - 2010
+ï¿½ Milyn - Copyright (C) 2006 - 2010
 
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public
@@ -31,7 +31,7 @@ import org.xml.sax.XMLReader;
 
 /**
  * Content delivery configuration.
- * <p/>
+ *
  * Provides access to Content Delivery Resources 
  * (e.g. {@link ContentHandler Content Delivery Units})
  * and other information for the targeted profile.
@@ -48,7 +48,7 @@ public interface ContentDeliveryConfig {
 
     /**
 	 * Get the list of {@link SmooksResourceConfiguration}s for the specified selector definition.
-	 * <p/>
+	 *
 	 * This list will be preselected and {@link org.milyn.cdr.SmooksResourceConfigurationSortComparator preordered} 
 	 * for the target execution context.
 	 * @param selector Configuration {@link org.milyn.cdr.SmooksResourceConfiguration#getSelector() selector}.  This 
@@ -61,7 +61,7 @@ public interface ContentDeliveryConfig {
 
 	/**
 	 * Get the {@link SmooksResourceConfiguration} map for the target execution context.
-	 * <p/>
+	 *
 	 * This Map will be {@link org.milyn.cdr.SmooksResourceConfigurationSortComparator preordered} 
 	 * for the target execution context.
 	 * 
@@ -73,10 +73,10 @@ public interface ContentDeliveryConfig {
 	
 	/**
 	 * Get a list of {@link Object}s from the {@link SmooksResourceConfiguration}s specified by the selector.
-	 * <p/>
+	 *
 	 * Gets the {@link SmooksResourceConfiguration}s specified for the selector and attempts to instanciate
 	 * a Java class instance from the resource specified by each of the {@link SmooksResourceConfiguration}s.
-	 * <p/>
+	 *
 	 * Implementations should use {@link org.milyn.cdr.SmooksResourceConfigurationStore#getObject(org.milyn.cdr.SmooksResourceConfiguration)} to 
 	 * construct each object.
 	 * @param selector selector attribute value from the .cdrl file in the .cdrar.  This 
@@ -141,11 +141,6 @@ public interface ContentDeliveryConfig {
      */
     public void executeHandlerCleanup(ExecutionContext executionContext);
 
-    /**
-     * Get an {@link XMLReader} instance from the 
-     * reader pool associated with this ContentDelivery config instance.
-     * @return An XMLReader instance if the pool is not empty, otherwise null.
-     */
     public XMLReader getXMLReader() throws SAXException;
     
     /**

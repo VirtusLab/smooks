@@ -60,6 +60,7 @@ public class InterchangeContext {
      * @param parserFeatures Parser features.
      * @param controlBlockHandlerFactory Control Block Handler Factory.
      * @param validate Validate the data types of the EDI message data as defined in the mapping model.
+     * @param namespaceDeclarationStack name space declaration
      */
 	public InterchangeContext(BufferedSegmentReader segmentReader, MappingsRegistry registry, ContentHandler contentHandler, Map<String, Boolean> parserFeatures, ControlBlockHandlerFactory controlBlockHandlerFactory, NamespaceDeclarationStack namespaceDeclarationStack, boolean validate) {
 		AssertArgument.isNotNull(segmentReader, "segmentReader");
@@ -154,11 +155,6 @@ public class InterchangeContext {
         segmentReader.popDelimiters();
     }
 
-    /**
-     * Returns an instance of {@link MappingsRegistry}
-     *
-     * @return
-     */
     public MappingsRegistry getRegistry() {
 		return registry;
 	}

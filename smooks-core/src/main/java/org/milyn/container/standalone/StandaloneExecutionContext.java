@@ -52,7 +52,7 @@ public class StandaloneExecutionContext implements ExecutionContext {
 
     /**
 	 * Public Constructor.
-	 * <p/>
+	 *
      * The execution context is constructed within the context of a target profile and
      * application context.
 	 * @param targetProfile The target base profile for the execution context.
@@ -67,7 +67,7 @@ public class StandaloneExecutionContext implements ExecutionContext {
 
 	/**
 	 * Public Constructor.
-	 * <p/>
+	 *
      * The execution context is constructed within the context of a target profile and
      * application context.
 	 * @param targetProfile The target profile (base profile) for this context.

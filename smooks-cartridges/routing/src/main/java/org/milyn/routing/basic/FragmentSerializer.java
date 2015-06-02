@@ -81,7 +81,7 @@ public class FragmentSerializer implements SAXVisitBefore, SAXVisitAfter, DOMVis
 
     /**
      * Set whether or not the child content only should be serialized.
-     * <p/>
+     *
      * This variable is, by default, false.
      * 
 	 * @param childContentOnly True if the child content only (exclude 

@@ -56,7 +56,7 @@ import javax.xml.namespace.QName;
 
 /**
  * DAO Inserter
- * <p />
+ *
  * This DAO inserter calls the insert method of a DAO, using a entity bean from
  * the bean context as parameter.
  *

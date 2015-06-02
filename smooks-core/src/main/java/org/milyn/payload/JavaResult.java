@@ -27,7 +27,7 @@ import java.util.*;
 
 /**
  * Java filtration/transformation result.
- * <p/>
+ *
  * Used to extract a Java "{@link Result result}" Map from the transformation.
  * Simply set an instance of this class as the {@link Result} arg in the call
  * to {@link org.milyn.Smooks#filterSource(org.milyn.container.ExecutionContext, javax.xml.transform.Source, javax.xml.transform.Result...)} .
@@ -44,10 +44,7 @@ public class JavaResult extends FilterResult implements ResultExtractor<JavaResu
     public JavaResult() {
         this(false);
     }
-    
-    /**
-     * Public default constructor.
-     */
+
     public JavaResult(boolean preserveOrder) {
     	if(preserveOrder) {
     		resultMap = new LinkedHashMap<String, Object>();
@@ -58,7 +55,7 @@ public class JavaResult extends FilterResult implements ResultExtractor<JavaResu
     
     /**
      * Public constructor.
-     * <p/>
+     *
      * See {@link #setResultMap(java.util.Map)}.
      * 
      * @param resultMap Result Map. This is the map onto which Java "result" objects will be set.
@@ -78,13 +75,6 @@ public class JavaResult extends FilterResult implements ResultExtractor<JavaResu
         return resultMap.get(name);
     }
 
-    /**
-     * Get the first instance of the specified bean type
-     * from this JavaResult instance.
-     * 
-     * @param beanType The bean runtime class type.
-     * @return The bean instance, otherwise null.
-     */
 	public <T> T getBean(Class<T> beanType) {
 		return StandaloneBeanContext.getBean(beanType, resultMap);
 	}

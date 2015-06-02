@@ -19,7 +19,7 @@ import org.milyn.assertion.AssertArgument;
 
 /**
  * OutputTo template usage.
- * <p/>
+ *
  * Output the templating result to the specified outputStreamResource.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

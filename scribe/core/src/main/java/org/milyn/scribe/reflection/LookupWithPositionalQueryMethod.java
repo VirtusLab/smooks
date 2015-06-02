@@ -41,9 +41,6 @@ public class LookupWithPositionalQueryMethod {
 	final ParameterType parameterType;
 
 
-	/**
-	 *
-	 */
 	public LookupWithPositionalQueryMethod(final Method method, final int queryIndex, final int parameterIndex) {
 
 		AssertArgument.isNotNull(method, "method");

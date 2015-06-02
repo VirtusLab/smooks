@@ -18,7 +18,7 @@ package org.milyn.profile;
 
 /**
  * ProfileStore interface.
- * <p/>
+ *
  * The ProfileStore stores and provides access to
  * all the ProfileSet instances. A ProfileSet is the set of profiles associated
  * with a given "profile member". A "profile member" can be a member of multiple
@@ -37,9 +37,9 @@ public interface ProfileStore {
     public void addProfileSet(ProfileSet profileSet);
 
     /**
-     * Get the ProfileSet associated with the specified profile member. <p/> A
+     * Get the ProfileSet associated with the specified profile member.  A
      * profile "member" can be a member of multiple profiles. This method should
-     * return that list of profiles. <p/> Implementations must be case
+     * return that list of profiles.  Implementations must be case
      * insensitive.
      *
      * @param baseProfile The base profile name.

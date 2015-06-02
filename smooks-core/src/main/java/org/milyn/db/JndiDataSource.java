@@ -42,7 +42,7 @@ import java.sql.Savepoint;
 
 /**
  * Jndi based DataSource.
- * <p />
+ *
  * Configure the JNDI datasource, transaction manager, transaction jndi (optional), etc.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

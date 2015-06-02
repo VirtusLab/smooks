@@ -68,9 +68,6 @@ public class EdifactModel {
         importBaseURI = URIResourceLocator.getSystemBaseURI();
     }
 
-    /**
-     * Public Constructor.
-     */
     public EdifactModel(InputStream mappingModelStream) throws IOException {
         AssertArgument.isNotNull(mappingModelStream, "mappingModelStream");
 		this.importBaseURI = URIResourceLocator.getSystemBaseURI();
@@ -87,6 +84,7 @@ public class EdifactModel {
      * @param modelURI The model resource URI.
      * @param importBaseURI The base URI for loading imports.
      * @param mappingModelStream The edi-message-mapping.
+     * @throws IOException IO error
 	 */
 	public EdifactModel(URI modelURI, URI importBaseURI, InputStream mappingModelStream) throws IOException {
 		AssertArgument.isNotNull(importBaseURI, "importBaseURI");
@@ -106,6 +104,7 @@ public class EdifactModel {
      * @param modelURI The model resource URI.
      * @param importBaseURI The base URI for loading imports.
      * @param mappingModelStream The edi-message-mapping.
+     * @throws IOException IO error
 	 */
 	public EdifactModel(URI modelURI, URI importBaseURI, Reader mappingModelStream) throws IOException {
 		AssertArgument.isNotNull(importBaseURI, "importBaseURI");
@@ -165,7 +164,7 @@ public class EdifactModel {
 
     /**
      * Set a set of models that are associated with this model instance.
-     * <p/>
+     *
      * An associate set of models could be (for example) the other models in
      * a UN/EDIFACT model set, or some other interchange type.
      *

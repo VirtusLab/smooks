@@ -24,7 +24,7 @@ import org.milyn.javabean.repository.BeanId;
 
 /**
  * List to array change event listener.
- * <p/>
+ *
  * Arrays start out their lives as Lists.  When the list is populated with all
  * wired in object entries, the List is converted to an Array.  This observer listens
  * for that event and triggers the wiring of the array into the target bean.

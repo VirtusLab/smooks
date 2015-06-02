@@ -25,7 +25,6 @@ import org.osgi.framework.ServiceRegistration;
  * Will register an OSGi {@link ServiceFactory} for Smooks which can 
  * be used to get a {@link SmooksFactory} that knows how to load classes
  * and resources from OSGi bundles.
- * </p>
  * 
  * @author Daniel Bevenius
  *

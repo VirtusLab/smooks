@@ -33,7 +33,7 @@ public abstract class FreeMarkerUtils {
 
     /**
      * Get a "merged" model for FreeMarker templating.
-     * <p/>
+     *
      * This utility merges the current set of beans being managed by the
      * {@link BeanContext} associated with the
      * current {@link ExecutionContext}, with the contents of the {@link DOMModel}

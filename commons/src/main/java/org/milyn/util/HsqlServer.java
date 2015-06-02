@@ -17,9 +17,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.concurrent.CountDownLatch;
 
-/**
- * @author
- */
 public class HsqlServer {
 
     private static Log logger = LogFactory.getLog(HsqlServer.class);

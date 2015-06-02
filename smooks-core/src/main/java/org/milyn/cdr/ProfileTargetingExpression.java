@@ -21,11 +21,11 @@ import org.milyn.profile.ProfileSet;
 
 /**
  * Represents a single parsed profile targeting expression.
- * <p/>
+ *
  * The <b>target-profile</b> attribute can contain multiple comma seperated "profile targeting expressions" i.e.
  * a list of them.  See {@link org.milyn.cdr.SmooksResourceConfiguration} docs.  This class represents
  * a single expression within a list of expressions.
- * <p/>
+ *
  * So, a single expression is composed of 1 or more "expression tokens" seperated by 
  * "AND".  The expression arg to the constructor will be in one of 
  * the following forms:
@@ -36,7 +36,7 @@ import org.milyn.profile.ProfileSet;
  * </ol>
  * Note, we only supports "AND" operations between the tokens, but a token can be
  * negated by prefixing it with "not:".
- * <p/>
+ *
  * See {@link ProfileTargetingExpression.ExpressionToken}.
  * @author tfennelly
  */
@@ -77,7 +77,7 @@ public class ProfileTargetingExpression {
 	
 	/**
 	 * Get the specificity of this expression with respect to the supplied profile set.
-	 * <p/>
+	 *
 	 * Iterates over this expressions list of {@link ExpressionToken}s calling
 	 * {@link ExpressionToken#getSpecificity(org.milyn.profile.ProfileSet)} and adds up their specificities.
 	 * @param profileSet Evaluation Profile Set.
@@ -151,7 +151,7 @@ public class ProfileTargetingExpression {
 
 		/**
 		 * Is this token negated.
-		 * <p/>
+		 *
 		 * Is the token prefixed with "not:".
 		 * @return True if the token is negated, otherwise false.
 		 */
@@ -161,7 +161,7 @@ public class ProfileTargetingExpression {
 		
 		/**
 		 * Is the token a wildcard token.
-		 * <p/>
+		 *
 		 * Is the token equal to "*".
 		 * @return True if the token is a wildcard token, otherwise false. 
 		 */
@@ -187,7 +187,7 @@ public class ProfileTargetingExpression {
 		
 		/**
 		 * Get the specificity of this token with respect to the supplied device.
-		 * <p/>
+		 *
 		 * The following outlines the algorithm:
 		 * <pre>
      if(isNegated()) {

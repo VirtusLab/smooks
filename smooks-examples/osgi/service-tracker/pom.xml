@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.milyn</groupId>
+        <groupId>org.virtuslab</groupId>
         <artifactId>milyn-smooks-examples-osgi</artifactId>
-        <version>1.5.2</version> <!-- base pom version - do not remove this comment -->
+        <version>1.5.3</version> <!-- base pom version - do not remove this comment -->
     </parent>
     <name>Milyn Smooks Example - service-tracker </name>
     <artifactId>milyn-smooks-example-service-tracker</artifactId>

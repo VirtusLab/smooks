@@ -40,7 +40,7 @@ import java.util.*;
  *  <li>The "-o" commandline arg specifies the path and filename for the generated config output.</li>
  *  <li>The "-p" commandline arg specifies the path and filename optional binding configuration file that specifies aditional binding parameters.</li>
  * </ul>
- * <p/>
+ *
  * The optional "-p" properties file parameter allows specification of additional config parameters:
  * <ul>
  *  <li><b>packages.included</b>: Semi-colon separated list of packages. Any fields in the class matching these packages will be included in the binding configuration generated.</li>

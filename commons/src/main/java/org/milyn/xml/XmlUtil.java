@@ -117,14 +117,6 @@ public class XmlUtil {
 		return xmlReservedNamespaces.contains(namespace);
 	}
 
-    /**
-     * Remove all entities from the supplied <code>Reader</code> stream
-     * replacing them with their actual character values. <p/> Both the read and
-     * write streams are returned unclosed.
-     *
-     * @param reader The read stream.
-     * @param writer The write stream.
-     */
     public static void removeEntities(Reader reader, Writer writer)
             throws IOException {
         int curChar = -1;
@@ -226,16 +218,7 @@ public class XmlUtil {
             return string;
         }
     }
-
-    /**
-     * Rewrite all entities from the supplied <code>Reader</code> stream
-     * replacing them with their character reference equivalents. <p/> Example:
-     * <b>&ampnbsp;</b> is rewriten as <b>&amp#160;</b> <p/> Both the read and
-     * write streams are returned unclosed.
-     *
-     * @param reader The read stream.
-     * @param writer The write stream.
-     */
+    
     public static void rewriteEntities(Reader reader, Writer writer)
             throws IOException {
         int curChar = -1;
@@ -298,31 +281,12 @@ public class XmlUtil {
         }
     }
 
-    /**
-     * Parse the XML stream and return the associated W3C Document object.
-     *
-     * @param stream           The stream to be parsed.
-     * @param validation       Validation type to be carried out on the document.
-     * @param expandEntityRefs Expand entity References as per
-     *                         {@link DocumentBuilderFactory#setExpandEntityReferences(boolean)}.
-     * @return The W3C Document object associated with the input stream.
-     */
     public static Document parseStream(InputStream stream, VALIDATION_TYPE validation,
                                        boolean expandEntityRefs) throws SAXException, IOException {
         return parseStream(stream, new LocalDTDEntityResolver(), validation,
                 expandEntityRefs);
     }
 
-    /**
-     * Parse the XML stream and return the associated W3C Document object.
-     *
-     * @param stream           The stream to be parsed.
-     * @param entityResolver   Entity resolver to be used during the parse.
-     * @param validation       Validation type to be carried out on the document.
-     * @param expandEntityRefs Expand entity References as per
-     *                         {@link javax.xml.parsers.DocumentBuilderFactory#setExpandEntityReferences(boolean)}.
-     * @return The W3C Document object associated with the input stream.
-     */
     public static Document parseStream(InputStream stream,
                                        EntityResolver entityResolver, VALIDATION_TYPE validation,
                                        boolean expandEntityRefs) throws SAXException, IOException {
@@ -330,16 +294,6 @@ public class XmlUtil {
         return parseStream(new InputStreamReader(stream), entityResolver, validation, expandEntityRefs);
     }
 
-    /**
-     * Parse the XML stream and return the associated W3C Document object.
-     *
-     * @param stream           The stream to be parsed.
-     * @param entityResolver   Entity resolver to be used during the parse.
-     * @param validation       Validation type to be carried out on the document.
-     * @param expandEntityRefs Expand entity References as per
-     *                         {@link javax.xml.parsers.DocumentBuilderFactory#setExpandEntityReferences(boolean)}.
-     * @return The W3C Document object associated with the input stream.
-     */
     public static Document parseStream(Reader stream,
                                        EntityResolver entityResolver, VALIDATION_TYPE validation,
                                        boolean expandEntityRefs) throws SAXException, IOException {
@@ -380,32 +334,14 @@ public class XmlUtil {
         }
     }
 
-    /**
-     * Basic DOM namespace aware parse.
-     * @param stream Document stream.
-     * @return Document instance.
-     */
     public static Document parseStream(InputStream stream) throws ParserConfigurationException, IOException, SAXException {
         return parseStream(new InputStreamReader(stream));
     }
 
-    /**
-     * Basic DOM namespace aware parse.
-     * @param stream Document stream.
-     * @return Document instance.
-     */
     public static Document parseStream(Reader stream) throws ParserConfigurationException, IOException, SAXException {
         return XmlUtil.parseStream(stream, null);
     }
 
-    /**
-     * Basic DOM namespace aware parse.
-     * @param stream Document stream.
-     * @param errorHandler {@link ErrorHandler} to be set on the DocumentBuilder.
-     *                      This can be used to controll error reporting. If null
-     *                      the default error handler will be used.
-     * @return Document instance.
-     */
     public static Document parseStream(Reader stream, final ErrorHandler errorHandler) throws ParserConfigurationException, IOException, SAXException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder;
@@ -532,7 +468,7 @@ public class XmlUtil {
 
     /**
      * Serialise the supplied W3C DOM subtree.
-     * <p/>
+     *
      * The output is unformatted.
      *
      * @param nodeList The DOM subtree as a NodeList.
@@ -652,17 +588,6 @@ public class XmlUtil {
         }
     }
 
-    /**
-     * Indent the supplied XML string by the number of spaces specified in the
-     * 'indent' param.
-     * <p/>
-     * The indents are only inserted after newlines, where the first non-whitespace character
-     * is '<'.
-     *
-     * @param xml The XML to indent.
-     * @param indent The number of spaces to insert as the indent.
-     * @return The indented XML string.
-     */
     public static String indent(String xml, int indent) {
         StringBuffer indentedXml = new StringBuffer();
         int xmlLen = xml.length();

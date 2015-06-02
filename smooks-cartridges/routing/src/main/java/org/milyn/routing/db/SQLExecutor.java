@@ -58,7 +58,7 @@ import java.util.*;
 
 /**
  * SQLExecutor Visitor.
- * <p/>
+ *
  * Supports extraction and persistence to a Database.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

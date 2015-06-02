@@ -34,42 +34,18 @@ public class MVELVariables {
 		this.variableResolverFactory = variableResolverFactory;
 	}
 
-	/**
-	 * Returns true if the variable is defined within the MVEL Context.
-	 *
-	 * @param var
-	 * @return
-	 */
 	public boolean isdef(String var) {
 		return variableResolverFactory.isResolveable(var);
 	}
 
-	/**
-	 * Returns true if the variable is defined within the MVEL Context.
-	 *
-	 * @param var
-	 * @return
-	 */
 	public boolean isResolveable(String var) {
 		return isdef(var);
 	}
 
-	/**
-	 * Returns true if the variable is not defined within the MVEL Context.
-	 *
-	 * @param var
-	 * @return
-	 */
 	public boolean isUnresolveable(String var) {
 		return !isResolveable(var);
 	}
 
-	/**
-	 * Returns the value of the variable or null if it is not defined.
-	 *
-	 * @param var
-	 * @return
-	 */
 	public Object get(String var) {
 		if(isdef(var)) {
 			return variableResolverFactory.getVariableResolver(var).getValue();

@@ -22,29 +22,16 @@ package org.milyn.javabean.factory;
  */
 public class FactoryAliasNotFoundException extends FactoryException {
 
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @param message
-	 */
 	public FactoryAliasNotFoundException(String message) {
 		super(message);
 	}
 
-	/**
-	 * @param cause
-	 */
 	public FactoryAliasNotFoundException(Throwable cause) {
 		super(cause);
 	}
 
-	/**
-	 * @param message
-	 * @param cause
-	 */
 	public FactoryAliasNotFoundException(String message, Throwable cause) {
 		super(message, cause);
 	}

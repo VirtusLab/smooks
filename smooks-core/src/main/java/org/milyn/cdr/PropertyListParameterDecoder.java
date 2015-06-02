@@ -26,7 +26,7 @@ import org.milyn.delivery.ContentDeliveryConfig;
 /**
  * {@link ParameterDecoder} used to convert a parameter String value to a
  * list of {@link Properties}.
- * <P/>
+ *
  * This decoder is pre-installed.
  * 
  * <h3 id="exampleusage">Example Usage</h3>
@@ -36,14 +36,14 @@ import org.milyn.delivery.ContentDeliveryConfig;
  * y=22222
  * z=33333
  * &lt;/param&gt;
- * <pre>
- * <p/>
+ * </pre>
+ *
  * The code for accessing this parameter value:
  * <pre>
  * {@link org.milyn.cdr.Parameter} param = {@link org.milyn.cdr.SmooksResourceConfiguration resourceConfig}.{@link org.milyn.cdr.SmooksResourceConfiguration#getParameter(String) getParameter("magic-properties-param")};
  * {@link java.util.Properties} properties = (Properties)param.{@link org.milyn.cdr.Parameter#getValue(ContentDeliveryConfig) getValue}(); 
  * </pre>
- * <p/>
+ *
  * Note, we will make this filter easier in the next release.  You'll be able to call a method such
  * as "getDecodedParameter" on the {@link SmooksResourceConfiguration}, returning a decoded parameter Object.
  * 

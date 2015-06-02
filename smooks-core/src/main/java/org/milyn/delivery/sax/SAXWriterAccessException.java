@@ -5,7 +5,7 @@ import org.milyn.SmooksException;
 
 /**
  * {@link SAXElement} element writer access excecption.
- * <p/>
+ *
  * See {@link org.milyn.delivery.sax.SAXElement}.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

@@ -28,7 +28,7 @@ import org.milyn.container.ExecutionContext;
 /**
  * FileListAccessor is a utility class that retrieves list file names
  * from the Smooks {@link ExecutionContext}.
- * <p/>
+ *
  * 
  * @author <a href="mailto:daniel.bevenius@gmail.com">Daniel Bevenius</a>			
  *
@@ -44,7 +44,7 @@ public class FileListAccessor
 	
 	/**
 	 * 	Adds the passes in <code>listFileName</code> to the ExecutionContext. 
-	 * 	<p/>
+	 *
 	 *  Note that the filename should be specified with a path. This is so that the same filename can be used 
 	 *  in multiple directories.
 	 * 
@@ -75,8 +75,8 @@ public class FileListAccessor
 	 * 	Return the list of files contained in the passed in file "fromFile"
 	 * 
 	 * @param executionContext	- Smooks execution context
-	 * @param fromFile			- path to list file 
-	 * @return List<String>		- where String is the absolute path to a file.
+	 * @param fromFile			- path to list file
+	 * @return files list
 	 * @throws IOException		- If the "fromFile" cannot be found or something else IO related goes wrong.
 	 */
 	public static List<String> getFileList( final ExecutionContext executionContext, String fromFile ) throws IOException

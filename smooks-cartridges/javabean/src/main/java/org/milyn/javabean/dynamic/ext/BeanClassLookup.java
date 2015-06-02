@@ -25,15 +25,6 @@ import org.milyn.delivery.dom.DOMVisitBefore;
 import org.milyn.javabean.ext.BeanConfigUtil;
 import org.w3c.dom.Element;
 
-/**
- * Bean class lookup visitor.
- * <p/>
- * Used during processing of the <dmb:writer> extended DMB configuration
- * for looking up the actual bean runtime Class from the beanId
- * specified on the on the <dmb:writer>.
- *
- * <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
- */
 public class BeanClassLookup implements DOMVisitBefore {
 
     public void visitBefore(Element element, ExecutionContext executionContext) throws SmooksException {

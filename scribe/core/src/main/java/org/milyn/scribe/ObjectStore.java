@@ -31,7 +31,7 @@ public interface ObjectStore {
 	 * Binds an object to this {@link ObjectStore} implementation, using the name
 	 * specified. If an object of the same name is already bound, the object
 	 * is replaced.
-	 * <p/>
+	 *
 	 * @param key The key against which the object is bound; cannot be null.
 	 * @param value The object to be bound; cannot be null.
 	 */
@@ -54,7 +54,7 @@ public interface ObjectStore {
 
 	/**
 	 * Removes the object bound with the specified name from this {@link ObjectStore}
-	 * implementation. If the {@link ObjectStoree} implementation does
+	 * implementation. If the ObjectStoree implementation does
 	 * not have an object bound with the specified name, this method does nothing.
      * @param key The key against which the object is bound; cannot be null.
 	 */

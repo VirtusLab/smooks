@@ -43,7 +43,7 @@ import java.util.Map;
 
 /**
  * {@link Visitor} Factory class for the <a href="http://groovy.codehaus.org/">Groovy</a> scripting language.
- * <p/>
+ *
  * Implement DOM or SAX visitors using the Groovy scripting language.
  *
  * <h2>Usage Tips</h2>
@@ -69,11 +69,11 @@ import java.util.Map;
  * When using the SAX filter, Groovy scripts can take advantage of the {@link DomModelCreator}.  <b>This is only
  * the case when the script is applied on the visitAfter event of the targeted element</b> (i.e. executeBefore="false",
  * which is the default).  If executeBefore is set to "true", the {@link DomModelCreator} will not be utilized.
- * <p/>
+ *
  * What this means is that you can use DOM utilities to process the targeted message fragment.  The "element"
  * received by the Groovy script will be a DOM {@link Element}.  This makes Groovy scripting via the SAX filter
  * a lot easier, while at the same time maintaining the ability to process huge messages in a streamed fashion.
- * <p/>
+ *
  * <b>Notes</b>:
  * <ol>
  *  <li>Only available in default mode i.e. when executeBefore equals "false".  If executeBefore is configured

@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 
 /**
  * Shipping History bean.
- * <p/>
+ *
  * This bean is populated by the Smooks JavaBean Cartridge.
  * @author tfennelly
  */

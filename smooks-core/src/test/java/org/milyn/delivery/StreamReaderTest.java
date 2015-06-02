@@ -44,7 +44,7 @@ import org.xml.sax.SAXNotSupportedException;
 /**
  * Test for JIRA: http://jira.codehaus.org/browse/MILYN-291,
  * "Add test(s) for StreamReader functionality"
- * <p/>
+ *
  *
  * @author <a href="mailto:daniel.bevenius@gmail.com">Daniel Bevenius</a>
  */

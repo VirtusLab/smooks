@@ -34,7 +34,7 @@ import org.w3c.dom.Element;
 /**
  * Map a property value from a parent {@link org.milyn.cdr.SmooksResourceConfiguration} and onto
  * the current {@link org.milyn.cdr.SmooksResourceConfiguration}.
- * <p/>
+ *
  * The value is set on the {@link org.milyn.cdr.SmooksResourceConfiguration} returned from the top
  * of the {@link org.milyn.cdr.extension.ExtensionContext#getResourceStack() ExtensionContext resourece stack}.
  *

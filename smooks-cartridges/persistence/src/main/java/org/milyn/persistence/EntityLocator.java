@@ -57,7 +57,7 @@ import org.w3c.dom.Element;
 
 /**
  * DAO Locator
- * <p />
+ *
  * This DAO locator uses lookup methods or methods that accept a query to
  * lookup entities from a data source. In case of a query it depends on the DAO
  * or the Scribe adapter what the query language is.

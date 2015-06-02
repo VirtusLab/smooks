@@ -88,7 +88,7 @@ public class XslTemplateProcessor extends AbstractTemplateProcessor implements C
 
     /**
      * Is the template application synchronized or not.
-     * <p/>
+     *
      * Xalan v2.7.0 has/had a threading issue - kick-on effect being that template application
      * must be synchronized.
      */
@@ -263,7 +263,7 @@ public class XslTemplateProcessor extends AbstractTemplateProcessor implements C
     /**
      * Simple ErrorHandler that only reports errors, fatals, and warnings
      * at a debug log level.
-     * <p/>
+     *
      * @author <a href="mailto:daniel.bevenius@gmail.com">Daniel Bevenius</a>
      *
      */

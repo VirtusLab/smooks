@@ -36,7 +36,7 @@ import org.milyn.assertion.AssertArgument;
 
 /**
  * ResourceMerger is able to merge java archives (jars) and in the process merge
- * any text based resource files. </p>
+ * any text based resource files.
  * 
  * The primary use case for this class is when building the smooks-all.jar which
  * consists of all the jars in the Smooks project. In Smooks there are a few
@@ -44,7 +44,7 @@ import org.milyn.assertion.AssertArgument;
  * exist in mulitple jars. This works well when loading resources from the
  * classpath as all jars will be searched and read. But when there is only a
  * single jar then only one of the jars resource files will be in the merged jar
- * and the others will be ignored. </p>
+ * and the others will be ignored.
  * 
  * @author Daniel Bevenius
  * 

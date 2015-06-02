@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.milyn</groupId>
+		<groupId>org.virtuslab</groupId>
 		<artifactId>smooks-examples</artifactId>
-		<version>1.5.2</version> <!-- base pom version - do not remove this comment -->
+		<version>1.5.3</version> <!-- base pom version - do not remove this comment -->
 	</parent>
     <name>Milyn Smooks Example - EDI-to-DB ETL</name>
 	<artifactId>milyn-smooks-example-db-extract-transform-load</artifactId>
@@ -12,12 +12,12 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-edi</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-routing</artifactId>
             <version>${project.version}</version>
         </dependency>

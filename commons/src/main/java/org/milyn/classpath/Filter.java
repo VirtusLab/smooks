@@ -29,10 +29,5 @@ public interface Filter {
      */
     public void filter(String resourceName);
 
-    /**
-     * Is this resource ignorable.
-     * @param resourceName
-     * @return
-     */
     public boolean isIgnorable(String resourceName);
 }

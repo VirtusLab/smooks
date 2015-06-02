@@ -27,11 +27,6 @@ public class TerminateException extends RuntimeException {
 	private SAXElement element;
 	private boolean terminateBefore;
 
-	/**
-	 * Public constructor.
-	 * @param element The element on which the terminate was fired.
-	 * @param terminateBefore 
-	 */
 	public TerminateException(SAXElement element, boolean terminateBefore) {
 		this.element = element;
 		this.terminateBefore = terminateBefore;

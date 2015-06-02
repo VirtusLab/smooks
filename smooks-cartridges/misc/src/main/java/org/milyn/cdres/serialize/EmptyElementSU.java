@@ -31,7 +31,7 @@ import org.w3c.dom.Text;
 
 /**
  * Empty element serialization unit.
- * <p/>
+ *
  * Writes empty elements well-formed (&lt;xxx/&gt;) or badly-formed (&lt;xxx&gt;).  If 
  * applied to an element, it also ensures that any child content is not 
  * writen to the requesting device.

@@ -37,7 +37,7 @@ public abstract class XPathExpressionEvaluator {
 
     /**
      * Does this XPath expression evaluate for the supplied {@link org.milyn.delivery.sax.SAXElement} context object.
-     * <p/>
+     *
      * The implementation can update the context to a parent element if the expression targets
      * multiple contexts.
      *
@@ -49,7 +49,7 @@ public abstract class XPathExpressionEvaluator {
 
     /**
      * Does this XPath expression evaluate for the supplied {@link org.w3c.dom.Element} context object.
-     * <p/>
+     *
      * The implementation can update the context to a parent element if the expression targets
      * multiple contexts.
      *
@@ -59,13 +59,6 @@ public abstract class XPathExpressionEvaluator {
      */
     public abstract boolean evaluate(Element element, ExecutionContext executionContext);
 
-    /**
-     * {@link XPathExpressionEvaluator} factory method.
-     * @param expr Jaxen XPath expression.
-     * @param selectorStep Selector Step.
-     * @param namespaces Namespace set.
-     * @return The {@link XPathExpressionEvaluator} for the Jaxen expression.
-     */
     public static XPathExpressionEvaluator getInstance(Expr expr, SelectorStep selectorStep, Properties namespaces) throws SAXPathException {
         AssertArgument.isNotNull(expr, "expr");
 

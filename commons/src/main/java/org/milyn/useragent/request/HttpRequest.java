@@ -19,9 +19,9 @@ package org.milyn.useragent.request;
 import java.util.Enumeration;
 
 /**
- * Http interface definition. <p/> Definition of access to the HTTP request
- * attributes - namely the request headers and parameters. <p/> Method
- * signatures are based on the servlet spec HttpServletRequest class. <p/>
+ * Http interface definition.  Definition of access to the HTTP request
+ * attributes - namely the request headers and parameters.  Method
+ * signatures are based on the servlet spec HttpServletRequest class.
  * 
  * @author Tom Fennelly
  */
@@ -61,7 +61,7 @@ public interface HttpRequest extends Request {
     /**
      * Returns an array of String objects containing all of the values the given
      * request parameter has, or null if the parameter does not exist.
-     * <p/>
+     *
      * If the parameter has a single value, the array has a length of 1.
      * @param name String containing the name of the parameter whose value is
      * requested.

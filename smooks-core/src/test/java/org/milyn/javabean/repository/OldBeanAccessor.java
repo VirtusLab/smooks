@@ -36,7 +36,7 @@ public class OldBeanAccessor {
 
     /**
      * Public constructor.
-     * <p/>
+     *
      * Creates an accessor based on the supplied result Map.
      *
      * @param resultMap The result Map.
@@ -48,7 +48,7 @@ public class OldBeanAccessor {
 
     /**
      * Get the current bean, specified by the supplied beanId, from the supplied request.
-     * <p/>
+     *
      * If the specified beanId refers to a bean instance list, this method returns the
      * last (current) bean from the list.
      * @param beanId Bean Identifier.
@@ -64,7 +64,7 @@ public class OldBeanAccessor {
 
     /**
      * Get the current bean, specified by the supplied beanId, from the supplied request.
-     * <p/>
+     *
      * If the specified beanId refers to a bean instance list, this method returns the
      * last (current) bean from the list.
      * @param beanId Bean Identifier.

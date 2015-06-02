@@ -27,7 +27,6 @@ import org.milyn.SmooksUtil;
 
 /**
  * Accessor class for looking up global parameters.
- * <p id="decode"/>
  * Profile specific parameters are stored under the "global-parameters" selector
  * (see {@link org.milyn.cdr.SmooksResourceConfiguration}).  The parameter values are
  * stored in the &lt;param&gt; elements within this Content Delivery Resource definition.
@@ -147,7 +146,7 @@ public abstract class ParameterAccessor {
 
     /**
 	 * Get the named parameter.
-     * <p/>
+     *
      * Calls {@link org.milyn.delivery.ContentDeliveryConfig#getSmooksResourceConfigurations()}
      * to get the configurations map and then passes that to
      * {@link #getParameter(String, java.util.Map)}, returning its return value.

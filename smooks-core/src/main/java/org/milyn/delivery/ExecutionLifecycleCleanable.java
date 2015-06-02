@@ -26,7 +26,7 @@ public interface ExecutionLifecycleCleanable extends Visitor {
 
     /**
      * Cleanup the resources allocated by this resource for the specified ExecutionContext.
-     * <p/>
+     *
      * Executes the cleanup at the end of the filter execution.
      *
      * @param executionContext The ExecutionContext.

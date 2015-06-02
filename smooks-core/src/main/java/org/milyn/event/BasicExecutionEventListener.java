@@ -37,11 +37,11 @@ import java.util.List;
 
 /**
  * Basic {@link ExecutionEventListener}.
- * <p/>
+ *
  * This event listener listens to and captures published events.
  * The list of captured events can be filtered by setting a list of
  * {@link #setFilterEvents filter event types}. 
- * <p/>
+ *
  * This listener should be used with great care.  It could quite easily consume
  * large amounts of memory if not used properly.  If access to this information
  * is required in a production environment, consider writing and using a more
@@ -59,7 +59,7 @@ public class BasicExecutionEventListener implements ExecutionEventListener {
 
     /**
      * Set a list of {@link ExecutionEvent event} types on which to filter.
-     * <p/>
+     *
      * The listener will only capture {@link ExecutionEvent event} types
      * provided in this list.  If not set, all events will be captured.
      *

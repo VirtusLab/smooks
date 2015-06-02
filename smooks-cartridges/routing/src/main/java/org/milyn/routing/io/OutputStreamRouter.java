@@ -41,7 +41,6 @@ import org.w3c.dom.Element;
 /**
  * OutputStreamRouter is a fragment Visitor (DOM/SAX) that can be used to route
  * context beans ({@link BeanContext} beans) an OutputStream.
- * </p>
  * An OutputStreamRouter is used in combination with a concreate implementation of
  * {@link AbstractOutputStreamResource}, for example a {@link org.milyn.routing.file.FileOutputStreamResource}.
  *

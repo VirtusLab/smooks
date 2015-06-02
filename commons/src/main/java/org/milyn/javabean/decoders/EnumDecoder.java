@@ -26,7 +26,7 @@ import java.util.Properties;
 
 /**
  * Enum instance decoder.
- * <p/>
+ *
  * The enumeration type is specified through the "<b>enumType</b>" configuration
  * param. Enum constant value mappings can be performed as per the
  * {@link org.milyn.javabean.decoders.MappingDecoder}.

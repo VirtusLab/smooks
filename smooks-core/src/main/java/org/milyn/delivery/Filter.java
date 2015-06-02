@@ -87,7 +87,7 @@ public abstract class Filter {
     /**
      * Filter the content in the supplied {@link javax.xml.transform.Source} instance, outputing the result
      * to the supplied {@link javax.xml.transform.Result} instance.
-     * <p/>
+     *
      * Implementations use static methods on the {@link FilterSource} and {@link FilterResult} classes
      * to access the {@link Source} and {@link Result Results} objects.
      *

@@ -24,7 +24,7 @@ import java.util.Properties;
 
 /**
  * Custom decoder.
- * <p/>
+ *
  * Specify a delegate decoder class in the properties.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

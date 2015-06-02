@@ -213,7 +213,7 @@ public class SmooksResourceConfigurationList {
 
 	/**
 	 * Lookup a resource configuration from this config list.
-	 * <p/>
+	 *
 	 * Note that this is resource config order-dependent.  It will not locate configs that
 	 * have not yet been loaded.
 	 *

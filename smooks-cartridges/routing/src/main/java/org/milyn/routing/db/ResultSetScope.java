@@ -19,6 +19,9 @@ import org.milyn.container.ExecutionContext;
 import org.milyn.container.ApplicationContext;
 import org.milyn.Smooks;
 
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+
 /**
  * Database Resultset lifecycle scope for Resultsets created by the
  * {@link SQLExecutor} class.
@@ -28,13 +31,13 @@ import org.milyn.Smooks;
 public enum ResultSetScope {
     /**
      * The Resultset is scoped around the Smooks {@link ExecutionContext}, and so only
-     * lives for the duration of the {@link Smooks#filter(org.milyn.container.ExecutionContext,javax.xml.transform.Source,javax.xml.transform.Result)}
+     * lives for the duration of the {@link Smooks#filterSource(ExecutionContext, Source, Result...)}
      * call.
      */
     EXECUTION,
     /**
      * The Resultset is scoped around the Smooks {@link ApplicationContext}. In this case,
-     * the ResultSet can outlive the lifetime of the {@link Smooks#filter(org.milyn.container.ExecutionContext,javax.xml.transform.Source,javax.xml.transform.Result)}
+     * the ResultSet can outlive the lifetime of the {@link Smooks#filterSource(ExecutionContext, Source, Result...)}
      * that created it.  It's expiry is governed by the .
      */
     APPLICATION;

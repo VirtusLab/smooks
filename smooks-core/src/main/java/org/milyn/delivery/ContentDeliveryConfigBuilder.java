@@ -321,7 +321,7 @@ public class ContentDeliveryConfigBuilder {
 
     /**
 	 * Build the ContentDeliveryConfigBuilder for the specified device.
-	 * <p/>
+	 *
 	 * Creates the buildTable instance and populates it with the ProcessingUnit matrix
 	 * for the specified device.
 	 */
@@ -437,7 +437,7 @@ public class ContentDeliveryConfigBuilder {
 
     /**
 	 * Expand the SmooksResourceConfiguration table.
-	 * <p/>
+	 *
 	 * Expand the XmlDef entries to the target elements etc.
 	 */
 	private void expandSmooksResourceConfigurationTable() {
@@ -606,7 +606,7 @@ public class ContentDeliveryConfigBuilder {
         
         /**
          * Try create the CDU creator for the specified resource type.
-         * <p/>
+         *
          * Return null if unsuccessful i.e. no exceptions.
          * @param restype The resource type.
          * @return The appropriate CDU creator instance, or null if there is none.

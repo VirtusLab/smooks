@@ -24,8 +24,8 @@ import org.jaxen.saxpath.SAXPathException;
 import java.util.Properties;
 
 /**
- * Simple "<" predicate evaluator.
- * <p/>
+ * Simple '&lt;' predicate evaluator.
+ *
  * Works for element text or attributes.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

@@ -19,7 +19,7 @@ import org.milyn.SmooksException;
 
 /**
  * Smooks routing exception.
- * <p/>
+ *
  * Raised by one of the routing resources after a routing operation has failed. 
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

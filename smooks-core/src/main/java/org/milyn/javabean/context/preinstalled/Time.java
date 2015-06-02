@@ -20,7 +20,7 @@ import java.util.Date;
 
 /**
  * Pre-installed Time bean.
- * <p/>
+ *
  * Installed under beanId "PTIME".
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
@@ -35,7 +35,7 @@ public class Time {
 
     /**
      * Get the Execution Context "start" time in milli seconds.
-     * <p/>
+     *
      * This is the time at which the message processing started.
      *
      * @return The Execution Context "start" time in milli seconds.
@@ -46,7 +46,7 @@ public class Time {
 
     /**
      * Get the Execution Context "start" time in nano seconds.
-     * <p/>
+     *
      * This is the time at which the message processing started.
      *
      * @return The Execution Context "start" time in  nano seconds.
@@ -57,7 +57,7 @@ public class Time {
 
     /**
      * Get the Execution Context "start" time as a {@link Date}.
-     * <p/>
+     *
      * This is the time at which the message processing started.
      *
      * @return The Execution Context "start" time as a {@link Date}.

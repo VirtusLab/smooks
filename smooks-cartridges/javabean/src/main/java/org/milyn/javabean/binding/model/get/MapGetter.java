@@ -22,7 +22,7 @@ import java.util.Map;
 
 /**
  * {@link Map} getter.
- * <p/>
+ *
  * Allows {@link Map Maps} to be used as a node in an object graph.  Allows
  * support for Virtual Object Models etc.
  *

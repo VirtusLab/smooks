@@ -33,7 +33,7 @@ public class AntRunner {
 
     /**
      * Public constructor.
-     * <p/>
+     *
      * The <code>antScript</code> parameter is a filename on the classpath,
      * relative to the caller Class.  AntRunner (<code>this</code>) uses the
      * current Thread's {@link Thread#getStackTrace Stack Trace}

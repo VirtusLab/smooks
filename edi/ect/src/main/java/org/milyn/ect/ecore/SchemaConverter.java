@@ -55,11 +55,6 @@ public class SchemaConverter {
 		// noop
 	}
 
-	/**
-	 * Convert directory given as {@link InputStream} to the resulting archive
-	 * 
-	 * @param directoryInputStream
-	 */
 	public Archive createArchive(Set<EPackage> packages, String pluginID, String pathPrefix)
 			throws IOException {
 		String qualifier = qualifierFormat.format(Calendar.getInstance()
@@ -151,13 +146,6 @@ public class SchemaConverter {
 		return resourceSet;
 	}
 
-	/**
-	 * Converts a single {@link Edimap} to XML Schema
-	 * 
-	 * @param pkg
-	 * @param out
-	 * @throws IOException 
-	 */
 	public void convertEDIMap(EPackage pkg, OutputStream out) throws IOException {
 		ResourceSet rs = createResourceSet();
 		Resource resource = addSchemaResource(rs, pkg);

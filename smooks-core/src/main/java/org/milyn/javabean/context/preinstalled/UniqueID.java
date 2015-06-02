@@ -20,9 +20,9 @@ import java.util.UUID;
 
 /**
  * Pre-installed UUID bean.
- * <p/>
+ *
  * Installed under beanId "PUUID".
- * <p/>
+ *
  * Uses the {@link UUID} class to generate the IDs.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

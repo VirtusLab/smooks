@@ -28,11 +28,11 @@ import javax.xml.transform.Source;
 
 /**
  * Processor class for an abstract payload type.
- * <p/>
+ *
  * This class can be used to ease Smooks integration with application
  * containers (for example ESBs).  It works out how to filter the supplied Object payload
  * through Smooks, to produce the desired {@link ResultType result type}.
- * <p/>
+ *
  * The "payload" object supplied to the {@link #process(Object, org.milyn.container.ExecutionContext)}
  * method can be one of type:
  * <ul>
@@ -44,7 +44,7 @@ import javax.xml.transform.Source;
  * <li>{@link SourceResult}, or</li>
  * <li>any Java user type (gets wrapped in a {@link org.milyn.payload.JavaSource}).</li>
  * </ul>
- * <p/>
+ *
  * The {@link SourceResult} payload type allows full control over the filter
  * {@link Source} and {@link Result}.
  *
@@ -70,7 +70,7 @@ public class PayloadProcessor {
 
     /**
      * Set the bean ID to be unpacked from a {@link JavaResult}.
-     * <p/>
+     *
      * Only relevant for {@link ResultType#JAVA}.  If not specified, the
      * complete {@link org.milyn.payload.JavaResult#getResultMap() result Map}
      * will be returned as the result of the {@link #process(Object, org.milyn.container.ExecutionContext)}
@@ -83,16 +83,6 @@ public class PayloadProcessor {
         this.javaResultBeanId = javaResultBeanId;
     }
 
-    /**
-     * Process the supplied payload.
-     * <p/>
-     * See class level javadoc.
-     *
-     * @param payload The payload to be filtered. See class level javadoc for supported data types.
-     * @return The filter result. Will be "unpacked" as per the {@link ResultType} supplied in the
-     * {@link #PayloadProcessor(org.milyn.Smooks, ResultType) constructor}.
-     * @throws SmooksException
-     */
     public final Object process(final Object payload, final ExecutionContext executionContext) throws SmooksException {
         AssertArgument.isNotNull(payload, "payload");
 

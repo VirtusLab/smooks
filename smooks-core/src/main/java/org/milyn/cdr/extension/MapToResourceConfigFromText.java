@@ -31,7 +31,7 @@ import java.util.EmptyStackException;
 /**
  * Map a property value onto the current {@link org.milyn.cdr.SmooksResourceConfiguration} based on an
  * elements text content.
- * <p/>
+ *
  * The value is set on the {@link org.milyn.cdr.SmooksResourceConfiguration} returned from the top
  * of the {@link ExtensionContext#getResourceStack() ExtensionContext resourece stack}.
  *

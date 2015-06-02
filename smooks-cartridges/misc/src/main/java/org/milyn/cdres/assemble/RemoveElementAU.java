@@ -26,7 +26,7 @@ import org.w3c.dom.Element;
 
 /**
  * Removes a DOM element <u>during the assembly phase</u>.
- * <p/>
+ *
  * The element is visited by this Assembly Unit before it's child content
  * has been iterated over.
  * <h3>.cdrl Configuration</h3>

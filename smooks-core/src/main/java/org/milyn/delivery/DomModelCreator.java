@@ -42,16 +42,16 @@ import java.util.Set;
 
 /**
  * DOM Node Model creator.
- * <p/>
+ *
  * Adds the visited element as a node model.
  *
  * <h2>Mixing DOM and SAX</h2>
  * When used with SAX filtering, this visitor will construct a DOM Fragment of the visited
  * element.  This allows DOM utilities to be used in a Streaming environment.
- * <p/>
+ *
  * When 1+ model are nested inside each other, outer model will never contain data from the
  * inner model i.e. the same fragments will never cooexist inside two model.
- * <p/>
+ *
  * Take the following message as an example:
  * <pre>
  * &lt;order id='332'&gt;

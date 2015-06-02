@@ -20,7 +20,6 @@ import org.milyn.container.ExecutionContext;
 /**
  * RuleProvider declares the contract which must be followed to make
  * different types of rule/evaluation technologies work with Smooks.
- * </p>
  *
  * @author <a href="mailto:danielbevenius@gmail.com">Daniel Bevenius</a>
  *

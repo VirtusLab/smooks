@@ -19,7 +19,7 @@ import org.milyn.event.ElementProcessingEvent;
 
 /**
  * Element Present Event.
- * <p/>
+ *
  * This event is fired for all elements in message.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

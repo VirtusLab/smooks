@@ -84,7 +84,7 @@ public class RecordMetaData {
 
     /**
      * Is this a wildcard record.
-     * <p/>
+     *
      * If it is, accept all fields and use the field index to generate the field
      * name.
      * 

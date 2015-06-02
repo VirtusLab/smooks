@@ -18,9 +18,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.milyn</groupId>
+        <groupId>org.virtuslab</groupId>
         <artifactId>milyn</artifactId>
-        <version>1.5.2</version> <!-- base pom version - do not remove this comment -->
+        <version>1.5.3</version> <!-- base pom version - do not remove this comment -->
     </parent>
     <name>Milyn Smooks All</name>
 	<artifactId>milyn-smooks-all</artifactId>
@@ -41,139 +41,139 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-commons</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-core</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-edisax-parser</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-calc</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-camel</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-csv</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-edi</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-fixed-length</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-javabean</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-json</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-misc</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-persistence</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-routing</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-rules</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-scripting</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-templating</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-validation</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-yaml</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-scribe-core</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-scribe-hibernate</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-scribe-ibatis</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-scribe-jpa</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-flatfile</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
@@ -305,7 +305,7 @@
         </dependency>
 
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>testres</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>

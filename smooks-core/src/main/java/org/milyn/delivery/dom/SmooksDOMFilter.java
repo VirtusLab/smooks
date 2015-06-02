@@ -53,25 +53,25 @@ import java.util.Vector;
 
 /**
  * Smooks DOM based content filtering class.
- * <p/>
+ *
  * This class is responsible for <b>Filtering</b> XML DOM streams
  * (XML/XHTML/HTML etc) through a process of iterating over the source XML DOM tree
  * and applying the {@link org.milyn.cdr.SmooksResourceConfiguration configured} Content Delivery Units
  * ({@link DOMElementVisitor DOMElementVisitors} and
  * {@link org.milyn.delivery.dom.serialize.SerializationUnit SerializationUnits}).
- * <p/>
+ *
  * This class doesn't get used directly.  See the {@link org.milyn.Smooks} class.
- * <p/>
+ *
  * <h3 id="phases">XML/XHTML/HTML Filtering Process</h3>
  * SmooksDOMFilter markup processing (XML/XHTML/HTML) is a 2 phase filter, depending on what
  * needs to be done.  The first phase is called the "Visit Phase", and the second
  * phase is called the "Serialisation Phase".  SmooksDOMFilter can be used to execute either or both of these
  * phases (depending on what needs to be done!).
- * <p/>
+ *
  * Through this filter, Smooks can be used to analyse and/or transform markup, and then
  * serialise it.
- * <p/>
- * <p/>
+ *
+ *
  * So, in a little more detail, the 2 phases are:
  * <ol>
  * <li>
@@ -81,7 +81,7 @@ import java.util.Vector;
  * <ul>
  * <li>
  * <b>Assembly</b>: This is effectively a pre-processing phase.
- * <p/>
+ *
  * This sub-phase involves iterating over the source XML DOM,
  * visiting all DOM elements that have {@link org.milyn.delivery.dom.VisitPhase ASSEMBLY} phase
  * {@link org.milyn.delivery.dom.DOMElementVisitor DOMElementVisitors}
@@ -97,7 +97,7 @@ import java.util.Vector;
  * <li>
  * <b>Processing</b>: Processing takes the assembled DOM and
  * iterates over it again, so as to perform transformation/analysis.
- * <p/>
+ *
  * This sub-phase involves iterating over the source XML DOM again,
  * visiting all DOM elements that have {@link org.milyn.delivery.dom.VisitPhase PROCESSING} phase
  * {@link org.milyn.delivery.dom.DOMElementVisitor DOMElementVisitors}
@@ -114,14 +114,14 @@ import java.util.Vector;
  * {@link org.milyn.delivery.dom.serialize.Serializer} class).  The serialisation phase takes the processed DOM and
  * iterates over it to apply all {@link org.milyn.delivery.dom.serialize.SerializationUnit SerializationUnits},
  * which write the document to the target output stream.
- * <p/>
+ *
  * Instead of using this serialisation mechanism, you may wish to perform
  * DOM Serialisation via some other mechanism e.g. XSL-FO via something like Apache FOP.
  * </li>
  * </ol>
- * <p/>
+ *
  * See the <a href="http://milyn.codehaus.org/flash/DOMProcess.html" target="DOMProcess">online flash demo</a> demonstrating this process.
- * <p/>
+ *
  * <h3>Other Documents</h3>
  * <ul>
  * <li>{@link org.milyn.Smooks}</li>
@@ -179,7 +179,7 @@ public class SmooksDOMFilter extends Filter {
 
     /**
      * Public constructor.
-     * <p/>
+     *
      * Constructs a SmooksDOMFilter instance for delivering content for the supplied execution context.
      *
      * @param executionContext Execution context.  This instance
@@ -270,15 +270,6 @@ public class SmooksDOMFilter extends Filter {
     public void cleanup() {
     }
 
-    /**
-     * Phase the supplied input reader.
-     * <p/>
-     * Simply parses the input reader into a W3C DOM and calls {@link #filter(Document)}.
-     *
-     * @param source The source of markup to be filtered.
-     * @return Node representing filtered document.
-     * @throws SmooksException
-     */
     public Node filter(Source source) throws SmooksException {
         Node deliveryNode;
 
@@ -297,14 +288,6 @@ public class SmooksDOMFilter extends Filter {
         return deliveryNode;
     }
 
-    /**
-     * Filter the supplied W3C Document.
-     * <p/>
-     * Executes the <a href="#phases">Assembly &amp Processing phases</a>.
-     *
-     * @param doc The W3C Document to be filtered.
-     * @return Node representing filtered document.
-     */
     public Node filter(Document doc) {
         Node deliveryNode;
 
@@ -324,14 +307,6 @@ public class SmooksDOMFilter extends Filter {
 
     private static String[] GLOBAL_SELECTORS = new String[] {"*", "**"};
 
-    /**
-     * Filter the supplied W3C Element.
-     * <p/>
-     * Executes the <a href="#phases">Assembly &amp Processing phases</a>.
-     *
-     * @param element The W3C Element to be filtered.
-     * @return Node representing filtered Element.
-     */
     public Node filter(Element element) {
         ContentHandlerConfigMapTable<DOMVisitBefore> visitBefores = deliveryConfig.getAssemblyVisitBefores();
         ContentHandlerConfigMapTable<DOMVisitAfter> visitAfters = deliveryConfig.getAssemblyVisitAfters();
@@ -406,7 +381,7 @@ public class SmooksDOMFilter extends Filter {
 
     /**
      * Assemble the supplied element.
-     * <p/>
+     *
      * Recursively iterate down into the elements children.
      *
      * @param element Next element to operate on and iterate over.
@@ -602,7 +577,7 @@ public class SmooksDOMFilter extends Filter {
 
     /**
      * Serialise the node to the supplied output writer instance.
-     * <p/>
+     *
      * Executes the <a href="#phases">Serialisation phase</a>,
      * using the {@link Serializer} class to perform the serialization.
      *
@@ -635,9 +610,9 @@ public class SmooksDOMFilter extends Filter {
 
     /**
      * Copy the nodes of a NodeList into the supplied list.
-     * <p/>
+     *
      * This is not a clone.  It's just a copy of the node references.
-     * <p/>
+     *
      * Allows iteration over the Nodelist using the copy in the knowledge that
      * the list will remain the same length.  Using the NodeList can result in problems
      * because elements can get removed from the list while we're iterating over it.
@@ -658,7 +633,7 @@ public class SmooksDOMFilter extends Filter {
 
     /**
      * Element Prcessor class.
-     * <p/>
+     *
      * Simple DOM Element to ProcessingUnit[] processing mapping and support functions.
      *
      * @author tfennelly
@@ -696,7 +671,7 @@ public class SmooksDOMFilter extends Filter {
 
         /**
          * Apply the ProcessingUnits.
-         * <p/>
+         *
          * Iterate over the ProcessingUnit instances calling the visitAfter method.
          *
          * @param executionContext Container request instance.

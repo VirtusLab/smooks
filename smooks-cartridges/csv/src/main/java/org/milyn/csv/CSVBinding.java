@@ -19,7 +19,7 @@ import org.milyn.assertion.AssertArgument;
 
 /**
  * CSV Binding configuration.
- * <p/>
+ *
  * For more complex bindings, use the main java binding framwework.
  * 
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

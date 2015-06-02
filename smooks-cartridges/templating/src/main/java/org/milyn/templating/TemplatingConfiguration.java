@@ -19,7 +19,7 @@ import org.milyn.assertion.AssertArgument;
 
 /**
  * Templating Configuration.
- * <p/>
+ *
  * Allow programmatic configuration of a {@link org.milyn.templating.AbstractTemplateProcessor}
  * implementation.
  * 

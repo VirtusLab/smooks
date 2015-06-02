@@ -63,7 +63,7 @@ public interface ApplicationContext extends BoundAttributeStore {
 
     /**
      * Registers a bean context observer.
-     * <p/>
+     *
      * This observer instance will be automatically added to all
      * {@link BeanContext#addObserver(org.milyn.javabean.lifecycle.BeanContextLifecycleObserver) BeanContext}
      * instances.
@@ -74,7 +74,7 @@ public interface ApplicationContext extends BoundAttributeStore {
 
     /**
      * Get bean context observers.
-     * <p/>
+     *
      * These observer instances will be automatically added to all
      * {@link BeanContext#addObserver(org.milyn.javabean.lifecycle.BeanContextLifecycleObserver) BeanContext}
      * instances.

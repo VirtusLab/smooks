@@ -23,7 +23,7 @@ import org.milyn.smooks.camel.processor.SmooksProcessor;
  * SmooksEndpoint is a wrapper around a {@link SmooksProcessor} instance and
  * adds lifecycle support by implementing Service. This enables a SmooksEndpoint
  * to be stopped and started.
- * <p/>
+ *
  * 
  * @author Daniel Bevenius
  * 

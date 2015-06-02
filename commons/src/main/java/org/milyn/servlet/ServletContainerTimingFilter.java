@@ -26,7 +26,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 /**
- * Servlet Container Timing Filter. <p/> Simple utility filter for logging
+ * Servlet Container Timing Filter.  Simple utility filter for logging
  * request/response timings on a filter chain.
  * 
  * @author tfennelly

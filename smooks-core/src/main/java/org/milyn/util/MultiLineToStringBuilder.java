@@ -99,23 +99,10 @@ public class MultiLineToStringBuilder {
     	return toString(map, stack, filterKeyList);
 	}
 
-    /**
-     * Creates a multi line JSON like string representation from a Collection.
-     *
-     * @param map The Map to create the string from
-     * @return The String representation of the Map
-     */
 	public static String toString(Collection<? extends Object> collection) {
 		return toString(collection, Collections.emptyList());
 	}
 
-	/**
-     * Creates a multi line JSON like string representation from a Collection
-     *
-     * @param map The Map to create the string from
-     * @param filterKeyList A list of objects that are ignored when encountered as keys
-     * @return The String representation of the Map
-     */
 	public static String toString(Collection<? extends Object> collection, List<?> filterKeyList) {
 		Stack<Object> stack = new Stack<Object>();
 		stack.add(new Object()); // A little hack to make sure that the first level is rendered correctly
@@ -123,23 +110,10 @@ public class MultiLineToStringBuilder {
 		return toString(collection, stack, filterKeyList);
 	}
 
-	/**
-     * Creates a multi line JSON like string representation from an Array
-     *
-     * @param map The Map to create the string from
-     * @return The String representation of the Map
-     */
 	public static String toString(Object[] array) {
 		return toString(array, Collections.emptyList());
 	}
 
-	/**
-     * Creates a multi line JSON like string representation from an Array
-     *
-     * @param map The Map to create the string from
-     * @param filterKeyList A list of objects that are ignored when encountered as keys
-     * @return The String representation of the Map
-     */
 	public static String toString(Object[] array, List<?> filterKeyList) {
 		Stack<Object> stack = new Stack<Object>();
 		stack.add(new Object()); // A little hack to make sure that the first level is renderd ok

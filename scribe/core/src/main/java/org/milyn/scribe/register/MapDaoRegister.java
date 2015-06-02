@@ -93,11 +93,6 @@ public class MapDaoRegister<T> extends AbstractDaoRegister<T> {
 
 	}
 
-	/**
-	 * Returns a clone of the underlying map.
-	 *
-	 * @return
-	 */
 	@SuppressWarnings("unchecked")
 	public Map<String, T> getAll() {
 
@@ -169,10 +164,6 @@ public class MapDaoRegister<T> extends AbstractDaoRegister<T> {
 			map = new HashMap<String, T>();
 		}
 
-		/**
-		 * Creates an Builder and copies all of the mappings for the
-		 * specified map to this builder
-		 */
 		public Builder(Map<String, ? extends T> map) {
 			AssertArgument.isNotNull(map, "map");
 

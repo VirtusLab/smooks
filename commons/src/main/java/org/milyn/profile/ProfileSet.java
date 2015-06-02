@@ -21,7 +21,7 @@ import java.util.Iterator;
 
 /**
  * Profile Set.
- * <p/>
+ *
  * A profile set consists of a "base" profile and a set of sub-profiles.  The base
  * profile fans out into a set of sub profiles.
  * 
@@ -37,7 +37,7 @@ public interface ProfileSet extends Serializable {
 
     /**
 	 * Is the specified profile a member of this profile set.
-     * <p/>
+     *
      * A profile is said to be a member of a profile set if it is the base
      * profile of the profile set, or one of its sub profiles.
 	 * 

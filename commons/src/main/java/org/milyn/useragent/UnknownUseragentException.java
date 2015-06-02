@@ -33,9 +33,6 @@ public class UnknownUseragentException extends RuntimeException {
 		super("Unknown Useragent");
 	}
 
-	/**
-	 * Public constructor.
-	 */
 	public UnknownUseragentException(String message) {
 		super(message);
 	}

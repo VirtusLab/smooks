@@ -24,7 +24,7 @@ import java.io.IOException;
 
 /**
  * Element index counter.
- * <p/>
+ *
  * Used for index based XPath predicates.
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

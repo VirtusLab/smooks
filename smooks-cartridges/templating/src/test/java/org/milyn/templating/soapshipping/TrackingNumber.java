@@ -18,7 +18,7 @@ package org.milyn.templating.soapshipping;
 
 /**
  * Shipping Tracking Number bean.
- * <p/>
+ *
  * This bean is populated by the Smooks JavaBean Cartridge.
  * @author tfennelly
  */

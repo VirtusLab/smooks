@@ -10,11 +10,11 @@
         <relativePath />
     </parent>
 
-    <groupId>org.milyn</groupId>
+    <groupId>org.virtuslab</groupId>
     <artifactId>smooks-examples</artifactId>
     <name>Milyn Smooks Examples (Base POM)</name>
     <packaging>pom</packaging>
-    <version>1.5.2</version> <!-- base pom version - do not remove this comment -->
+    <version>1.5.3</version> <!-- base pom version - do not remove this comment -->
 
     <profiles>
         <profile>
@@ -102,13 +102,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>testres</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.milyn</groupId>
+            <groupId>org.virtuslab</groupId>
             <artifactId>milyn-smooks-core</artifactId>
             <version>${project.version}</version>
             <exclusions>
@@ -132,10 +132,10 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
+				<version>3.3</version>
                 <configuration>
                     <source>1.5</source>
-                    <target>1.5</target>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>

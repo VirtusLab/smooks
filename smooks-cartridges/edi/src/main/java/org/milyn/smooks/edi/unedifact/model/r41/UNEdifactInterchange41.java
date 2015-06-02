@@ -89,7 +89,7 @@ public class UNEdifactInterchange41 implements UNEdifactInterchange {
 	
 	/**
 	 * Get the List of interchange messages.
-	 * <p/>
+	 *
 	 * The list is ungrouped.  {@link UNG41 Interchange group} information is on each
 	 * {@link UNEdifactMessage41} message instance, if the message is part
 	 * of a group of messages.
@@ -111,7 +111,7 @@ public class UNEdifactInterchange41 implements UNEdifactInterchange {
 
     /**
      * Write the interchange to the specified writer.
-     * <p/>
+     *
      * Uses the default UN/EDIFACT delimiter set.
      * 
      * @param writer The target writer.

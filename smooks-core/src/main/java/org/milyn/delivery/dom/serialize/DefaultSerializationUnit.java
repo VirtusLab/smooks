@@ -34,7 +34,7 @@ import java.io.Writer;
 
 /**
  * Default SerializationUnit implementation.
- * <p/>
+ *
  * Default SerialisationUnit where none defined.
  * @author tfennelly
  */

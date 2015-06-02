@@ -20,7 +20,7 @@ import java.io.IOException;
 
 /**
  * Null writer implementation.
- * <p/>
+ *
  * Data writen to this writer is swallowed (ala piping output to <i>/dev/null</i>).
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

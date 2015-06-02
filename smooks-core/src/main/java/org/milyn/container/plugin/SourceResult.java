@@ -20,7 +20,7 @@ import javax.xml.transform.Source;
 
 /**
  * {@link Source} - {@link Result} value Object.
- * <p/>
+ *
  * This class allows users of the {@link PayloadProcessor} class to explicitly specify
  * both the {@link Source} and {@link Result} payload carrier types.  This can be used
  * in situations where the required {@link Source} or {@link Result} are not supported

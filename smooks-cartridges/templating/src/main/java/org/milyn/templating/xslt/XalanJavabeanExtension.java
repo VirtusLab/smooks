@@ -32,7 +32,7 @@ import org.milyn.javabean.repository.BeanRepositoryManager;
 
 /**
  * Javabean access <a href="http://xml.apache.org/xalan-j/">Xalan</a> XSLT extension for XSLT templating.
- * <p/>
+ *
  * Provides XSLT template population using <a href="http://www.ognl.org/">OGNL</a> expressions
  * embedded in an XSLT element or function extension.  The <a href="http://www.ognl.org/">OGNL</a> expressions
  * are targeted at the Javabean data gathered through use of the 
@@ -72,10 +72,10 @@ public class XalanJavabeanExtension {
 
 	/**
 	 * Support OGNL based bean value injection via an XSLT extension element.
-	 * <p/>
+	 *
 	 * The <a href="http://www.ognl.org/">OGNL</a> expression is expected to be specified in 
 	 * the "ognl" attribute.
-	 * <p/>
+	 *
 	 * See <a href="#usage">Usage</a>.
 	 * @param context Processor context.
 	 * @param element Extension element instance.
@@ -96,10 +96,10 @@ public class XalanJavabeanExtension {
 
 	/**
 	 * Support OGNL based bean value injection via an XSLT extension function.
-	 * <p/>
+	 *
 	 * The <a href="http://www.ognl.org/">OGNL</a> expression is expected to be specified in 
 	 * the function call.
-	 * <p/>
+	 *
 	 * See <a href="#usage">Usage</a>.
 	 * @param ognlExpression <a href="http://www.ognl.org/">OGNL</a> expression.
 	 * @return The bean value, or null if the bean is unknown.

@@ -34,7 +34,7 @@ import org.xml.sax.XMLReader;
 
 /**
  * Smooks SAX data stream parser.
- * <p/>
+ *
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
  */

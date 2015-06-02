@@ -10,13 +10,13 @@ import org.milyn.javabean.DecodeType;
 
 /**
  * {@link java.util.Calendar} data decoder.
- * <p/>
+ *
  * Decodes the supplied string into a {@link java.util.Calendar} value
  * based on the supplied "{@link java.text.SimpleDateFormat format}" parameter.
- * <p/>
+ *
  * This decoder is synchronized on its underlying {@link SimpleDateFormat} instance.
  *
- * @see {@link LocaleAwareDateDecoder}
+ * @see org.milyn.javabean.decoders.LocaleAwareDateDecoder
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
  * @author Pavel Kadlec

@@ -22,13 +22,13 @@ package org.milyn.delivery;
 public enum ContentDeliveryConfigBuilderLifecycleEvent {
     /**
      * First Event.
-     * <p/>
+     *
      * Handlers created (and sorted), but the builder instance is not yet created.
      */
     HANDLERS_CREATED,
     /**
      * Second Event.
-     * <p/>
+     *
      * The builder instance (for the profile) is now created and ready to be used.
      */
     CONFIG_BUILDER_CREATED

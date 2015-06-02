@@ -24,10 +24,10 @@ import org.w3c.dom.Element;
 
 /**
  * Removes a DOM element <u>during the processing phase</u>.
- * <p/>
+ *
  * The element is visited by this Processing Unit after it's child content
  * has been iterated over.
- * <p/>
+ *
  * See {@link DomUtils#removeElement(org.w3c.dom.Element, boolean)}.
  * 
  * <h3>.cdrl Configuration</h3>

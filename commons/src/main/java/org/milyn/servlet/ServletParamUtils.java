@@ -26,7 +26,7 @@ import javax.servlet.ServletConfig;
 public abstract class ServletParamUtils {
 
 	/**
-	 * Get a Servlet configuration parameter. <p/> This method will check the
+	 * Get a Servlet configuration parameter.  This method will check the
 	 * Servlet configuration (init-param config parameters) for a definition of
 	 * 'paramName'. If not specified in the Servlet configuration, it will check
 	 * the servlet context configuration parameters (context-param).
@@ -64,7 +64,7 @@ public abstract class ServletParamUtils {
 	}
 
 	/**
-	 * Get a Servlet configuration parameter. <p/> This method will check the
+	 * Get a Servlet configuration parameter.  This method will check the
 	 * Servlet configuration (init-param config parameters) for a definition of
 	 * 'paramName'. If not specified in the Servlet configuration, it will check
 	 * the servlet context configuration parameters (context-param).

@@ -22,7 +22,7 @@ import java.util.List;
 
 /**
  * Bean configuration.
- * <p/>
+ *
  * Corresponds to the top level &lt;jb:bean&gt; element. 
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

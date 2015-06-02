@@ -30,9 +30,6 @@ public class EntityMethod {
 
 	private final boolean returnsEntity;
 
-	/**
-	 *
-	 */
 	public EntityMethod(final Method method, final boolean returnsEntity) {
 		AssertArgument.isNotNull(method, "method");
 

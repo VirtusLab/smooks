@@ -25,7 +25,7 @@ import java.io.IOException;
 
 /**
  * Null Source reader.
- * <p/>
+ *
  * Used for null sources.  Fires just a single root element ("#document" element)
  * event that can be targeted through the "#document" selector.
  *

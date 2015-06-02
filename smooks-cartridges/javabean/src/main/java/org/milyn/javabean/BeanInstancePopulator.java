@@ -61,7 +61,7 @@ import java.util.*;
 
 /**
  * Bean instance populator visitor class.
- * <p/>
+ *
  * Targeted via {@link org.milyn.javabean.BeanPopulator} expansion configuration.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

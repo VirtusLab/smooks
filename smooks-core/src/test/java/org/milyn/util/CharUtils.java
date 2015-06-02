@@ -37,7 +37,7 @@ public abstract class CharUtils {
 
     /**
 	 * Compares the 2 streams.
-	 * <p/>
+	 *
 	 * Calls {@link #trimLines(InputStream)} on each stream before comparing.
 	 * @param s1 Stream 1.
 	 * @param s2 Stream 2.

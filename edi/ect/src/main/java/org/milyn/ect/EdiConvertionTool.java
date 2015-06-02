@@ -49,7 +49,7 @@ import org.milyn.edisax.util.EDIUtils;
 
 /**
  * EDI Convertion Tool.
- * <p/>
+ *
  * Takes the set of messages from an {@link EdiSpecificationReader} and generates
  * a Smooks EDI Mapping Model archive that can be written to a zip file or folder.
  * 

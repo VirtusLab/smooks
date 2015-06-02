@@ -52,7 +52,7 @@ import java.util.Map;
 
 /**
  * JSON to SAX event reader.
- * <p/>
+ *
  * This JSON Reader can be plugged into Smooks in order to convert a
  * JSON based message stream into a stream of SAX events to be consumed by the other
  * Smooks resources.
@@ -142,7 +142,7 @@ import java.util.Map;
  *   &lt;quantity&gt;7&lt;/quantity&gt;
  *  &lt;element&gt;
  * &lt;/json&gt;</pre>
- * <p/>
+ *
  *
  * @author <a href="mailto:maurice@zeijen.net">maurice@zeijen.net</a>
  */

@@ -61,10 +61,10 @@ import java.util.Properties;
 
 /**
  * Smooks executor class.
- * <p/>
+ *
  * Additional configurations can be carried out on the {@link org.milyn.Smooks} instance
  * through the {@link org.milyn.SmooksUtil} class.
- * <p/>
+ *
  * The basic usage scenario for this class might be as follows:
  * <ol>
  * <li>Develop (or reuse) an implementation of {@link org.milyn.delivery.dom.DOMElementVisitor}/{@link org.milyn.delivery.sax.SAXElementVisitor} to
@@ -87,7 +87,7 @@ import java.util.Properties;
  * within the context of a single filtering operation.  You can also target
  * {@link org.milyn.delivery.dom.DOMElementVisitor DOMElementVisitors}/{@link org.milyn.delivery.sax.SAXElementVisitor} based on target profiles, and so use a single
  * configuration to process multiple messages by sharing profiles across your message set.
- * <p/>
+ *
  * See <a target="new" href="http://milyn.codehaus.org/Tutorials">Smooks Tutorials</a>.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
@@ -110,7 +110,7 @@ public class Smooks {
 
     /**
      * Public Default Constructor.
-     * <p/>
+     *
      * Resource configurations can be added through calls to
      * {@link #addConfigurations(String)} or {@link #addConfigurations(String,java.io.InputStream)}.
      */
@@ -121,7 +121,7 @@ public class Smooks {
 
     /**
      * Public Default Constructor.
-     * <p/>
+     *
      * Resource configurations can be added through calls to
      * {@link #addConfigurations(String)} or {@link #addConfigurations(String,java.io.InputStream)}.
      */
@@ -132,10 +132,10 @@ public class Smooks {
 
     /**
      * Public constructor.
-     * <p/>
+     *
      * Adds the set of {@link SmooksResourceConfiguration resources} via the {@link #addConfigurations(String)} method,
      * which resolves the resourceURI parameter using a {@link org.milyn.resource.URIResourceLocator}.
-     * <p/>
+     *
      * Additional resource configurations can be added through calls to
      * {@link #addConfigurations(String)} or {@link #addConfigurations(String,java.io.InputStream)}.
      *
@@ -155,9 +155,9 @@ public class Smooks {
 
     /**
      * Public constructor.
-     * <p/>
+     *
      * Adds the set of {@link SmooksResourceConfiguration resources} via the {@link #addConfigurations(java.io.InputStream)}.
-     * <p/>
+     *
      * Additional resource configurations can be added through calls to
      * <code>addConfigurations</code> method set.
      *
@@ -197,11 +197,7 @@ public class Smooks {
         AssertArgument.isNotNull(filterSettings, "filterSettings");
         filterSettings.applySettings(this);
     }
-    
-    /**
-     * Set the Exports for this Smooks instance.
-     * @param exports The exports that will be created by this Smooks instance.
-     */
+
     public Smooks setExports(Exports exports) {
         AssertArgument.isNotNull(exports, "exports");
         Exports.setExportsInApplicationContext(getApplicationContext(), exports);
@@ -232,7 +228,7 @@ public class Smooks {
 
     /**
      * Add a visitor instance to <code>this</code> Smooks instance.
-     * <p/>
+     *
      * This Visitor will be targeted at the root (#document) fragment.
      *
      * @param visitor The visitor implementation.
@@ -275,7 +271,7 @@ public class Smooks {
 
     /**
      * Add a resource configuration to this Smooks instance.
-     * <p/>
+     *
      * These configurations do not overwrite previously added configurations.
      * They are added to the list of configurations on this Smooks instance.
      *
@@ -289,9 +285,9 @@ public class Smooks {
 
     /**
      * Add a set of resource configurations to this Smooks instance.
-     * <p/>
+     *
      * Uses the {@link org.milyn.resource.URIResourceLocator} class to load the resource.
-     * <p/>
+     *
      * These configurations do not overwrite previously added configurations.
      * They are added to the list of configurations on this Smooks instance.
      *
@@ -319,10 +315,10 @@ public class Smooks {
 
     /**
      * Add a set of resource configurations to this Smooks instance.
-     * <p/>
+     *
      * These configurations do not overwrite previously added configurations.
      * They are added to the list of configurations on this Smooks instance.
-     * <p/>
+     *
      * The base URI is required for resolving resource imports.  Just specify
      * the location of the resource file.
      *
@@ -345,7 +341,7 @@ public class Smooks {
 
     /**
      * Add a set of resource configurations to this Smooks instance.
-     * <p/>
+     *
      * Calls {@link #addConfigurations(String, java.io.InputStream)} with a baseURI of "./",
      * which is the default base URI on all {@link org.milyn.resource.URIResourceLocator}
      * instances.
@@ -360,9 +356,9 @@ public class Smooks {
 
     /**
      * Create a {@link ExecutionContext} instance for use on this Smooks instance.
-     * <p/>
+     *
      * The created context is profile agnostic and should be used where profile based targeting is not in use.
-     * <p/>
+     *
      * The context returned from this method is used in subsequent calls to
      * {@link #filterSource(org.milyn.container.ExecutionContext, javax.xml.transform.Source, javax.xml.transform.Result...)} 
      * It allows access to the execution context instance
@@ -378,10 +374,10 @@ public class Smooks {
 
     /**
      * Create a {@link ExecutionContext} instance for use on this Smooks instance.
-     * <p/>
+     *
      * The created context is profile aware and should be used where profile based targeting is in use. In this case,
      * the transfromation/analysis resources must be configured with profile targeting information.
-     * <p/>
+     *
      * The context returned from this method is used in subsequent calls to
      * {@link #filterSource(org.milyn.container.ExecutionContext, javax.xml.transform.Source, javax.xml.transform.Result...)}.
      * It allows access to the execution context instance
@@ -434,7 +430,7 @@ public class Smooks {
 
     /**
      * Filter the content in the supplied {@link Source} instance.
-     * <p/>
+     *
      * Not producing a {@link Result}.
      *
      * @param source           The content Source.
@@ -572,7 +568,7 @@ public class Smooks {
 
     /**
      * Close this Smooks instance and all associated resources.
-     * <p/>
+     *
      * Should result in the {@link org.milyn.delivery.annotation.Uninitialize uninitialization}
      * of all allocated {@link org.milyn.delivery.ContentHandler} instances.
      */

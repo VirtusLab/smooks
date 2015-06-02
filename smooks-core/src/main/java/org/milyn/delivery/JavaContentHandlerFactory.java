@@ -29,7 +29,7 @@ import java.lang.reflect.InvocationTargetException;
 
 /**
  * Java ContentHandler instance creator.
- * <p/>
+ *
  * Java-based ContentHandler implementations should contain a public
  * constructor that takes a SmooksResourceConfiguration instance as a parameter.
  * @author tfennelly

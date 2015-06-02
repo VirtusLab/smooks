@@ -25,7 +25,7 @@ import java.util.regex.Matcher;
 
 /**
  * Simple file consumer.
- * <p/>
+ *
  * Eats the files produced by the Smooks file splitter.
  *
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

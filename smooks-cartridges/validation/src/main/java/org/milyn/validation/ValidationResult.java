@@ -86,7 +86,7 @@ public class ValidationResult extends FilterResult
 
     /**
      * Gets the {@link OnFailResult} that was reported as a {@link OnFail#FATAL}.
-     * <p/>
+     *
      * Can only be one {@link OnFail#FATAL}.
      *
      * @return {@link OnFail#FATAL} {@link OnFailResult} if one occured, otherwise null.

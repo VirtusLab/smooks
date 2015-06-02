@@ -23,7 +23,7 @@ import java.util.Properties;
 
 /**
  * Mapping decoder.
- * <p/>
+ *
  * Decodes the supplied data by using it to lookup the decode mapping from the
  * decoders configuration parameters.
  *

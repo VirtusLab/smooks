@@ -58,10 +58,6 @@ public class XsdValidator {
         this.schema = schemaFactory.newSchema();
     }
 
-    /**
-     * Set the XSD/Schema Sources.
-     * @param xsdSources The schema sources.
-     */
     public void setXSDSources(Collection<Source> xsdSources) throws SAXException {
         assertSchemaNotInitialized();
 
@@ -80,11 +76,6 @@ public class XsdValidator {
         this.errorHandler = errorHandler;
     }
 
-    /**
-     * Validate the supplied source against the namespaces referenced in it.
-     * @throws org.xml.sax.SAXException Validation error.
-     * @throws java.io.IOException Error reading the XSD Sources.
-     */
     public void validate(Source source) throws SAXException, IOException {
         AssertArgument.isNotNull(source, "source");
 

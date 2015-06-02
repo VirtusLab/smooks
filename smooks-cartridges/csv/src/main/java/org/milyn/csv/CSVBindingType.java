@@ -31,13 +31,13 @@ public enum CSVBindingType {
     SINGLE,
     /**
      * Bind a {@link List} of instances of the binding class.
-     * <p/>
+     *
      * Creates a {@link List} under the binding 'beanId' name.
      */
     LIST,
     /**
      * Bind a {@link Map} of instances of the binding class.
-     * <p/>
+     *
      * Creates a {@link Map} under the binding 'beanId' name, with the
      * Map entry keys coming from the 'keyField' name on the
      * {@link CSVBinding} instance.

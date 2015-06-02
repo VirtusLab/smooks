@@ -94,11 +94,6 @@ public class AnnotatedDaoRuntimeInfo {
 		return defaultInsertMethod;
 	}
 
-	/**
-	 *
-	 * @param name
-	 * @return
-	 */
 	public EntityMethod getInsertMethod(String name) {
 		return insertMethods.get(name);
 	}
@@ -110,11 +105,6 @@ public class AnnotatedDaoRuntimeInfo {
 		return defaultUpdateMethod;
 	}
 
-	/**
-	 *
-	 * @param name
-	 * @return
-	 */
 	public EntityMethod getUpdateMethod(String name) {
 		return updateMethods.get(name);
 	}
@@ -134,11 +124,6 @@ public class AnnotatedDaoRuntimeInfo {
 	}
 
 
-	/**
-	 *
-	 * @param name
-	 * @return
-	 */
 	public EntityMethod getDeleteMethod(String name) {
 		return deleteMethods.get(name);
 	}

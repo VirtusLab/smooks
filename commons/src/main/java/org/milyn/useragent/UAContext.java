@@ -21,7 +21,7 @@ import java.io.Serializable;
 import org.milyn.profile.ProfileSet;
 
 /**
- * Useragnet device context. <p/> Provides access to information such as the
+ * Useragnet device context.  Provides access to information such as the
  * useragent name and the useragent ProfileSet.
  * 
  * @author tfennelly

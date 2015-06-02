@@ -28,7 +28,7 @@ import java.io.IOException;
 public interface SAXVisitChildren extends SAXVisitor {
     /**
      * Process the onChildText event for the targeted element.
-     * <p/>
+     *
      * Be careful when caching element data.  This is not a DOM.
      *
      * @param element          The element containing the text (parent).  The targeted element.
@@ -41,7 +41,7 @@ public interface SAXVisitChildren extends SAXVisitor {
 
     /**
      * Process the onChildElement event for the targeted element.
-     * <p/>
+     *
      * Be careful when caching element data.  This is not a DOM.
      *
      * @param element          The element containing the child element (parent). The targeted element.

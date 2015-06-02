@@ -28,7 +28,7 @@ import java.net.URI;
 public interface ContainerResourceLocator extends ExternalResourceLocator {
 
 	/**
-	 * Get the resource specified by the container 'config' value. <p/> If the
+	 * Get the resource specified by the container 'config' value.  If the
 	 * config value isn't specified, uses the defaultLocation.
 	 * 
 	 * @param configName

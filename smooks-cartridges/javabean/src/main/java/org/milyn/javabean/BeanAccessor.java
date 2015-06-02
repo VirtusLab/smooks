@@ -32,7 +32,7 @@ import org.milyn.javabean.repository.BeanId;
 
 /**
  * Bean Accessor.
- * <p/>
+ *
  * This class provides support for saving and accessing Javabean instance.
  *
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>
@@ -53,7 +53,7 @@ public class BeanAccessor {
 
     /**
      * Public constructor.
-     * <p/>
+     *
      * Creates an accessor based on the supplied result Map.
      *
      * @param resultMap The result Map.
@@ -64,7 +64,7 @@ public class BeanAccessor {
 
     /**
      * Get the current bean, specified by the supplied beanId, from the supplied request.
-     * <p/>
+     *
      * If the specified beanId refers to a bean instance list, this method returns the
      * last (current) bean from the list.
      * @param beanId Bean Identifier.
@@ -79,7 +79,7 @@ public class BeanAccessor {
 
     /**
      * Get the current bean, specified by the supplied beanId, from the supplied request.
-     * <p/>
+     *
      * If the specified beanId refers to a bean instance list, this method returns the
      * last (current) bean from the list.
      * @param beanId Bean Identifier.

@@ -44,18 +44,18 @@ import javax.xml.namespace.QName;
 
 /**
  * The counter can increment or decrement a value.
- * <p />
+ *
  * This counter has extended xml schema configuration. Take a look at the
- * schema {@link http://www.milyn.org/xsd/smooks/calc-1.1.xsd} for more
+ * schema <a href="http://www.milyn.org/xsd/smooks/calc-1.1.xsd">http://www.milyn.org/xsd/smooks/calc-1.1.xsd</a> for more
  * information.
- * <p />
+ *
  * Example basic configuration:
  * <pre>
  * &lt;resource-config selector="orderItems"&gt;
  *    &lt;resource&gt;org.milyn.calc.Counter&lt;/resource&gt;
- *    &lt;param name="beanId">count&lt;/param&gt;
+ *    &lt;param name="beanId"&gt;count&lt;/param&gt;
  * &lt;/resource-config&gt;
- * <p />
+ *
  * Optional parameters:
  *    &lt;param name="start"&gt;1&lt;/param&gt;
  *    &lt;param name="amount"&gt;2&lt;/param&gt;
@@ -86,8 +86,9 @@ import javax.xml.namespace.QName;
  * <li><i>direction</i>: The direction that the counter counts. Can be INCREMENT (default) or DECREMENT.</li>
  * <li><i>executeAfter</i>: If the counter is executed after the element else it will execute before the element.
  *			    			Default is 'false'.</li>
+ * </ul>
  *
- * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>
+ * @author maurice.zeijen@smies.com
  * @since 1.1
  */
 @VisitBeforeIf(	condition = "!parameters.containsKey('executeAfter') || parameters.executeAfter.value != 'true'")

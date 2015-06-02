@@ -22,10 +22,10 @@ import java.sql.Time;
 
 /**
  * {@link java.sql.Time} data decoder.
- * <p/>
+ *
  * Extends {@link org.milyn.javabean.decoders.DateDecoder} and returns
  * a java.sql.Time instance.
- * <p/>
+ *
  *
  * @author <a href="mailto:daniel.bevenius@gmail.com">daniel.bevenius@gmail.com</a>
  */

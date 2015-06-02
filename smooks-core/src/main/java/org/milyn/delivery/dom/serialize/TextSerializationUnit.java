@@ -32,7 +32,7 @@ import java.io.Writer;
 
 /**
  * Write a &lt;text&gt; element.
- * <p/>
+ *
  * Basically just drops the &lt;text&gt; tags. 
  *
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

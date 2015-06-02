@@ -33,9 +33,6 @@ public class LookupWithNamedQueryMethod {
 	final int queryIndex;
 	final int parameterIndex;
 
-	/**
-	 *
-	 */
 	public LookupWithNamedQueryMethod(final Method method, final int queryIndex, final int parameterIndex) {
 		AssertArgument.isNotNull(method, "method");
 

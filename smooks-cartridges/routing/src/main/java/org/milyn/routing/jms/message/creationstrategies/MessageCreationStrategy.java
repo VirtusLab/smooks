@@ -34,10 +34,10 @@ public interface MessageCreationStrategy
 	 * identified by beanId.
 	 *
 	 * @param beanId		- the beanId of the Java Object to populate the JMS Message body with
-	 * @param context
-	 * @param jmsSession
-	 * @return
-	 * @throws SmooksException
+	 * @param context context
+	 * @param jmsSession session
+	 * @return message
+	 * @throws SmooksException smooks error
 	 */
 	Message createJMSMessage( String beanId, ExecutionContext context, Session jmsSession ) throws SmooksException;
 

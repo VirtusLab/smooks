@@ -89,7 +89,7 @@ public abstract class AbstractContentDeliveryConfig implements ContentDeliveryCo
 
     /**
      * Get the {@link org.milyn.cdr.SmooksResourceConfiguration} map for the target execution context.
-     * <p/>
+     *
      * This Map will be {@link org.milyn.cdr.SmooksResourceConfigurationSortComparator preordered}
      * for the target execution context.
      *
@@ -105,7 +105,7 @@ public abstract class AbstractContentDeliveryConfig implements ContentDeliveryCo
 
     /**
      * Get a list {@link Object}s from the supplied {@link org.milyn.cdr.SmooksResourceConfiguration} selector value.
-     * <p/>
+     *
      * Uses {@link org.milyn.cdr.SmooksResourceConfigurationStore#getObject(org.milyn.cdr.SmooksResourceConfiguration)} to construct the object.
      * @param selector selector attribute value from the .cdrl file in the .cdrar.
      * @return List of Object instances.  An empty list is returned where no

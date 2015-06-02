@@ -57,7 +57,7 @@ import javax.xml.namespace.QName;
 
 /**
  * DAO Updater
- * <p />
+ *
  * This DAO updater calls the update method of a DAO, using a entity bean from
  * the bean context as parameter.
  *

@@ -52,7 +52,7 @@ public interface EdiSpecificationReader {
 
     /**
      * Get the EDI Mapping Model for the named message.
-     * <p/>
+     *
      * The Mapping Model is constructed after converting/translating the
      * message definition in the specification.  This is the "normalized"
      * definition of any EDI message in Smooks.  From the EDI Mapping Model,
@@ -75,7 +75,7 @@ public interface EdiSpecificationReader {
 
     /**
      * Get the {@link org.milyn.edisax.interchange.EdiDirectory} instance for specification.
-     * <p/>
+     *
      * Implementations should cache this instance.
      *
      * @param includeMessages Messages to include.

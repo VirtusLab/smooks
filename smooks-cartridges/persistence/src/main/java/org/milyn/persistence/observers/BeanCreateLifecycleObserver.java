@@ -36,13 +36,6 @@ public class BeanCreateLifecycleObserver implements BeanContextLifecycleObserver
 	private BeanRuntimeInfo wiredBeanRI;
 	private ArrayToListChangeObserver arrayToListChangeObserver;
 	
-	/**
-	 * Public constructor.
-	 * @param beanContext The associ
-	 * @param populator
-	 * @param watchedBean
-	 * @param wiredBeanRI
-	 */
 	public BeanCreateLifecycleObserver(BeanId watchedBean, EntityLocatorParameterVisitor populator, BeanRuntimeInfo wiredBeanRI) {
 		this.watchedBean = watchedBean;
 		this.populator = populator;

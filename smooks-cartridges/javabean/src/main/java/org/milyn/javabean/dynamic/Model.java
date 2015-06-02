@@ -28,7 +28,7 @@ import org.milyn.payload.JavaResult;
 
 /**
  * Model container.
- * <p/>
+ *
  * Contains the {@link #getModelRoot() modelRoot} object instance, as well
  * as {@link #getModelMetadata() modelMetadata} associated with the
  * objects wired into the object graph routed on the {@link #getModelRoot() modelRoot}.
@@ -67,14 +67,6 @@ public class Model<T> {
         registerBean(modelRoot);
 	}
 
-	/**
-	 * Protected constructor.
-     * <p/>
-     * Used by the {@link ModelBuilder}.
-     *
-	 * @param modelRoot The model root object.
-	 * @param modelMetadata Model metadata.
-	 */
 	protected Model(T modelRoot, List<BeanMetadata> modelMetadata, Map<Class<?>, Map<String, BeanWriter>> beanWriters, Map<String, String> namespacePrefixMappings) {
         AssertArgument.isNotNull(modelRoot, "modelRoot");
         AssertArgument.isNotNull(modelMetadata, "modelMetadata");
@@ -111,11 +103,11 @@ public class Model<T> {
 
     /**
      * Register the specified bean instance.
-     * <p/>
+     *
      * All "namespace root" bean instances within a model must be registered via this method.
      * All "namespace root" bean types must be annotated with the {@link org.milyn.javabean.dynamic.serialize.DefaultNamespace @DefaultNamespace}
      * annotation.
-     * <p/>
+     *
      * Note that not all beans in the model object graph need to be registered with the model.  Only the
      * namepsace "root" beans need to be registered.  The root bean of the model's object graph is often the only
      * namespace "root" bean in the model.  This is only ever the case when the configuration is composed of a single
@@ -127,6 +119,7 @@ public class Model<T> {
      * be registered with the model via this method.  If not registered, the serialization process is likely to
      * fail when it attempts to locate a {@link BeanWriter} for the bean (and it's associated configuration namespace).
      *
+     * @param beanInstance bean instance
      * @return Model metadata.
      * @throws BeanRegistrationException Bean instance
      * {@link BeanRegistrationException#throwBeanInstanceAlreadyRegisteredException(Object) already registered}, or
@@ -158,7 +151,7 @@ public class Model<T> {
 
     /**
 	 * Get the model metadata.
-	 * <p/>
+	 *
 	 * A {@link BeanMetadata} list containing metadata about objects
 	 * wired into the object graph, routed at the {@link #getModelRoot() model root}.
 	 *
@@ -170,10 +163,11 @@ public class Model<T> {
 
     /**
 	 * Get the model metadata.
-	 * <p/>
+	 *
 	 * A {@link BeanMetadata} list containing metadata about objects
 	 * wired into the object graph, routed at the {@link #getModelRoot() model root}.
 	 *
+     * @param beanInstance bean instance
 	 * @return Model metadata.
 	 */
 	public BeanMetadata getBeanMetadata(Object beanInstance) {

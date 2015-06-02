@@ -21,7 +21,7 @@ import org.milyn.util.FreeMarkerTemplate;
 /**
  * TemplatedNamingStrategy uses FreeMarker to generate a file name from
  * the passed in <code>templateString</code> and the <code>dataModel</code>
- * <p/>
+ *
  *
  * @author <a href="mailto:daniel.bevenius@gmail.com">Daniel Bevenius</a>
  */
@@ -31,8 +31,7 @@ public class TemplatedNamingStrategy implements NamingStrategy {
      *
      * @param templateString - FreeMarker template
      * @param dataModel      - FreeMarker data model
-     * @throws NamingStrategyException
-     * @throws TemplateException
+     * @throws NamingStrategyException strategy error
      */
     public String generateFileName(final String templateString, final Object dataModel) throws NamingStrategyException {
         FreeMarkerTemplate template = new FreeMarkerTemplate(templateString);
